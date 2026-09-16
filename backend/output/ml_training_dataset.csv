@@ -1,0 +1,2232 @@
+project_id,sector,state,implementing_agency,approved_cost,planned_duration_months,is_overrun,overrun_pct
+108841,,(-) (-) PAN India,Department of Telecommunications,3742.0,36.0,0,0.0
+124199,,(-) (-) PAN India,Department of Telecommunications,837.0,36.0,0,0.0
+171218,,(-) (-) PAN India,Department of Telecommunications,1245.0,36.0,0,0.0
+175860,,(-) (-) PAN India,Department of Telecommunications,4943.0,36.0,0,0.0
+188000,,46431.54 81 1898 MPLS-IP BASED ACCESS AND AGGREGATION NETWORK [MAAN] IN BSNL ALONG WITH TEST AND MEASURING EQUIPMENT (BSNL) (709856) (N26000116) PAN India,61109,645.13,15.0,0,0.0
+210914,,(-) (-) PAN India,Department of Telecommunications,1674.0,36.0,0,0.0
+222253,,(-) (-) Uttar Pradesh,Department of Telecommunications,5008.0,36.0,0,0.0
+240484,,(-) (-) PAN India,Department of Telecommunications,832.0,36.0,0,0.0
+245986,,(-) (-) Rajasthan,Jaipur Metro Rail Corporation,13037.66,66.0,0,0.0
+298178,,(-) (-) Uttar Pradesh,National Thermal Power Corporation [NTPC],38358.0,78.0,0,0.0
+317725,,(-) (-) PAN India,Department of Telecommunications,1713.0,36.0,0,0.0
+364934,,(-) (-) West Bengal,Steel Authority of India Limited (SAIL,999.46,41.0,0,0.0
+400005,,"Multi-States (Dadra & Nagar Haveli and Daman & Diu, Gujarat, Maharashtra)",Power Grid Corporation of India Limited [POWERGRID],4546.26,30.0,0,0.0
+400006,,Odisha,South Eastern Railway [SER] - I,808.99,48.0,0,0.0
+400010,,Ladakh,Airport Authority of India [AAI],480.0,49.0,1,33.33333333333333
+400012,,"Multi-States (Gujarat, Madhya Pradesh, Uttar Pradesh)",Ministry of Petroleum & Natural Gas,10088.0,48.0,0,0.0
+400013,,PAN India,Department of Telecommunications [DoT],26316.0,21.0,0,-41.50767593859249
+400018,,Jharkhand,ECL - CIL,859.41,79.0,0,0.0
+400019,,Maharashtra,CR,493.0,9.0,1,137.60654273885865
+400022,,"Multi-States (Gujarat, Rajasthan)",North Western Railway [NWR],2798.0,0.0,1,14.30164403145103
+400023,,Karnataka,South Western Railway [SWR] - II,749.0,-12.0,0,0.0
+400033,,Maharashtra,Western Coalfields Limited [WCL],580.61,70.0,0,0.0
+400035,,Tripura,Indian Oil Corporation Limited [IOCL],656.0,0.0,0,0.0
+400043,,Tamil Nadu,Ministry of Petroleum & Natural Gas,829.0,0.0,0,0.0
+400045,,Odisha,East Coast Railway [ECoR] - II,168.32,-2.0,0,0.0
+400047,,Odisha,East Coast Railway [ECoR] - II,210.0,30.0,0,0.0
+400048,,Odisha,East Coast Railway [ECoR] - II,186.21,30.0,0,0.0
+400062,,West Bengal,Damodar Valley Corporation,17673.0,52.0,0,0.0
+400065,,Odisha,Steel Authority of India Limited [SAIL],1105.23,2.0,0,0.0
+400073,,Jharkhand,Ministry of Coal,799.34,122.0,0,0.0
+400074,,Jharkhand,Ministry of Coal,908.47,86.0,0,0.0
+400077,,Tamil Nadu,Indian Oil Corporation Limited [IOCL],827.0,15.0,0,0.0
+400078,,"Multi-States (Gujarat, Haryana, Rajasthan)",Ministry of Petroleum & Natural Gas,9028.0,12.0,0,0.0
+400081,,Manipur,Department of Sports & Youth Affairs,906.47,31.0,0,-32.51403797147175
+400087,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],885.63,0.0,1,52.163996251256165
+400093,,Uttar Pradesh,Irrigation & Water Resources-UP,1672.7,75.0,0,0.0
+400094,,Telangana,Irrigation and CAD-TG,759.94,39.0,1,1669.2712582572306
+400095,,Maharashtra,Department of water resources-MH - II,743.73,78.0,0,0.0
+400096,,Madhya Pradesh,Water resource-mp,648.09,75.0,0,0.0
+400097,,Gujarat,"Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",5021.76,63.0,1,32.82813196966801
+400100,,Andhra Pradesh,Water Resources-AP,353.05,63.0,1,189.8286361705141
+400101,,Andhra Pradesh,Water Resources-AP,397.41,87.0,1,75.48375732870333
+400102,,Telangana,Irrigation and CAD-TG,736.13,60.0,1,29.03563229320908
+400103,,Telangana,Irrigation and CAD-TG,1331.3,63.0,1,346.1871854578232
+400104,,Bihar,Water Resources-BR,571.07,75.0,1,15.243315180275612
+400105,,Maharashtra,Department of water resources-MH - II,580.79,36.0,1,54.239914599080564
+400107,,Maharashtra,Department of water resources-MH - II,2407.67,48.0,0,0.0
+400109,,Maharashtra,Department of water resources-MH - II,848.07,60.0,1,4.759041116888924
+400111,,Chhattisgarh,Water Resources-CT,459.97,66.0,1,58.06248233580449
+400112,,Maharashtra,Department of water resources-MH - II,7222.95,122.0,0,0.0
+400115,,Madhya Pradesh,Water Resources-MP,751.03,67.0,1,18.949975367162438
+400116,,Madhya Pradesh,Water Resources-MP,1229.15,67.0,1,13.87544237887971
+400117,,Uttar Pradesh,Irrigation & Water Resources-UP,741.38,0.0,0,0.0
+400119,,Offshore,Oil and Natural Gas Corporation Limited [ONGC],3190.69,92.0,1,5.804700550664591
+400120,,Andhra Pradesh,Oil and Natural Gas Corporation Limited [ONGC],34012.0,72.0,0,0.0
+400121,,Karnataka,National Mineral Development Corporation Limited [NMDC],1043.63,26.0,0,0.0
+400136,,Jharkhand,Ministry of Coal,2660.0,60.0,0,0.0
+400138,,Jharkhand,Ministry of Coal,973.5,139.0,0,0.0
+400139,,Jharkhand,Ministry of Coal,861.06,139.0,0,0.0
+400141,,Odisha,National Aluminium Company Limited [NALCO],4103.0,33.0,1,38.371922983183026
+400142,,Jharkhand,NLC India Limited [NLCIL],2242.9,105.0,0,0.0
+400144,,Chhattisgarh,South Eastern Coalfields Limited [SECL],2310.12,99.0,0,0.0
+400145,,Chhattisgarh,South Eastern Coalfields Limited [SECL],610.63,42.0,0,0.0
+400147,,Chhattisgarh,South Eastern Coalfields Limited [SECL],7612.33,84.0,0,0.0
+400148,,Madhya Pradesh,Ministry of Coal,869.44,72.0,0,0.0
+400149,,Chhattisgarh,South Eastern Coalfields Limited [SECL],2309.8,103.0,0,0.0
+400150,,Jharkhand,Ministry of Coal,7254.37,91.0,0,0.0
+400151,,Jharkhand,Ministry of Coal,778.8,92.0,0,0.0
+400152,,Madhya Pradesh,South Eastern Coalfields Limited [SECL],1248.93,80.0,0,0.0
+400153,,Jharkhand,Ministry of Coal,1020.42,86.0,0,0.0
+400154,,Jharkhand,Ministry of Coal,713.35,76.0,0,0.0
+400155,,Jharkhand,Ministry of Coal,2898.28,82.0,0,0.0
+400156,,Jharkhand,Ministry of Coal,5136.15,97.0,0,0.0
+400158,,Maharashtra,"Department of Water Resources, River Development & GR",1164.69,22.0,0,0.0
+400160,,Jharkhand,Ministry of Coal,510.85,132.0,0,0.0
+400161,,Uttar Pradesh,Gas Authority of India Limited [GAIL],910.56,19.0,0,0.0
+400162,,Madhya Pradesh,Northern Coalfields Limited [NCL],998.71,48.0,0,0.0
+400165,,Odisha,Mahanadi Coalfields Limited (MCL,1693.81,0.0,0,0.0
+400166,,Odisha,Mahanadi Coalfields Limited (MCL,5194.95,-12.0,0,0.0
+400167,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],1162.56,0.0,0,0.0
+400168,,Maharashtra,Ministry of Petroleum & Natural Gas,8797.0,6.0,1,27.95271115152893
+400169,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],631.03,7.0,1,33.974612934408825
+400171,,Punjab,Hindustan Petroleum Corporation Limited [HPCL],1421.46,37.0,0,0.0
+400172,,Jharkhand,Eastern Coal Fields Limited [ECL],513.99,91.0,0,0.0
+400173,,West Bengal,Eastern Coal Fields Limited [ECL],888.99,64.0,0,0.0
+400174,,Jharkhand,Steel Authority of India Limited [SAIL],1034.01,116.0,1,69.4664461658978
+400177,,Maharashtra,Western Coalfields Limited [WCL],727.28,12.0,0,0.0
+400178,,Maharashtra,Western Coalfields Limited [WCL],822.88,85.0,0,0.0
+400179,,Odisha,Mahanadi Coalfields Limited (MCL,3145.45,,1,100.98014592506637
+400180,,West Bengal,Eastern Coal Fields Limited [ECL],570.11,0.0,0,0.0
+400181,,West Bengal,Eastern Coal Fields Limited [ECL],502.68,127.0,0,-0.0019893371528588574
+400182,,West Bengal,ECL - CIL,535.18,106.0,0,-0.0018685302141318633
+400183,,Odisha,Mahanadi Coalfields Limited (MCL,3504.21,103.0,0,0.0
+400185,,Odisha,Mahanadi Coalfields Limited (MCL,8416.19,95.0,0,-27.42713745768573
+400186,,West Bengal,Eastern Coal Fields Limited [ECL],749.08,0.0,0,-0.0013349708976332173
+400187,,Odisha,Mahanadi Coalfields Limited (MCL,2434.75,106.0,0,0.0
+400188,,Delhi,National Buildings Construction Corporation [NBCC],32850.0,36.0,0,-0.0273972602739726
+400192,,Jharkhand,Damodar Valley Corporation,1581.0,0.0,0,0.0
+400203,,Chhattisgarh,WR,1686.22,-4.0,1,44.61517476960303
+400204,,Uttar Pradesh,North Eastern Railway [NER],4939.78,0.0,0,0.0
+400205,,Uttar Pradesh,North Eastern Railway [NER],1319.75,0.0,0,0.0
+400220,,Chhattisgarh,Indian Railway Construction International Limited [IRCON],3055.0,90.0,1,24.322749590834693
+400223,,"Multi-States (Puducherry, Tamil Nadu)",Southern Railway [SR] - II,713.0,12.0,1,145.2384291725105
+400231,,Odisha,NLC India Limited [NLCIL],27212.96,74.0,0,0.0
+400232,,Odisha,East Coast Railway [ECoR] - II,297.0,0.0,0,-0.16498316498316803
+400234,,"Multi-States (Bihar, Jharkhand)",RVNL - II,8975.0,4.0,0,0.0
+400235,,Jammu and Kashmir,Bharat Petroleum Corporation Limited [BPCL],676.89,6.0,0,0.0
+400247,,West Bengal,Eastern Railway [ER] - I,1000.0,0.0,1,115.39099999999998
+400253,,"Multi-States (Andhra Pradesh, Odisha)",RVNL - II,4803.0,0.0,1,38.8696647928378
+400254,,Bihar,East Central Railway [ECR] - I,735.2,27.0,1,9.147170837867247
+400259,,Uttar Pradesh,NLC India Limited [NLCIL],17237.8,59.0,0,0.0
+400261,,Jharkhand,National Thermal Power Corporation [NTPC],17112.0,44.0,1,8.752946218127276
+400271,,Maharashtra,Central Railway [CR] - II,3445.0,0.0,0,0.0
+400273,,West Bengal,Eastern Railway [ER] - I,1189.0,83.0,1,58.01682085786375
+400275,,"Multi-States (Andhra Pradesh, Tamil Nadu)",Southern Railway [SR] - II,3631.0,138.0,1,0.009363811622146669
+400277,,West Bengal,RVNL - II,8964.0,3.0,0,0.0
+400280,,Tamil Nadu,Southern Railways [SR] - construction,734.0,13.0,1,0.0013623978201622487
+400291,,Chhattisgarh,East Coast Railway [ECoR] - II,1589.0,69.0,1,13.152926368785401
+400298,,Andhra Pradesh,South Central Railway [SCR] - II,2312.0,10.0,1,155.45112456747404
+400299,,Odisha,National Aluminium Company Limited [NALCO],1381.0,14.0,1,41.981897175959446
+400301,,"Multi-States (Karnataka, Tamil Nadu)","Department of Water Resources, River Development & GR",678.0,104.0,1,155.45722713864308
+400312,,West Bengal,Eastern Coal Fields Limited [ECL],1210.12,107.0,0,0.0
+400313,,"Multi-States (Jharkhand, West Bengal)",Bharat Coking Coal Limited [BCCL],2661.73,112.0,0,0.0
+400315,,West Bengal,Eastern Coal Fields Limited [ECL],5365.88,92.0,0,0.0
+400321,,Madhya Pradesh,Northern Coalfields Limited [NCL],1729.68,36.0,0,0.0
+400352,,Jharkhand,Ministry of Coal,764.57,127.0,0,0.0
+400353,,Maharashtra,Western Coalfields Limited [WCL],711.01,77.0,0,0.0
+400354,,Chhattisgarh,South Eastern Coalfields Limited [SECL],5241.4,99.0,0,0.0
+400369,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",Northern Coalfields Limited [NCL],836.42,36.0,0,0.0
+400382,,Maharashtra,Reliance Industries Ltd,6000.0,38.0,0,0.0
+400392,,Odisha,Mahanadi Coalfields Limited (MCL,2838.86,124.0,0,0.0
+400416,,Jharkhand,Ministry of Coal,1799.64,37.0,1,42.49183169967326
+400424,,Chhattisgarh,South Eastern Coalfields Limited [SECL],11816.4,36.0,0,0.0
+400425,,Jharkhand,BCCL - CIL,1230.27,86.0,0,0.0
+400426,,Madhya Pradesh,Hindustan Copper Limited [HCL],1856.36,72.0,1,104.70167424421987
+400429,,Delhi,India International Convention & Expo Centre,5178.0,63.0,1,4.306682116647354
+425828,,(-) (-) West Bengal,Steel Authority of India Limited (SAIL,706.51,41.0,0,0.0
+437130,,(-) (-) PAN India,Department of Telecommunications,1621.0,36.0,0,0.0
+462136,,(-) (-) PAN India,Department of Telecommunications,768.0,48.0,0,0.0
+476006,,(-) (-) PAN India,Department of Telecommunications,1292.0,36.0,0,0.0
+478482,,(-) (-) Odisha,Steel Authority of India Limited (SAIL,1064.55,30.0,0,0.0
+505491,,(-) (-) Chhattisgarh,Steel Authority of India Limited (SAIL,268.36,24.0,0,0.0
+547243,,(-) (-) PAN India,Department of Telecommunications,22174.56,66.0,0,0.0
+589703,,(-) (-) Odisha,Steel Authority of India Limited (SAIL,216.02,18.0,0,0.0
+601812,,(-) (9939) Telangana,National Industrial Corridor Development Corporation,2360.0,35.0,0,0.0
+602096,,"Multi-States (Arunachal Pradesh, Assam)",National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],6285.33,188.0,1,314.86349960940794
+602098,,Jammu and Kashmir,"Indian Institute of Management, Jammu",424.93,26.0,1,17.880592097521948
+602099,,Himachal Pradesh,"Indian Institute of Management, Sirmaur",392.51,28.0,1,15.864563960153877
+602181,,Sikkim,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],5748.04,45.0,0,0.0
+602182,,Arunachal Pradesh,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],31876.39,0.0,0,0.0
+602184,,West Bengal,National Thermal Power Corporation [NTPC],1381.84,114.0,1,107.37277832455278
+602185,,Uttarakhand,National Thermal Power Corporation [NTPC],2978.0,193.0,1,266.2625923438549
+602193,,Uttarakhand,THDC India Limited,4825.6,41.0,0,0.0
+602194,,Uttar Pradesh,THDC India Limited,11089.42,18.0,0,0.0
+602195,,Uttarakhand,THDC India Limited,3860.35,51.0,1,65.91967049619853
+602223,,"Multi-States (Arunachal Pradesh, Sikkim)",Power Grid Corporation of India Limited [POWERGRID],4754.42,99.0,1,92.0175331586187
+602525,,Jammu and Kashmir,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],8112.12,77.0,1,56.90103203601525
+602532,,Jammu and Kashmir,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],4287.59,30.0,1,26.15478625521563
+602535,,Jammu and Kashmir,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],5281.94,42.0,0,0.0
+602538,,West Bengal,Damodar Valley Corporation,1037.0,23.0,1,6.653809064609451
+602579,,Bihar,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,10439.09,22.0,1,31.779302602046723
+602582,,Himachal Pradesh,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,687.97,16.0,1,156.30623428347164
+602593,,Himachal Pradesh,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,1810.56,43.0,1,139.99812212796044
+602633,,Himachal Pradesh,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,2615.0,107.0,0,0.0
+602792,,Chhattisgarh,SECR,1171.0,9.0,0,0.0
+602797,,"Multi-States (Uttar Pradesh, West Bengal)",Eastern Railway [ER] - I,461.64,0.0,1,72.84897322589032
+602961,,Odisha,National Thermal Power Corporation [NTPC],11843.75,10.0,1,5.903957783641161
+603210,,(-) (4249) Rajasthan,National Industrial Corridor Development Corporation,921.66,30.0,0,0.0
+603293,,Jharkhand,National Thermal Power Corporation [NTPC],502.0,-356.0,1,56.17529880478087
+603945,,Odisha,Water Resources-OR,567.03,66.0,1,427.3177786007796
+604791,,Assam,Ministry of Petroleum & Natural Gas,12366.0,17.0,1,104.6983664887595
+604792,,Assam,Ministry of Petroleum & Natural Gas,1750.0,46.0,0,0.0
+604795,,Tamil Nadu,Chennai Petroleum Corporation Limited [CPCL],31580.0,40.0,1,15.117162761241293
+604833,,Maharashtra,Ministry of Petroleum & Natural Gas,281.35,13.0,1,38.500088857295175
+604852,,Uttar Pradesh,Ministry of Petroleum & Natural Gas,980.45,0.0,0,0.0
+604853,,Haryana,Ministry of Petroleum & Natural Gas,2281.94,39.0,1,40.231557359089194
+604859,,Odisha,Ministry of Petroleum & Natural Gas,13805.0,31.0,0,-14.646867077145961
+604863,,Assam,Ministry of Petroleum & Natural Gas,682.9,70.0,1,6.44750329477229
+605155,,Jammu and Kashmir,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],4526.12,54.0,0,0.0
+605156,,Sikkim,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],938.29,19.0,1,94.83421969753488
+605292,,Punjab,"Indian intitue of Management, Amritsar",348.31,30.0,1,11.067727024776783
+606013,,Bihar,NIT Patna,499.21,18.0,0,0.0
+606431,,Kerala,INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,1006.45,53.0,1,20.959809230463513
+606479,,Uttar Pradesh,Banaras Hindu University,246.0,42.0,0,0.0
+606781,,"Multi-States (Jammu and Kashmir, Ladakh)",Power Grid Corporation of India Limited [POWERGRID],288.71,9.0,0,0.0
+607653,,(-) (-) Punjab,CAO/C/NR,234.78,20.0,0,0.0
+607701,,Assam,Ministry of Petroleum & Natural Gas,412.3,31.0,0,0.0
+607709,,"Multi-States (Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura)",Power Grid Corporation of India Limited [POWERGRID],5111.33,81.0,1,31.08134282075311
+608301,,"Multi-States (Delhi, Uttar Pradesh)",Power Grid Corporation of India Limited [POWERGRID],359.47,26.0,0,0.0
+608302,,Jammu and Kashmir,Power Grid Corporation of India Limited [POWERGRID],318.12,4.0,0,0.0
+608922,,"Multi-States (Delhi, Haryana, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],1666.0,24.0,0,0.0
+609019,,West Bengal,"Indian Institute of Technology, Kharagpur",500.0,36.0,0,-11.600000000000001
+609424,,Gujarat,Deendayal Port Trust [DPT],4243.64,36.0,0,0.0
+609736,,Sikkim,Sikkim University,314.06,8.0,1,8.43469400751449
+609996,,Telangana,"Indian Institute of Technology, Hyderabad",262.0,15.0,0,0.0
+610315,,Odisha,"Indian Institutes of Science Education and Research, Behrampur",1229.32,56.0,0,-31.41818240978752
+610940,,Karnataka,IISC Bangalore,420.41,18.0,0,0.0
+610984,,Jharkhand,Oil and Natural Gas Corporation Limited [ONGC],431.0,19.0,0,0.0
+610985,,Maharashtra,Ministry of Petroleum & Natural Gas,423.39,24.0,0,0.0
+611016,,West Bengal,Ministry of Coal,384.57,60.0,0,0.0
+611017,,Jharkhand,Ministry of Coal,334.27,95.0,0,0.0
+611047,,Jammu and Kashmir,Airport Authority of India [AAI],861.37,0.0,0,0.0
+611142,,Offshore,Inland Waterways Authority of India [IWAI],177.0,59.0,1,11.299435028248588
+611440,,"Multi-States (Andhra Pradesh, Bihar, Delhi, Gujarat, Jharkhand, Karnataka, Kerala, Madhya Pradesh, Odisha, Tamil Nadu, Telangana, Uttar Pradesh, West Bengal)",Airport Authority of India [AAI],215.17,,0,0.0
+611452,,"Multi-States (Gujarat, Maharashtra)",Western Railway,311.0,-6.0,0,0.0
+611495,,West Bengal,Airport Authority of India [AAI],1549.0,0.0,0,0.0
+611509,,Jharkhand,Damodar Valley Corporation,14358.0,52.0,0,0.0
+611570,,"Multi-States (Goa, Karnataka, Maharashtra, Telangana)",Airport Authority of India [AAI],500.48,35.0,0,0.0
+611586,,Himachal Pradesh,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,2614.51,8.0,1,74.23876749371773
+611602,,Tamil Nadu,Airport Authority of India [AAI],1207.0,8.0,0,0.0
+611614,,Rajasthan,North Western Railway [NWR],819.48,0.0,1,18.008981305217933
+611615,,Andhra Pradesh,South Western Railway [SWR] - II,342.0,1.0,0,0.0
+611656,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],1167.55,7.0,0,0.0
+611657,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],2820.99,8.0,0,0.0
+611659,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],1433.28,13.0,0,0.0
+611660,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],966.79,8.0,0,0.0
+611669,,"Multi-States (Bihar, Uttar Pradesh)",North Eastern Railway [NER],380.47,45.0,0,0.0
+611698,,Arunachal Pradesh,North Eastern Electric Power Corporation Limited,1938.85,50.0,0,0.0
+611699,,Arunachal Pradesh,North Eastern Electric Power Corporation Limited,1750.07,50.0,0,0.0
+611716,,(-) (9690) Arunachal Pradesh,North Eastern Electric Power Corporation Limited,8146.21,72.0,0,0.0
+611735,,"Multi-States (Delhi, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],331.0,13.0,0,0.0
+611737,,Chhattisgarh,Power Grid Corporation of India Limited [POWERGRID],385.84,22.0,0,0.0
+611751,,Maharashtra,South Central Railway [SCR] - II,960.64,46.0,0,0.0
+611752,,Andhra Pradesh,South Central Railway [SCR] - II,351.83,0.0,0,0.0
+611754,,Andhra Pradesh,South Central Railway [SCR] - II,293.3,36.0,0,0.0
+611798,,Jharkhand,Hindustan Copper Limited [HCL],2705.0,108.0,0,0.0
+611800,,Jharkhand,Hindustan Copper Limited [HCL],665.02,48.0,0,0.0
+611849,,Rajasthan,North Western Railway [NWR],969.0,0.0,0,0.0
+611855,,Rajasthan,North Western Railway [NWR],968.92,48.0,1,13.52846468232672
+611861,,"Multi-States (Haryana, Rajasthan)",North Western Railway [NWR],352.0,0.0,0,0.0
+611864,,Jharkhand,Ministry of Coal,4011.85,86.0,0,0.0
+611884,,Haryana,North Western Railway [NWR],471.0,0.0,0,0.0
+611917,,Haryana,Indian Oil Corporation Limited [IOCL],1459.0,15.0,1,73.50514050719671
+611918,,Gujarat,PCE/WR,468.0,56.0,0,0.0
+611927,,Andhra Pradesh,WPO/Patna,560.72,74.0,0,0.0
+611929,,Rajasthan,WPO/Patna,166.86,18.0,0,0.0
+611930,,Chhattisgarh,National Thermal Power Corporation [NTPC],15530.0,58.0,1,3.708950418544752
+611937,,Gujarat,Western Railway [WR] - II,417.53,0.0,0,0.0
+611938,,Gujarat,PCE/WR,415.38,0.0,0,0.0
+611939,,Gujarat,WR,482.42,300.0,0,0.0
+611943,,Gujarat,PCE/WR,410.26,0.0,0,0.0
+611944,,Gujarat,PCE/WR,152.44,0.0,0,0.0
+611945,,Gujarat,PCE/WR,307.11,0.0,1,0.0032561622871254293
+611947,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],428.3,3.0,0,0.0
+611948,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],2211.29,8.0,0,0.0
+611949,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],1796.02,6.0,0,0.0
+611950,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],2190.54,8.0,0,0.0
+611951,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],688.74,7.0,0,0.0
+611957,,Madhya Pradesh,"Indian Institute of Technology, Indore",496.28,37.0,0,0.0
+611961,,(-) (-) Odisha,"Indian Institute of Technology, Bhubaneshwar",454.27,30.0,0,0.0
+611963,,Uttarakhand,National Institute of Technology Uttarakhand,650.85,41.0,0,0.0
+611966,,Maharashtra,Power Grid Corporation of India Limited [POWERGRID],224.41,4.0,0,0.0
+611967,,Andhra Pradesh,Power Grid Corporation of India Limited [POWERGRID],1248.69,7.0,0,0.0
+611969,,Gujarat,PCE/WR,246.0,38.0,0,0.0
+611970,,Gujarat,PCE/WR,670.17,0.0,0,0.0
+611971,,Gujarat,PCE/WR,350.0,0.0,0,-0.01999999999999805
+611972,,Gujarat,PCE/WR,318.0,44.0,0,0.0
+611973,,Gujarat,PCE/WR,450.0,42.0,0,0.0
+611974,,Gujarat,PCE/WR,1430.0,40.0,0,0.0
+611975,,Maharashtra,PCE/WR,176.0,32.0,0,0.0
+611976,,Maharashtra,PCE/WR,221.0,28.0,0,0.0
+611977,,Gujarat,PCE/WR,487.0,24.0,0,0.0
+611978,,Gujarat,PCE/WR,158.0,24.0,0,0.0
+611979,,Gujarat,PCE/WR,250.0,26.0,0,0.0
+611980,,Offshore,WR,492.83,0.0,0,0.0
+612063,,Uttar Pradesh,Airport Authority of India [AAI],219.18,9.0,1,25.184779633178206
+612066,,(-) (-) Rajasthan,Jaipur Metro Rail Corporation,980.08,43.0,0,0.0
+612068,,(-) (-) Rajasthan,Jaipur Metro Rail Corporation,204.81,27.0,0,0.0
+612072,,Gujarat,Western Railway,961.67,0.0,0,0.0
+612096,,West Bengal,Northeast Frontier Railway [NFR],1209.0,-24.0,0,-2.268817204301081
+612128,,Himachal Pradesh,"Indian Institute of Technology, Mandi",166.66,0.0,0,0.0
+612132,,"Multi-States (Delhi, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],2000.0,9.0,0,0.0
+612133,,"Multi-States (Rajasthan, Uttar Pradesh)",Power Grid Corporation of India Limited [POWERGRID],2056.0,6.0,0,0.0
+612134,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],2998.34,3.0,0,0.0
+612135,,Maharashtra,"Indian Institute of Technology, Bombay",182.33,40.0,0,0.0
+612138,,"Multi-States (Karnataka, Telangana)",Power Grid Corporation of India Limited [POWERGRID],2147.62,24.0,0,0.0
+612139,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],3751.82,6.0,0,0.0
+612140,,Karnataka,Power Grid Corporation of India Limited [POWERGRID],2889.39,24.0,0,0.0
+612142,,Uttar Pradesh,National Thermal Power Corporation [NTPC],17195.0,71.0,0,0.0
+612151,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],334.0,3.0,0,0.0
+612167,,Andhra Pradesh,Employee's State Insurance Company [ESIC],384.27,30.0,0,0.0
+612178,,Tamil Nadu,Employee's State Insurance Company [ESIC],152.95,27.0,0,0.0
+612183,,Bihar,Airport Authority of India [AAI],1413.0,30.0,0,0.0
+612185,,Gujarat,Employee's State Insurance Company [ESIC],209.36,51.0,0,0.0
+612186,,Gujarat,Employee's State Insurance Company [ESIC],558.12,35.0,0,0.0
+612188,,Maharashtra,Employee's State Insurance Company [ESIC],429.25,30.0,0,0.0
+612194,,Bihar,Airport Authority of India [AAI],911.66,18.0,0,0.0
+612201,,Assam,Employee's State Insurance Company [ESIC],143.23,42.0,0,0.0
+612203,,Maharashtra,"Indian Institute of Technology, Bombay",68.0,8.0,1,288.13235294117646
+612211,,Gujarat,Employee's State Insurance Company [ESIC],205.87,24.0,0,0.0
+612213,,Maharashtra,Employee's State Insurance Company [ESIC],194.93,36.0,1,0.9080182629661836
+612239,,Jammu and Kashmir,Employee's State Insurance Company [ESIC],131.05,33.0,0,0.0
+612259,,Uttarakhand,Employee's State Insurance Company [ESIC],102.4,34.0,1,190.65429687499997
+612513,,Odisha,Employee's State Insurance Company [ESIC],164.6,28.0,0,0.0
+612688,,Telangana,Employee's State Insurance Company [ESIC],211.13,32.0,0,0.0
+612745,,Karnataka,Employee's State Insurance Company [ESIC],278.0,27.0,0,0.0
+612748,,Karnataka,Employee's State Insurance Company [ESIC],150.92,23.0,0,0.0
+612781,,West Bengal,Steel Authority of India Limited [SAIL],916.78,36.0,0,0.0
+612786,,Andhra Pradesh,Airport Authority of India [AAI],265.91,2.0,0,0.0
+612787,,Karnataka,Airport Authority of India [AAI],320.47,2.0,0,0.0
+612788,,Karnataka,Airport Authority of India [AAI],322.45,0.0,0,0.0
+612789,,Kerala,Airport Authority of India [AAI],484.57,6.0,0,0.0
+612790,,Karnataka,Mangalore Refinary and Petrochemicals Limited,385.0,0.0,0,0.0
+612791,,West Bengal,Airport Authority of India [AAI],328.3,18.0,0,0.0
+612793,,Sikkim,Airport Authority of India [AAI],323.26,26.0,0,0.0
+612815,,Chhattisgarh,South East Central Railway [SECR] - II,170.49,34.0,0,0.0
+612816,,West Bengal,Eastern Coal Fields Limited [ECL],929.1,75.0,0,0.0
+612819,,Rajasthan,NLC India Limited [NLCIL],1813.0,12.0,0,0.0
+612827,,Andhra Pradesh,East Coast Railway [ECoR] - II,183.65,35.0,0,0.0
+612834,,Odisha,East Coast Railway [ECoR] - II,252.0,32.0,0,0.0
+612838,,Gujarat,SECL - CIL,7580.0,98.0,0,0.0
+612845,,(-) (7616) Maharashtra,Central Railway [CR] - II,955.39,30.0,1,119.1586681878605
+612851,,Delhi,Ministry of Education,333.49,34.0,1,0.8785870640798844
+612853,,"Multi-States (Jammu and Kashmir, Punjab)",Gas Authority of India Limited [GAIL],521.9,0.0,0,0.0
+612855,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],679.0,-3.0,0,0.0
+612856,,Andhra Pradesh,Power Grid Corporation of India Limited [POWERGRID],163.61,2.0,0,0.0
+612876,,Mizoram,Ministry of Education,474.23,0.0,0,0.0
+612877,,Puducherry,"National Institute of Technology, Puducherry",618.34,8.0,0,-11.967525956593459
+612878,,(-) (-) Karnataka,Bengaluru Metro Rail,15611.0,59.0,0,0.0
+612883,,Sikkim,Ministry of Education,685.76,-14.0,0,-10.936770881941204
+612885,,Meghalaya,"National Institute of Technology, Meghalaya",494.52,40.0,0,-13.10765995308582
+612894,,Himachal Pradesh,"Central University, Himachal Pradesh",251.98,12.0,1,19.235653623303435
+612898,,Arunachal Pradesh,"National Institute of Technology, Arunachal Pradesh",592.61,161.0,0,0.0
+612916,,Gujarat,Gujarat,490.63,12.0,0,0.0
+612998,,Punjab,Ministry of Petroleum and Natural Gas,367.0,15.0,0,0.0
+613002,,Tamil Nadu,WR,842.0,41.0,0,0.0
+613003,,Chhattisgarh,CERL,1686.26,49.0,0,0.0
+613008,,Andhra Pradesh,Central Tribal University of Andhra Pradesh,305.0,42.0,0,0.0
+613013,,Nagaland,NIT Nagaland,275.63,159.0,0,0.0
+613015,,Maharashtra,Ministry of Railways,1813.0,44.0,0,0.0
+613785,,Delhi,Ministry of Railways,4744.0,54.0,0,0.0
+613786,,Gujarat,Ministry of Railways,2379.0,52.0,0,0.0
+613787,,Uttarakhand,Irrigation-UK,2584.1,74.0,0,0.0
+613788,,Assam,Northeast Frontier Railway [NFR],1473.77,,0,0.0
+613793,,West Bengal,Eastern Coal Fields Limited [ECL],483.65,71.0,0,0.0
+613794,,West Bengal,Eastern Coal Fields Limited [ECL],389.1,62.0,0,0.0
+613795,,Chhattisgarh,SECL - CIL,278.64,3.0,0,0.0
+613798,,Chhattisgarh,South Eastern Coalfields Limited [SECL],335.97,133.0,0,0.0
+613799,,Chhattisgarh,South Eastern Coalfields Limited [SECL],316.11,128.0,0,0.0
+613800,,Chhattisgarh,South Eastern Coalfields Limited [SECL],459.49,12.0,0,0.0
+613801,,Chhattisgarh,South Eastern Coalfields Limited [SECL],410.26,94.0,0,0.0
+613802,,Madhya Pradesh,South Eastern Coalfields Limited [SECL],371.04,135.0,0,0.0
+613803,,Madhya Pradesh,South Eastern Coalfields Limited [SECL],366.94,26.0,0,0.0
+613804,,Madhya Pradesh,WCL - CIL,314.09,63.0,0,0.0
+613808,,Jharkhand,Ministry of Coal,339.87,152.0,0,0.0
+615183,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",Northern Coalfields Limited [NCL],491.67,24.0,0,0.0
+615184,,Maharashtra,Western Coalfields Limited [WCL],228.64,74.0,0,0.0
+615185,,Madhya Pradesh,Western Coalfields Limited [WCL],399.2,54.0,0,0.0
+615186,,Maharashtra,Western Coalfields Limited [WCL],319.04,67.0,0,0.0
+615187,,Madhya Pradesh,Western Coalfields Limited [WCL],220.62,76.0,0,0.0
+615188,,Maharashtra,Western Coalfields Limited [WCL],402.27,54.0,0,0.0
+615189,,Maharashtra,Western Coalfields Limited [WCL],361.87,45.0,0,0.0
+615190,,Maharashtra,Western Coalfields Limited [WCL],335.75,82.0,0,0.0
+615191,,Chhattisgarh,South Eastern Coalfields Limited [SECL],329.21,74.0,0,0.0
+615192,,Maharashtra,Western Coalfields Limited [WCL],309.58,59.0,0,0.0
+615193,,Odisha,Mahanadi Coalfields Limited (MCL,479.15,58.0,0,0.0
+615194,,Madhya Pradesh,Western Coalfields Limited [WCL],206.88,98.0,0,0.0
+615195,,Madhya Pradesh,Western Coalfields Limited [WCL],166.25,54.0,0,0.0
+615199,,Maharashtra,Western Coalfields Limited [WCL],198.71,42.0,0,0.0
+615202,,Chhattisgarh,National Mineral Development Corporation Limited [NMDC],1700.0,-9.0,1,3.3058823529411794
+615206,,Madhya Pradesh,Western Coalfields Limited [WCL],414.15,79.0,0,0.0
+615327,,Tamil Nadu,NLC India Limited [NLCIL],218.03,6.0,0,0.0
+615330,,Maharashtra,Western Coalfields Limited [WCL],360.81,75.0,0,0.0
+615331,,Maharashtra,Western Coalfields Limited [WCL],497.41,77.0,0,0.0
+615332,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],3279.0,24.0,0,0.0
+615333,,"Multi-States (Madhya Pradesh, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],2227.0,24.0,0,0.0
+615334,,"Multi-States (Madhya Pradesh, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],3251.0,24.0,0,0.0
+615335,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],1382.0,24.0,0,0.0
+615336,,(-) (11862) Delhi,Power Grid Corporation of India Limited [POWERGRID],284.0,16.0,0,0.0
+615337,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],369.0,18.0,0,0.0
+615338,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],2735.0,24.0,0,0.0
+615339,,"Multi-States (Haryana, Punjab, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],5969.0,24.0,0,0.0
+615340,,"Multi-States (Haryana, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],5357.0,24.0,0,0.0
+615342,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],329.0,21.0,0,0.0
+615343,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],501.0,24.0,0,0.0
+615344,,Madhya Pradesh,Power Grid Corporation of India Limited [POWERGRID],3674.0,24.0,0,0.0
+615345,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],4766.0,24.0,0,0.0
+615346,,Madhya Pradesh,Power Grid Corporation of India Limited [POWERGRID],2708.0,24.0,0,0.0
+615347,,"Multi-States (Gujarat, Maharashtra)",Power Grid Corporation of India Limited [POWERGRID],24819.0,54.0,0,0.0
+615349,,Jharkhand,Ministry of Coal,230.41,88.0,0,0.0
+615818,,Telangana,Singareni Collieries Company Limited [SCCL],297.88,24.0,0,0.0
+615820,,Assam,MIS MoCoal Integration Logins,159.77,108.0,0,0.0
+615821,,Assam,MIS MoCoal Integration Logins,289.46,96.0,0,0.0
+615822,,Jharkhand,Ministry of Coal,222.82,94.0,0,0.0
+615843,,Jharkhand,Ministry of Coal,243.52,24.0,0,0.0
+615857,,Odisha,Singareni Collieries Company Limited [SCCL],494.3,72.0,0,0.0
+615858,,Telangana,Singareni Collieries Company Limited [SCCL],384.32,106.0,0,0.0
+615859,,Telangana,Singareni Collieries Company Limited [SCCL],413.84,106.0,0,0.0
+615860,,Telangana,Singareni Collieries Company Limited [SCCL],607.04,12.0,0,0.0
+615861,,Telangana,Singareni Collieries Company Limited [SCCL],424.81,12.0,0,0.0
+615862,,Telangana,Singareni Collieries Company Limited [SCCL],345.6,55.0,0,0.0
+615863,,Telangana,Singareni Collieries Company Limited [SCCL],484.5,69.0,0,0.0
+615864,,Telangana,Singareni Collieries Company Limited [SCCL],489.62,129.0,0,0.0
+615865,,Telangana,Singareni Collieries Company Limited [SCCL],442.42,12.0,0,0.0
+615914,,Maharashtra,Western Coalfields Limited [WCL],184.71,96.0,0,0.0
+615915,,(-) (-) Odisha,CAO/C/SER,244.99,27.0,0,0.0
+615916,,Maharashtra,Western Coalfields Limited [WCL],1225.21,71.0,0,0.0
+615917,,Maharashtra,Western Coalfields Limited [WCL],973.07,69.0,0,0.0
+615918,,Maharashtra,Western Coalfields Limited [WCL],405.2,66.0,0,0.0
+615919,,Maharashtra,Western Coalfields Limited [WCL],1024.91,69.0,0,0.0
+615982,,Maharashtra,Western Coalfields Limited [WCL],319.75,48.0,0,0.0
+616044,,Maharashtra,Western Coalfields Limited [WCL],237.06,60.0,0,0.0
+616050,,Maharashtra,Western Coalfields Limited [WCL],235.9,24.0,0,0.0
+616221,,(-) (7510) Uttar Pradesh,Noida Metro Rail Corporation Ltd. [NMRCL],2254.35,48.0,0,0.0
+616223,,Maharashtra,Western Coalfields Limited [WCL],316.0,24.0,0,0.0
+616225,,Jharkhand,Eastern Coal Fields Limited [ECL],979.08,159.0,0,0.0
+616226,,Odisha,Mahanadi Coalfields Limited (MCL,3563.5,119.0,0,0.0
+616227,,"Multi-States (Jharkhand, West Bengal)",CAO/C/SER,1932.01,50.0,0,0.0
+616229,,Maharashtra,Western Coalfields Limited [WCL],668.54,66.0,0,0.0
+616230,,West Bengal,Eastern Coal Fields Limited [ECL],1193.55,148.0,0,0.0
+616231,,Odisha,Mahanadi Coalfields Limited (MCL,5366.27,108.0,0,0.0
+616232,,Odisha,Mahanadi Coalfields Limited (MCL,1561.85,76.0,0,0.0
+616233,,Odisha,Mahanadi Coalfields Limited (MCL,978.44,83.0,0,0.0
+616234,,Chhattisgarh,South Eastern Coalfields Limited [SECL],1725.04,125.0,0,0.0
+616235,,Andhra Pradesh,Ministry of Petroleum & Natural Gas,240.0,0.0,0,0.0
+616236,,Jharkhand,CCL - CIL,414.37,109.0,0,0.0
+616253,,Jharkhand,Ministry of Coal,5850.83,60.0,0,0.0
+616254,,"Multi-States (Andhra Pradesh, Chhattisgarh, Odisha)",Ministry of Petroleum and Natural Gas,2212.0,0.0,0,0.0
+616586,,Odisha,CAO/C/SER,2269.49,51.0,0,0.0
+616587,,Odisha,CAO/C/SER,1875.72,51.0,0,0.0
+616588,,"Multi-States (Jharkhand, Odisha, West Bengal)",South Eastern Railway [SER] - I,1459.13,60.0,0,0.0
+616594,,Uttar Pradesh,National Mission for Clean Ganga,842.25,8.0,0,0.0
+616600,,Bihar,National Mission for Clean Ganga,413.29,10.0,0,0.0
+616604,,West Bengal,National Mission for Clean Ganga,154.73,9.0,0,0.0
+616605,,Uttar Pradesh,National Mission for Clean Ganga,690.71,29.0,0,0.0
+616611,,Bihar,National Mission for Clean Ganga,824.0,77.0,0,0.0
+616612,,Bihar,National Mission for Clean Ganga,578.89,77.0,0,0.0
+616615,,Bihar,National Mission for Clean Ganga,230.06,8.0,0,0.0
+616616,,Bihar,National Mission for Clean Ganga,305.19,6.0,0,0.0
+616670,,"Multi-States (Rajasthan, Uttar Pradesh)",Power Grid Corporation of India Limited [POWERGRID],5846.0,24.0,0,0.0
+616671,,Tamil Nadu,Power Grid Corporation of India Limited [POWERGRID],548.0,0.0,0,0.0
+616672,,Karnataka,Power Grid Corporation of India Limited [POWERGRID],1354.0,29.0,0,0.0
+616691,,Maharashtra,Employee's State Insurance Company [ESIC],260.13,194.0,0,0.0
+616694,,Odisha,East Coast Railway [ECoR] - II,200.77,33.0,0,0.0
+616695,,Odisha,East Coast Railway [ECoR] - II,300.15,43.0,0,0.0
+616696,,Rajasthan,North Western Railway [NWR],254.06,48.0,0,0.0
+616697,,Andhra Pradesh,East Coast Railway [ECoR] - II,154.28,27.0,0,0.0
+616699,,"Multi-States (Bihar, Jharkhand)",East Central Railway [ECR] - I,12333.57,55.0,0,0.0
+616701,,"Multi-States (Assam, Nagaland)",Northeast Frontier Railway [NFR],2123.7,37.0,0,0.0
+616702,,"Multi-States (Andhra Pradesh, Odisha, Telangana)",Indian Railways,3591.76,58.0,0,0.0
+616839,,(-) (7082) Odisha,Indian Railway,1165.89,44.0,0,-0.013723421592095466
+616840,,Rajasthan,North Western Railway [NWR],947.0,49.0,0,0.0
+616841,,Rajasthan,North Western Railway [NWR],799.64,34.0,0,0.0
+616842,,"Multi-States (Gujarat, Rajasthan)",North Western Railway [NWR],3085.59,41.0,0,0.0
+616843,,Rajasthan,North Western Railway [NWR],1634.79,40.0,0,0.0
+616856,,Telangana,South Central Railway [SCR] - II,770.12,48.0,0,0.0
+616857,,"Multi-States (Andhra Pradesh, Telangana)",South Central Railway [SCR] - II,1595.55,48.0,0,0.0
+616858,,Assam,Ministry of Petroleum & Natural Gas,430.76,21.0,0,0.0
+616879,,Karnataka,Ministry of Petroleum & Natural Gas,364.0,0.0,0,0.0
+616886,,Delhi,Delhi University,373.0,21.0,0,0.0
+616933,,Maharashtra,Ministry of Petroleum and Natural Gas,4679.0,0.0,1,28.403505022440694
+616950,,Offshore,Ministry of Petroleum & Natural Gas,1486.4,0.0,0,-6.480432867748835
+616983,,(-) (-) Gujarat,Ministry of Railways-,467.58,47.0,0,0.0
+617068,,Karnataka,Power Grid Corporation of India Limited [POWERGRID],288.0,28.0,0,0.0
+617069,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],466.0,24.0,0,0.0
+617179,,Jammu and Kashmir,Power Grid Corporation of India Limited [POWERGRID],218.6,24.0,0,0.0
+617181,,Rajasthan,Power Grid Corporation of India Limited [POWERGRID],404.0,21.0,0,0.0
+617182,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],172.0,24.0,0,0.0
+617183,,Andhra Pradesh,Power Grid Corporation of India Limited [POWERGRID],2886.0,33.0,0,0.0
+617184,,Karnataka,Power Grid Corporation of India Limited [POWERGRID],3453.0,30.0,0,0.0
+617185,,"Multi-States (Andhra Pradesh, Karnataka)",Power Grid Corporation of India Limited [POWERGRID],5550.0,24.0,0,0.0
+617186,,"Multi-States (Madhya Pradesh, Rajasthan)",Power Grid Corporation of India Limited [POWERGRID],5028.0,24.0,0,0.0
+617188,,Chhattisgarh,National Thermal Power Corporation [NTPC],9791.0,60.0,0,0.0
+617200,,Chhattisgarh,CAO/C/SECR,7853.84,71.0,0,0.0
+617201,,Maharashtra,South East Central Railway,4373.04,60.0,0,0.0
+617206,,"Multi-States (Delhi, Haryana)",Delhi Metro Rail Corporation Limited [DMRC],6230.99,48.0,0,0.0
+617207,,Delhi,Delhi Metro Rail Corporation Limited [DMRC],8399.81,60.0,0,0.0
+617210,,Andhra Pradesh,South Central Railway [SCR] - II,1215.56,47.0,0,0.0
+617211,,"Multi-States (Andhra Pradesh, Telangana)",South Central Railway [SCR] - II,2853.23,67.0,0,0.0
+617212,,"Multi-States (Andhra Pradesh, Maharashtra, Telangana)",South Central Railway [SCR] - II,4686.09,67.0,0,0.0
+617213,,Uttar Pradesh,Northern Railways,2464.46,48.0,0,0.0
+617214,,"Multi-States (Andhra Pradesh, Telangana)",South Central Railway [SCR] - II,2047.4,28.0,0,0.0
+617215,,Maharashtra,South Central Railway [SCR] - II,769.93,51.0,0,0.0
+617216,,Andhra Pradesh,South Central Railway [SCR] - II,877.34,29.0,0,0.0
+617221,,Punjab,Central University of Punjab,210.99,30.0,0,0.0
+617224,,"Multi-States (Bihar, Uttar Pradesh)",NER,1120.0,45.0,0,0.0
+617225,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],910.18,39.0,1,5.493418884176757
+617226,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],2954.53,54.0,0,0.0
+617231,,Bihar,East Central Railway [ECR] - I,611.74,48.0,0,0.0
+617233,,Maharashtra,Western Coalfields Limited [WCL],379.3,62.0,0,0.0
+617239,,(-) (9904) Bihar,East Central Railway [ECR] - I,4079.95,48.0,1,0.0002451010429102876
+617240,,"Multi-States (Jharkhand, West Bengal)",Eastern Railway [ER] - II ,935.19,,0,0.0
+617242,,West Bengal,Steel Authority of India Limited [SAIL],2115.44,32.0,0,0.0
+617243,,Chhattisgarh,Steel Authority of India Limited [SAIL],198.62,23.0,0,0.0
+617245,,"Multi-States (Bihar, West Bengal)",Northeast Frontier Railway [NFR],942.64,48.0,1,108.03275905966223
+617246,,West Bengal,Steel Authority of India Limited [SAIL],758.09,20.0,0,0.0
+617248,,West Bengal,Steel Authority of India Limited [SAIL],227.96,19.0,0,0.0
+617249,,Jharkhand,Steel Authority of India Limited [SAIL],211.94,23.0,0,0.0
+617250,,Jharkhand,Steel Authority of India Limited [SAIL],207.13,20.0,0,0.0
+617251,,West Bengal,Steel Authority of India Limited [SAIL],196.4,17.0,0,0.0
+617252,,Uttar Pradesh,Construction NER,958.27,52.0,1,56.64687405428532
+617253,,Jharkhand,Steel Authority of India Limited [SAIL],513.82,4.0,0,0.0
+617254,,Jharkhand,Steel Authority of India Limited [SAIL],260.37,26.0,0,0.0
+617255,,Chhattisgarh,Steel Authority of India Limited [SAIL],471.83,30.0,0,0.0
+617256,,Chhattisgarh,Steel Authority of India Limited [SAIL],884.1,21.0,0,0.0
+617257,,Jharkhand,Steel Authority of India Limited [SAIL],627.31,35.0,0,0.0
+617269,,Uttar Pradesh,Power Grid Corporation of India Limited [POWERGRID],212.81,18.0,0,0.0
+617270,,"Multi-States (Bihar, West Bengal)",Power Grid Corporation of India Limited [POWERGRID],408.94,18.0,0,0.0
+617271,,"Multi-States (Bihar, Odisha, West Bengal)",Power Grid Corporation of India Limited [POWERGRID],342.69,18.0,0,0.0
+617272,,Haryana,Power Grid Corporation of India Limited [POWERGRID],370.0,30.0,0,0.0
+617278,,Maharashtra,Western Coalfields Limited [WCL],630.37,61.0,0,0.0
+617279,,Madhya Pradesh,Power Grid Corporation of India Limited [POWERGRID],558.0,30.0,0,0.0
+617280,,West Bengal,Central Public Works Department (CPWD,255.37,78.0,0,0.0
+617282,,Delhi,Central Public Works Department [CPWD],646.53,3.0,0,0.0
+617284,,Uttar Pradesh,North Central Railway,1423.96,38.0,0,0.0
+617287,,Chhattisgarh,SECL - CIL,4516.88,64.0,0,0.0
+617288,,Chhattisgarh,South Eastern Coalfields Limited [SECL],382.61,50.0,0,0.0
+617290,,Odisha,Indian Railways,2343.64,154.0,0,0.0
+617299,,Gujarat,NLC India Limited [NLCIL],383.84,7.0,0,0.0
+617302,,West Bengal,Ministry of Petroleum & Natural Gas,1740.0,60.0,1,48.44827586206897
+617303,,Bihar,Ministry of Petroleum & Natural Gas,163.0,0.0,0,0.0
+617304,,Bihar,MinistryofPetroleumNaturalGas,340.15,0.0,0,0.0
+617320,,Odisha,Indian Railway and Govt of Odisha,747.91,36.0,0,0.0
+617321,,Offshore,Ministry of Railways,150000.0,120.0,0,0.0
+617322,,West Bengal,Eastern Railway [ER] - I,350.46,0.0,0,0.0
+617326,,Jharkhand,Power Grid Corporation of India Limited [POWERGRID],1842.25,169.0,0,0.0
+617327,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],12200.1,60.0,0,0.0
+617333,,Uttar Pradesh,East Central Railway [ECR] - I,199.96,33.0,0,0.0
+617338,,West Bengal,Steel Authority of India Limited [SAIL],2518.39,41.0,0,0.0
+617345,,West Bengal,South Eastern Railway - JH,226.87,22.0,0,0.0
+617361,,Maharashtra,Central Railway (CR) - II,362.81,41.0,0,0.0
+617364,,Maharashtra,Central Railway (CR) - II,338.33,42.0,0,-39.40827003221706
+617370,,Uttar Pradesh,M/S SRC company Infra Private Limited,180.66,23.0,1,31.39599247204694
+617372,,Jharkhand,East Central Railway [ECR] - I,349.22,37.0,0,0.0
+617373,,Bihar,East Central Railway [ECR] - I,588.18,48.0,0,0.0
+617374,,Chhattisgarh,Rail Vikas Nigam Limited,1516.45,184.0,1,24.05684328530449
+617375,,Arunachal Pradesh,Power Grid Corporation of India Limited [POWERGRID],209.38,30.0,0,0.0
+617379,,Delhi,Northern Railways,446.21,84.0,0,0.0
+617390,,"Multi-States (Chhattisgarh, Odisha)",SECR,1281.81,42.0,0,0.0
+617391,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],488.29,21.0,0,0.0
+617403,,Rajasthan,North Western Railway [NWR],468.64,29.0,0,0.0
+617404,,Rajasthan,North Western Railway [NWR],189.21,35.0,0,0.0
+617405,,Gujarat,Adani Transmission Limited,4000.0,24.0,0,0.0
+617406,,"Multi-States (Madhya Pradesh, Rajasthan)",North Western Railway [NWR],2417.24,58.0,0,0.0
+617408,,Rajasthan,North Western Railway [NWR],166.33,35.0,0,0.0
+617409,,Telangana,South Central Railway [SCR] - II,521.36,46.0,0,0.0
+617412,,Telangana,Central Public Works Department - CPWD,644.0,34.0,0,0.0
+617413,,"Multi-States (Andhra Pradesh, Bihar, Chhattisgarh, Jharkhand, Madhya Pradesh, Maharashtra, Odisha, Telangana, Uttar Pradesh, West Bengal)",Department of Telecommunications [DoT],1884.6,12.0,0,0.0
+617416,,Jharkhand,Bharat Coking Coal Limited (BCCL,5940.47,41.0,0,0.0
+617422,,Maharashtra,Department of Water Resources-MH,1923.81,126.0,0,0.0
+617727,,(-) (9936) Andhra Pradesh,NICDC,2786.0,36.0,0,0.0
+617729,,(-) (9937) Andhra Pradesh,NICDC,2136.0,36.0,0,0.0
+617730,,Gujarat,NLC India Limited [NLCIL],3335.85,24.0,0,0.0
+617764,,(-) (9968) Jharkhand,NLC India Limited [NLCIL],1354.2,63.0,0,0.0
+617801,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],581.74,21.0,0,0.0
+617802,,Madhya Pradesh,Power Grid Corporation of India Limited [POWERGRID],319.0,29.0,0,0.0
+617803,,Karnataka,Power Grid Corporation of India Limited [POWERGRID],379.0,24.0,0,0.0
+617804,,Karnataka,New Mangalore Port Authority,153.23,33.0,0,0.0
+617806,,"Multi-States (Andhra Pradesh, Karnataka)",Sterlite Power,4535.99,24.0,0,0.0
+617807,,"Multi-States (Bihar, Uttar Pradesh)",Power Grid Corporation of India Limited [POWERGRID],2368.0,24.0,0,0.0
+617808,,"Multi-States (Karnataka, Maharashtra)",Power Grid Corporation of India Limited [POWERGRID],1007.0,24.0,0,0.0
+617818,,Odisha,Ministry of Petroleum & Natural Gas,514.91,96.0,0,0.0
+617819,,Chhattisgarh,Ministry of Petroleum & Natural Gas,557.04,96.0,0,0.0
+617822,,Telangana,MinistryofPetroleumNaturalGas,215.0,30.0,0,0.0
+617824,,Bihar,East Central Railway (ECR) - II,2017.38,48.0,0,0.0
+617827,,Assam,Ministry of Petroleum & Natural Gas,680.0,60.0,0,0.0
+617828,,West Bengal,Indian Oil Corporation Limited (IOCL,267.0,54.0,0,0.0
+617829,,Mizoram,Ministry of Petroleum & Natural Gas,225.71,40.0,0,0.0
+617830,,Madhya Pradesh,Ministry of Petroleum & Natural Gas,1792.0,32.0,0,0.0
+617832,,Jharkhand,East Central Railway [ECR] - I,2887.11,54.0,0,0.0
+617836,,Assam,Ministry of Petroleum & Natural Gas,635.28,36.0,0,0.0
+617837,,West Bengal,Ministry of Petroleum & Natural Gas,484.0,49.0,0,0.0
+617838,,Kerala,Ministry of Petroleum & Natural Gas,1130.0,47.0,0,0.0
+617839,,Gujarat,Ministry of Petroleum & Natural Gas,356.86,38.0,0,-14.700442750658532
+617877,,Chhattisgarh,"Indian Institute of Technology, Bhilai",1188.97,40.0,0,0.0
+617878,,Kerala,INDIAN INSTITUTE OF TECHNOLOGY PALAKKAD,1527.0,33.0,0,0.0
+617880,,(-) (10790) Gujarat,Western Railway [WR] - II,2526.47,36.0,0,0.0
+617882,,Delhi,PMSSY AND Institute of NATIONAL Importance,358.19,12.0,0,0.0
+617883,,Delhi,PMSSY AND Institute of NATIONAL Importance,4441.0,60.0,0,0.0
+617885,,Meghalaya,MoRTH,302.88,18.0,0,0.0
+617886,,Nagaland,MoRTH,252.2,24.0,0,0.0
+617887,,Rajasthan,MoRTH,379.23,24.0,0,0.0
+617888,,Uttarakhand,MoRTH,192.54,12.0,0,0.0
+617889,,Uttarakhand,MoRTH,192.22,12.0,0,0.0
+617890,,Uttarakhand,MoRTH,220.89,23.0,0,0.0
+617891,,Rajasthan,MoRTH,186.29,18.0,0,0.0
+617892,,Arunachal Pradesh,MoRTH,450.65,36.0,0,0.0
+617893,,West Bengal,MoRTH,304.83,30.0,0,0.0
+617894,,West Bengal,MoRTH,410.83,24.0,0,0.0
+617895,,Assam,MoRTH,535.03,24.0,0,0.0
+617896,,Assam,MoRTH,421.15,18.0,0,0.0
+617897,,Bihar,MoRTH,295.24,24.0,0,0.0
+617898,,Odisha,MoRTH,199.5,30.0,0,0.0
+617899,,Odisha,MoRTH,636.1,24.0,0,0.0
+617900,,Rajasthan,MoRTH,150.11,24.0,0,0.0
+617901,,Rajasthan,MoRTH,194.88,24.0,0,0.0
+617902,,Odisha,MoRTH,168.95,24.0,0,0.0
+617904,,Odisha,MoRTH,238.78,30.0,0,0.0
+617905,,Odisha,MoRTH,324.09,24.0,0,0.0
+617906,,Gujarat,MoRTH,246.6,35.0,1,18.081914030819142
+617907,,Andhra Pradesh,MoRTH,436.09,24.0,0,0.0
+617908,,Chhattisgarh,MoRTH,161.96,24.0,0,0.0
+617909,,Madhya Pradesh,MoRTH,648.05,24.0,0,0.0
+617911,,Madhya Pradesh,MoRTH,511.83,23.0,1,19.79758904323701
+617912,,Maharashtra,MoRTH,619.55,24.0,0,0.0
+617913,,Telangana,MoRTH,283.15,24.0,1,6.198128200600393
+617914,,Madhya Pradesh,MoRTH,241.23,23.0,1,3.672843344525977
+617915,,Madhya Pradesh,MoRTH,329.14,24.0,0,0.0
+617916,,Gujarat,MoRTH,1295.39,30.0,0,0.0
+617917,,Maharashtra,MoRTH,478.83,24.0,1,2.441367499947789
+617918,,(-) (-) Odisha,MoRTH,174.21,18.0,0,0.0
+617919,,Chhattisgarh,MoRTH,349.03,24.0,0,0.0
+617920,,Odisha,MoRTH,511.54,24.0,0,0.0
+617921,,Odisha,MoRTH,499.79,24.0,0,0.0
+617922,,Odisha,MoRTH,587.1,30.0,0,0.0
+617923,,Odisha,MoRTH,155.97,24.0,0,0.0
+617924,,Odisha,MoRTH,300.33,23.0,0,0.0
+617925,,Odisha,MoRTH,157.49,18.0,0,0.0
+617926,,Gujarat,MoRTH,398.4,24.0,0,0.0
+617927,,Gujarat,MoRTH,699.19,11.0,0,0.0
+617928,,Gujarat,MoRTH,151.13,24.0,1,13.326275392046593
+617929,,Uttarakhand,MoRTH,247.41,24.0,0,0.0
+617930,,Odisha,MoRTH,196.94,24.0,0,0.0
+617931,,West Bengal,MoRTH,155.87,24.0,0,-11.098992750368904
+617932,,Maharashtra,MoRTH,496.64,15.0,0,0.0
+617933,,Maharashtra,MoRTH,984.07,29.0,0,0.0
+617934,,Maharashtra,MoRTH,406.54,24.0,0,0.0
+617935,,Karnataka,MoRTH,298.0,36.0,1,17.27852348993289
+617936,,Telangana,MoRTH,253.99,24.0,0,-27.84755305326982
+617937,,(-) (12150) Maharashtra,MoRTH,809.77,24.0,0,0.0
+617939,,Telangana,MoRTH,1297.75,24.0,0,0.0
+617940,,Telangana,MoRTH,545.11,24.0,0,0.0
+617941,,Goa,MoRTH,398.25,24.0,0,0.0
+617942,,Goa,MoRTH,641.46,24.0,0,0.0
+617943,,(-) (-) Goa,MoRTH,746.75,30.0,0,0.0
+617944,,Maharashtra,MoRTH,680.43,30.0,1,3.0906926502358933
+617945,,Maharashtra,MoRTH,354.21,18.0,0,0.0
+617946,,Maharashtra,MoRTH,1142.62,24.0,0,0.0
+617947,,Maharashtra,MoRTH,1006.99,24.0,1,43.30728209813403
+617948,,Maharashtra,MoRTH,1117.75,24.0,1,80.7702974726012
+617949,,Andhra Pradesh,MoRTH,159.66,24.0,0,0.0
+617950,,Karnataka,MoRTH,204.42,18.0,0,0.0
+617951,,(-) (-) Karnataka,MoRTH,314.55,18.0,0,0.0
+617954,,Karnataka,MoRTH,398.48,24.0,0,0.0
+617955,,Karnataka,MoRTH,718.52,24.0,0,0.0
+617957,,Uttar Pradesh,MoRTH,274.06,18.0,0,0.0
+617958,,Bihar,MoRTH,566.1,24.0,0,0.0
+617959,,Bihar,MoRTH,477.54,23.0,0,0.0
+617960,,West Bengal,MoRTH,271.17,24.0,1,7.386510307187363
+617961,,Bihar,MoRTH,1408.85,36.0,1,51.766334244241754
+617962,,Tamil Nadu,MoRTH,238.97,23.0,1,8.82956019584048
+617963,,Uttar Pradesh,MoRTH,296.02,24.0,1,18.836565096952906
+617964,,Uttar Pradesh,MoRTH,309.63,24.0,0,0.0
+617965,,Maharashtra,MoRTH,195.38,18.0,0,0.0
+617966,,Bihar,MoRTH,780.77,36.0,1,23.125888545922624
+617967,,Uttarakhand,MoRTH,251.88,30.0,0,0.0
+617968,,Uttarakhand,MoRTH,418.89,24.0,0,0.0
+617969,,Bihar,MoRTH,201.08,24.0,0,0.0
+617970,,Uttarakhand,MoRTH,282.08,24.0,0,0.0
+617971,,Chhattisgarh,MoRTH,322.4,24.0,0,0.0
+617972,,Chhattisgarh,MoRTH,200.67,18.0,0,0.0
+617973,,Chhattisgarh,MoRTH,188.8,18.0,0,0.0
+617974,,Uttarakhand,MoRTH,344.73,30.0,0,0.0
+617975,,Uttarakhand,MoRTH,237.79,24.0,0,0.0
+617976,,Gujarat,MoRTH,530.2,24.0,0,0.0
+617977,,Gujarat,MoRTH,211.28,24.0,1,10.961756910261263
+617978,,Maharashtra,MoRTH,631.76,24.0,0,0.0
+617979,,Maharashtra,MoRTH,533.76,24.0,0,0.0
+617980,,Telangana,MoRTH,626.76,24.0,0,0.0
+617981,,Telangana,MoRTH,359.0,24.0,0,0.0
+617982,,Telangana,MoRTH,230.03,17.0,0,0.0
+617983,,Telangana,MoRTH,317.19,24.0,0,-5.242914341561838
+617984,,Andhra Pradesh,MoRTH,317.22,24.0,0,0.0
+617985,,Andhra Pradesh,MoRTH,529.54,24.0,1,11.162518412206826
+617986,,Andhra Pradesh,MoRTH,292.63,24.0,0,0.0
+617987,,Andhra Pradesh,MoRTH,691.81,24.0,0,0.0
+617988,,Andhra Pradesh,MoRTH,776.17,24.0,0,-17.010448741899324
+617989,,Karnataka,MoRTH,157.32,30.0,1,19.25375031782356
+617990,,Andhra Pradesh,MoRTH,242.0,21.0,0,0.0
+617991,,Andhra Pradesh,MoRTH,290.15,24.0,0,0.0
+617992,,Telangana,MoRTH,322.81,24.0,0,0.0
+617993,,Telangana,MoRTH,220.28,18.0,0,0.0
+617994,,Telangana,MoRTH,294.13,17.0,0,-12.41627851630231
+617995,,Telangana,MoRTH,300.0,24.0,0,0.0
+617996,,Telangana,MoRTH,298.0,24.0,0,0.0
+617997,,(-) (-) Karnataka,MoRTH,538.71,24.0,0,0.0
+617998,,Karnataka,MoRTH,177.94,24.0,0,0.0
+617999,,Karnataka,MoRTH,471.62,19.0,0,0.0
+618000,,Karnataka,MoRTH,170.34,18.0,0,-13.473053892215578
+618001,,Telangana,MoRTH,216.53,24.0,1,22.79129912714173
+618002,,Nagaland,MoRTH,192.93,24.0,0,0.0
+618003,,Odisha,MoRTH,154.49,18.0,0,0.0
+618004,,Bihar,MoRTH,179.86,18.0,0,0.0
+618005,,Bihar,MoRTH,178.85,24.0,1,55.733855185909974
+618006,,Bihar,MoRTH,369.77,30.0,1,36.10622819590556
+618007,,Bihar,MoRTH,553.3,30.0,1,27.668534249051156
+618008,,Uttar Pradesh,MoRTH,185.09,18.0,1,45.7723269760657
+618009,,Uttar Pradesh,MoRTH,319.96,18.0,1,8.701087635954504
+618010,,Punjab,MoRTH,546.67,18.0,0,0.0
+618011,,Rajasthan,MoRTH,411.44,24.0,0,0.0
+618012,,Odisha,MoRTH,186.52,24.0,0,0.0
+618013,,Andhra Pradesh,MoRTH,1318.59,24.0,0,-31.048316762602468
+618014,,Chhattisgarh,MoRTH,199.05,17.0,0,0.0
+618015,,Chhattisgarh,MoRTH,225.41,18.0,1,1.5615988642917396
+618016,,Chhattisgarh,MoRTH,397.44,24.0,0,0.0
+618017,,Chhattisgarh,MoRTH,286.0,18.0,0,0.0
+618018,,Chhattisgarh,MoRTH,351.19,18.0,0,0.0
+618019,,Madhya Pradesh,MoRTH,365.21,24.0,0,0.0
+618020,,Madhya Pradesh,MoRTH,386.49,24.0,0,0.0
+618021,,Madhya Pradesh,MoRTH,425.97,-5.0,0,0.0
+618022,,Gujarat,MoRTH,173.06,18.0,1,26.59193343349128
+618023,,Punjab,MoRTH,152.58,18.0,0,0.0
+618024,,Punjab,MoRTH,263.19,18.0,0,0.0
+618025,,Telangana,MoRTH,192.67,18.0,0,0.0
+618026,,Telangana,MoRTH,605.08,23.0,0,0.0
+618027,,Karnataka,MoRTH,445.62,24.0,0,0.0
+618028,,Karnataka,MoRTH,333.96,24.0,0,0.0
+618029,,Karnataka,MoRTH,350.69,24.0,0,-11.01542673016054
+618030,,Karnataka,MoRTH,264.14,18.0,0,0.0
+618031,,Karnataka,MoRTH,516.96,30.0,0,0.0
+618033,,Arunachal Pradesh,MoRTH,496.47,36.0,0,0.0
+618034,,Assam,MoRTH,173.65,18.0,0,0.0
+618035,,Madhya Pradesh,MoRTH,275.4,18.0,0,0.0
+618036,,Madhya Pradesh,MoRTH,315.55,24.0,0,0.0
+618037,,Andhra Pradesh,MoRTH,439.82,24.0,0,-18.25746896457642
+618038,,Jammu and Kashmir,MoRTH,224.44,24.0,0,0.0
+618039,,Uttarakhand,MoRTH,346.82,30.0,0,0.0
+618040,,Uttarakhand,MoRTH,452.81,24.0,0,0.0
+618041,,Uttarakhand,MoRTH,299.31,24.0,0,0.0
+618042,,Maharashtra,MoRTH,163.86,18.0,0,0.0
+618043,,Madhya Pradesh,MoRTH,492.12,30.0,1,6.41916605705926
+618044,,(-) (12152) Madhya Pradesh,MoRTH,851.4,24.0,0,0.0
+618045,,Madhya Pradesh,MoRTH,179.18,18.0,0,0.0
+618046,,Maharashtra,MoRTH,213.33,17.0,0,0.0
+618047,,Maharashtra,MoRTH,657.16,24.0,0,0.0
+618049,,Maharashtra,MoRTH,183.41,18.0,0,0.0
+618050,,Himachal Pradesh,MoRTH,345.89,24.0,1,3.952123507473479
+618051,,Himachal Pradesh,MoRTH,242.8,24.0,0,0.0
+618052,,Andhra Pradesh,MoRTH,808.7,24.0,0,0.0
+618053,,Andhra Pradesh,MoRTH,1019.97,24.0,0,0.0
+618054,,Uttar Pradesh,MoRTH,515.69,18.0,0,0.0
+618055,,Uttar Pradesh,MoRTH,225.17,17.0,0,0.0
+618056,,Uttar Pradesh,MoRTH,509.65,18.0,0,-4.950456195428227
+618057,,Uttar Pradesh,MoRTH,189.31,18.0,0,0.0
+618060,,Jharkhand,MoRTH,315.21,18.0,0,0.0
+618061,,Maharashtra,MoRTH,386.16,18.0,0,0.0
+618062,,Andhra Pradesh,MoRTH,244.83,18.0,0,0.0
+618063,,Uttar Pradesh,MoRTH,262.37,18.0,1,31.024888516217548
+618064,,Chhattisgarh,MoRTH,278.97,24.0,0,0.0
+618065,,Maharashtra,MoRTH,316.44,18.0,0,0.0
+618066,,Uttar Pradesh,MoRTH,283.86,24.0,0,0.0
+618067,,Uttar Pradesh,MoRTH,1086.3,24.0,0,0.0
+618068,,Madhya Pradesh,MoRTH,158.36,24.0,0,0.0
+618069,,Rajasthan,MoRTH,334.64,24.0,0,0.0
+618070,,Kerala,MoRTH,294.28,24.0,1,7.254995242626079
+618071,,Sikkim,MoRTH,385.15,24.0,0,-10.97234843567441
+618072,,Nagaland,MoRTH,297.25,24.0,0,0.0
+618073,,Bihar,MoRTH,226.16,15.0,0,0.0
+618074,,Bihar,MoRTH,624.43,18.0,0,0.0
+618075,,Uttar Pradesh,MoRTH,840.93,24.0,0,-8.008990046733963
+618076,,Meghalaya,MoRTH,504.0,24.0,0,-30.422619047619044
+618078,,Chhattisgarh,MoRTH,193.16,18.0,0,0.0
+618079,,Odisha,MoRTH,172.66,18.0,0,0.0
+618080,,Bihar,MoRTH,353.27,18.0,0,0.0
+618081,,Uttar Pradesh,MoRTH,438.24,24.0,0,-17.307867834976275
+618082,,Uttar Pradesh,MoRTH,395.62,18.0,0,-0.9074364288964237
+618083,,Jharkhand,MoRTH,458.78,24.0,0,0.0
+618084,,Jharkhand,MoRTH,153.01,24.0,0,-12.639696751846289
+618085,,Madhya Pradesh,MoRTH,305.12,18.0,0,-3.729680125852122
+618086,,Karnataka,MoRTH,617.28,18.0,0,0.0
+618087,,Karnataka,MoRTH,255.88,18.0,0,0.0
+618088,,Maharashtra,MoRTH,325.79,18.0,0,0.0
+618089,,Maharashtra,MoRTH,206.54,24.0,0,0.0
+618090,,Maharashtra,MoRTH,545.64,24.0,0,0.0
+618091,,Telangana,MoRTH,512.98,24.0,0,0.0
+618092,,Rajasthan,MoRTH,606.61,24.0,0,0.0
+618093,,Rajasthan,MoRTH,838.43,24.0,0,0.0
+618094,,Maharashtra,MoRTH,369.39,18.0,0,0.0
+618095,,Karnataka,MoRTH,196.05,18.0,0,0.0
+618096,,Maharashtra,MoRTH,181.45,18.0,0,0.0
+618097,,Maharashtra,MoRTH,407.2,24.0,0,0.0
+618098,,Maharashtra,MoRTH,167.97,18.0,0,0.0
+618099,,Maharashtra,MoRTH,164.13,18.0,0,0.0
+618101,,Andhra Pradesh,MoRTH,881.61,24.0,0,0.0
+618103,,Andhra Pradesh,MoRTH,279.29,18.0,0,0.0
+618104,,Telangana,MoRTH,886.69,24.0,0,0.0
+618105,,Telangana,MoRTH,631.49,24.0,0,0.0
+618106,,Telangana,MoRTH,703.68,24.0,0,0.0
+618107,,Gujarat,MoRTH,1155.21,30.0,0,0.0
+618108,,Gujarat,MoRTH,237.28,24.0,0,0.0
+618109,,Karnataka,MoRTH,355.72,24.0,0,0.0
+618110,,Uttar Pradesh,MoRTH,307.11,18.0,0,0.0
+618111,,Uttar Pradesh,MoRTH,403.36,18.0,0,-14.384172947243169
+618112,,Uttar Pradesh,MoRTH,912.5,18.0,0,0.0
+618113,,Uttar Pradesh,MoRTH,587.97,18.0,0,0.0
+618114,,(-) (12089) Uttar Pradesh,MoRTH,1192.33,30.0,0,0.0
+618116,,Uttar Pradesh,MoRTH,1679.75,24.0,0,0.0
+618117,,Rajasthan,MoRTH,154.89,18.0,0,0.0
+618118,,Rajasthan,MoRTH,174.34,17.0,0,0.0
+618119,,Uttarakhand,MoRTH,472.23,30.0,0,0.0
+618120,,Bihar,MoRTH,1060.16,24.0,0,0.0
+618121,,Bihar,MoRTH,427.29,18.0,0,0.0
+618122,,Odisha,MoRTH,172.09,24.0,0,0.0
+618123,,Jharkhand,MoRTH,423.18,24.0,0,0.0
+618124,,Uttar Pradesh,MoRTH,343.54,18.0,0,0.0
+618125,,Andhra Pradesh,MoRTH,228.32,18.0,0,0.0
+618126,,Bihar,MoRTH,479.37,24.0,0,0.0
+618127,,Jharkhand,MoRTH,255.73,18.0,0,0.0
+618129,,Madhya Pradesh,MoRTH,467.93,24.0,0,0.0
+618130,,Telangana,MoRTH,490.92,24.0,0,0.0
+618132,,Telangana,MoRTH,206.13,24.0,0,0.0
+618133,,Maharashtra,MoRTH,280.57,23.0,0,0.0
+618134,,Maharashtra,MoRTH,459.39,24.0,0,0.0
+618136,,Maharashtra,MoRTH,224.44,19.0,0,0.0
+618137,,Maharashtra,MoRTH,540.35,24.0,0,0.0
+618138,,Maharashtra,MoRTH,349.57,18.0,0,0.0
+618139,,Maharashtra,MoRTH,355.12,17.0,0,0.0
+618140,,Telangana,MoRTH,445.76,23.0,0,0.0
+618141,,Telangana,MoRTH,423.48,24.0,0,0.0
+618142,,Telangana,MoRTH,244.54,24.0,0,0.0
+618143,,Telangana,MoRTH,197.0,23.0,0,0.0
+618144,,Karnataka,MoRTH,423.15,36.0,0,0.0
+618145,,Andhra Pradesh,MoRTH,568.12,24.0,0,0.0
+618146,,Bihar,MoRTH,495.16,18.0,0,0.0
+618147,,Karnataka,MoRTH,166.58,18.0,0,
+618148,,(-) (-) Karnataka,MoRTH,785.79,24.0,0,0.0
+618149,,Karnataka,MoRTH,957.09,24.0,0,0.0
+618151,,(-) (-) Karnataka,MoRTH,1084.29,36.0,0,0.0
+618152,,Maharashtra,MoRTH,488.6,23.0,0,0.0
+618153,,Maharashtra,MoRTH,653.46,24.0,0,0.0
+618154,,Maharashtra,MoRTH,157.62,18.0,0,0.0
+618155,,Maharashtra,MoRTH,396.17,18.0,0,0.0
+618156,,Madhya Pradesh,MoRTH,492.66,24.0,0,0.0
+618157,,Madhya Pradesh,MoRTH,348.06,18.0,0,0.0
+618158,,Madhya Pradesh,MoRTH,416.96,24.0,0,0.0
+618159,,Assam,MoRTH,382.1,18.0,0,0.0
+618160,,Assam,MoRTH,1019.17,24.0,0,0.0
+618161,,Andhra Pradesh,MoRTH,839.98,27.0,0,0.0
+618162,,Uttar Pradesh,MoRTH,2008.7,24.0,0,0.0
+618163,,Uttar Pradesh,MoRTH,809.25,18.0,0,-25.463083101637313
+618164,,Uttar Pradesh,MoRTH,1141.67,24.0,1,1.3699230075240545
+618165,,Uttar Pradesh,MoRTH,1156.72,23.0,0,0.0
+618166,,Uttar Pradesh,MoRTH,697.66,24.0,0,0.0
+618167,,Uttar Pradesh,MoRTH,264.86,12.0,0,0.0
+618168,,Uttar Pradesh,MoRTH,917.91,24.0,1,5.162815526576678
+618169,,Uttar Pradesh,MoRTH,640.18,24.0,0,-5.845231028773152
+618170,,Madhya Pradesh,MoRTH,214.07,18.0,0,0.0
+618171,,Madhya Pradesh,MoRTH,352.69,24.0,0,0.0
+618172,,Maharashtra,MoRTH,341.8,24.0,0,0.0
+618173,,Maharashtra,MoRTH,381.77,24.0,0,0.0
+618174,,Maharashtra,MoRTH,226.58,18.0,0,0.0
+618175,,Maharashtra,MoRTH,428.8,24.0,0,0.0
+618176,,Maharashtra,MoRTH,349.08,24.0,0,0.0
+618177,,Maharashtra,MoRTH,227.19,18.0,0,0.0
+618178,,Maharashtra,MoRTH,162.67,18.0,0,0.0
+618179,,Maharashtra,MoRTH,181.58,18.0,0,0.0
+618180,,Maharashtra,MoRTH,223.46,18.0,0,0.0
+618181,,Maharashtra,MoRTH,153.79,18.0,0,0.0
+618182,,Telangana,MoRTH,499.88,24.0,0,0.0
+618183,,Telangana,MoRTH,399.01,24.0,0,0.0
+618184,,Karnataka,MoRTH,313.56,24.0,0,0.0
+618185,,Karnataka,MoRTH,394.95,24.0,0,0.0
+618186,,Telangana,MoRTH,549.28,24.0,0,0.0
+618187,,Uttar Pradesh,MoRTH,947.15,24.0,0,0.0
+618188,,Maharashtra,MoRTH,253.78,18.0,0,0.0
+618189,,Karnataka,MoRTH,613.65,24.0,0,0.0
+618190,,Telangana,MoRTH,644.45,24.0,0,0.0
+618191,,Andhra Pradesh,MoRTH,403.22,24.0,0,0.0
+618192,,Andhra Pradesh,MoRTH,423.67,24.0,0,0.0
+618193,,Andhra Pradesh,MoRTH,368.63,20.0,0,0.0
+618194,,Andhra Pradesh,MoRTH,294.13,18.0,0,-3.005473770101647
+618196,,Telangana,MoRTH,578.85,24.0,0,0.0
+618197,,Telangana,MoRTH,882.18,24.0,0,0.0
+618198,,Maharashtra,MoRTH,388.93,24.0,0,-12.146144550433242
+618199,,Maharashtra,MoRTH,723.13,24.0,0,0.0
+618200,,Rajasthan,MoRTH,317.74,18.0,0,0.0
+618201,,Jammu and Kashmir,MoRTH,702.1,24.0,0,0.0
+618202,,Jammu and Kashmir,MoRTH,992.43,24.0,0,0.0
+618203,,Jammu and Kashmir,MoRTH,980.21,23.0,0,0.0
+618204,,Jammu and Kashmir,MoRTH,426.15,24.0,0,0.0
+618205,,Jammu and Kashmir,MoRTH,823.46,24.0,0,0.0
+618206,,Jammu and Kashmir,MoRTH,1404.94,30.0,0,0.0
+618207,,Uttarakhand,MoRTH,573.96,48.0,0,0.0
+618208,,Uttarakhand,MoRTH,180.1,23.0,0,0.0
+618209,,Uttarakhand,MoRTH,258.85,36.0,0,0.0
+618210,,Uttarakhand,MoRTH,603.92,24.0,0,0.0
+618211,,Uttarakhand,MoRTH,649.6,24.0,0,0.0
+618212,,Uttarakhand,MoRTH,197.26,18.0,0,0.0
+618213,,Uttarakhand,MoRTH,273.76,24.0,0,0.0
+618214,,Uttarakhand,MoRTH,346.5,30.0,0,0.0
+618215,,Himachal Pradesh,MoRTH,274.36,36.0,0,-29.28998396267678
+618216,,Himachal Pradesh,MoRTH,230.55,35.0,0,-11.884623725872915
+618217,,Himachal Pradesh,MoRTH,314.67,36.0,0,-22.410779546826838
+618218,,Uttarakhand,MoRTH,338.38,24.0,0,0.0
+618219,,Uttarakhand,MoRTH,292.76,24.0,0,0.0
+618220,,Jammu and Kashmir,MoRTH,642.24,24.0,0,-10.85731190832088
+618221,,Jammu and Kashmir,MoRTH,734.64,24.0,0,0.0
+618222,,Jammu and Kashmir,MoRTH,562.45,24.0,0,0.0
+618223,,Jammu and Kashmir,MoRTH,152.93,24.0,0,0.0
+618224,,Jammu and Kashmir,MoRTH,796.97,36.0,0,0.0
+618225,,Jammu and Kashmir,MoRTH,395.25,24.0,0,0.0
+618226,,Jammu and Kashmir,MoRTH,272.49,24.0,0,0.0
+618227,,West Bengal,MoRTH,995.04,30.0,1,6.44798199067375
+618228,,Bihar,MoRTH,2926.42,42.0,0,0.0
+618229,,Uttar Pradesh,MoRTH,211.09,18.0,0,-2.1460040740916204
+618230,,Himachal Pradesh,MoRTH,314.32,30.0,0,0.0
+618231,,Himachal Pradesh,MoRTH,371.93,30.0,0,0.0
+618232,,Himachal Pradesh,MoRTH,251.62,30.0,0,-24.481360782131784
+618233,,Uttar Pradesh,MoRTH,1948.25,36.0,0,-24.783267034518154
+618234,,Bihar,MoRTH,1478.4,36.0,0,0.0
+618235,,Rajasthan,MoRTH,278.1,18.0,0,0.0
+618236,,Andhra Pradesh,MoRTH,316.06,24.0,0,-8.637600455609698
+618237,,Andhra Pradesh,MoRTH,263.45,24.0,0,0.0
+618238,,Andhra Pradesh,MoRTH,350.61,18.0,1,23.473374975043498
+618239,,Andhra Pradesh,MoRTH,445.22,24.0,1,3.1782040339607334
+618240,,Uttar Pradesh,MoRTH,236.47,18.0,0,0.0
+618242,,Jharkhand,MoRTH,300.46,24.0,0,0.0
+618243,,Uttar Pradesh,MoRTH,1138.72,24.0,0,0.0
+618244,,Uttar Pradesh,MoRTH,1273.72,24.0,0,0.0
+618246,,Bihar,MoRTH,1110.23,48.0,0,0.0
+618247,,Uttar Pradesh,MoRTH,1708.62,36.0,0,0.0
+618248,,Uttar Pradesh,MoRTH,1653.15,24.0,0,0.0
+618249,,Uttar Pradesh,MoRTH,1511.57,24.0,0,0.0
+618250,,Bihar,MoRTH,3064.45,42.0,0,0.0
+618251,,Bihar,MoRTH,1661.25,30.0,0,0.0
+618252,,Uttar Pradesh,MoRTH,974.19,30.0,1,38.02338352888038
+618253,,(-) (12090) Himachal Pradesh,MoRTH,870.95,36.0,1,2.974912451920313
+618254,,Andhra Pradesh,MoRTH,244.43,18.0,0,0.0
+618255,,Andhra Pradesh,MoRTH,361.24,24.0,0,-0.883069427527405
+618256,,Andhra Pradesh,MoRTH,311.22,24.0,0,0.0
+618257,,Andhra Pradesh,MoRTH,349.29,24.0,0,0.0
+618258,,Andhra Pradesh,MoRTH,296.66,24.0,0,-2.5450010112586834
+618259,,Andhra Pradesh,MoRTH,222.61,24.0,0,0.0
+618260,,Uttar Pradesh,MoRTH,1348.06,24.0,0,0.0
+618262,,Uttar Pradesh,MoRTH,1734.7,23.0,0,0.0
+618263,,Uttar Pradesh,MoRTH,701.02,18.0,0,0.0
+618264,,Uttar Pradesh,MoRTH,2061.86,29.0,0,0.0
+618265,,Uttar Pradesh,MoRTH,172.5,24.0,0,-1.7043478260869553
+618266,,Uttar Pradesh,MoRTH,325.24,24.0,1,4.587381625876281
+618267,,(-) (-) Uttar Pradesh,MoRTH,1590.2,24.0,0,0.0
+618282,,Assam,NHIDCL,1264.9,30.0,0,0.0
+618283,,Assam,NHIDCL,1000.27,30.0,0,0.0
+618284,,Assam,NHIDCL,1457.59,36.0,0,0.0
+618285,,Assam,NHIDCL,286.72,24.0,0,0.0
+618286,,Assam,NHIDCL,746.76,36.0,0,0.0
+618287,,Assam,NHIDCL,1338.61,30.0,0,0.0
+618288,,Assam,NHIDCL,1081.15,30.0,0,0.0
+618289,,Assam,NHIDCL,224.85,30.0,0,0.0
+618290,,Nagaland,NHIDCL,202.36,18.0,0,0.0
+618291,,Nagaland,NHIDCL,159.85,24.0,1,114.13199874882704
+618292,,Nagaland,NHIDCL,277.44,24.0,0,0.0
+618293,,Nagaland,NHIDCL,232.29,36.0,1,51.052563605837534
+618294,,Meghalaya,NHIDCL,801.07,24.0,0,0.0
+618295,,Meghalaya,NHIDCL,705.83,24.0,0,0.0
+618296,,Nagaland,NHIDCL,330.8,24.0,0,0.0
+618297,,Nagaland,NHIDCL,355.79,24.0,0,0.0
+618298,,Manipur,NHIDCL,211.7,18.0,0,0.0
+618299,,Manipur,NHIDCL,268.98,18.0,0,0.0
+618300,,Manipur,NHIDCL,379.39,18.0,0,0.0
+618301,,Manipur,NHIDCL,228.97,18.0,0,0.0
+618302,,Manipur,NHIDCL,256.04,23.0,0,0.0
+618303,,Manipur,NHIDCL,222.77,23.0,0,0.0
+618304,,Manipur,NHIDCL,164.89,18.0,0,0.0
+618305,,Manipur,NHIDCL,554.66,24.0,0,0.0
+618306,,Manipur,NHIDCL,564.05,22.0,0,0.0
+618307,,Tripura,NHIDCL,456.88,24.0,0,0.0
+618308,,Assam,NHIDCL,676.18,30.0,1,7.807092785944583
+618309,,Assam,NHIDCL,1319.55,24.0,0,0.0
+618310,,(N24002231) Assam,NHIDCL,791.79,24.0,0,0.0
+618311,,(N24002230) Assam,NHIDCL,870.0,24.0,0,0.0
+618312,,Assam,NHIDCL,1258.13,30.0,0,0.0
+618313,,Assam,NHIDCL,1181.55,24.0,0,0.0
+618314,,Assam,NHIDCL,1716.21,30.0,0,0.0
+618315,,Assam,NHIDCL,1256.9,30.0,0,0.0
+618316,,Mizoram,NHIDCL,491.39,18.0,0,0.0
+618317,,Mizoram,NHIDCL,561.91,18.0,0,0.0
+618318,,Mizoram,NHIDCL,720.4,24.0,0,0.0
+618319,,Mizoram,NHIDCL,595.65,18.0,0,0.0
+618320,,Mizoram,NHIDCL,866.32,36.0,0,0.0
+618321,,Mizoram,NHIDCL,875.79,36.0,0,0.0
+618323,,Mizoram,NHIDCL,1313.28,36.0,0,0.0
+618324,,Mizoram,NHIDCL,720.72,37.0,0,0.0
+618325,,Assam,NHIDCL,204.1,18.0,0,0.0
+618326,,Assam,NHIDCL,516.88,24.0,0,0.0
+618327,,Assam,NHIDCL,625.64,24.0,0,0.0
+618328,,Nagaland,NHIDCL,562.98,24.0,1,41.168425166080496
+618329,,Nagaland,NHIDCL,819.39,36.0,0,0.0
+618330,,Assam,NHIDCL,511.02,36.0,0,0.0
+618331,,Assam,NHIDCL,957.95,36.0,0,0.0
+618333,,Manipur,NHIDCL,760.16,24.0,0,0.0
+618334,,Manipur,NHIDCL,504.76,24.0,0,0.0
+618335,,Manipur,NHIDCL,410.68,18.0,0,0.0
+618336,,Manipur,NHIDCL,579.63,18.0,0,0.0
+618337,,Manipur,NHIDCL,467.0,18.0,0,0.0
+618338,,Manipur,NHIDCL,195.14,12.0,0,0.0
+618339,,Assam,NHIDCL,356.65,36.0,0,0.0
+618340,,Assam,NHIDCL,458.59,28.0,0,0.0
+618341,,Mizoram,NHIDCL,523.78,17.0,0,0.0
+618342,,Mizoram,NHIDCL,206.9,23.0,0,0.0
+618343,,Mizoram,NHIDCL,292.23,23.0,0,0.0
+618344,,Manipur,NHIDCL,673.27,24.0,0,0.0
+618345,,Manipur,NHIDCL,365.53,24.0,0,0.0
+618346,,Manipur,NHIDCL,232.99,23.0,0,0.0
+618347,,Manipur,NHIDCL,241.52,23.0,0,0.0
+618348,,Manipur,NHIDCL,177.76,12.0,0,0.0
+618349,,Manipur,NHIDCL,204.12,12.0,0,0.0
+618350,,Tripura,NHIDCL,920.66,24.0,0,0.0
+618351,,Assam,NHIDCL,890.33,24.0,0,-22.14684442847035
+618352,,Assam,NHIDCL,860.37,24.0,0,-28.585376059137353
+618353,,Assam,NHIDCL,904.04,24.0,0,0.0
+618354,,Assam,NHIDCL,846.82,24.0,0,0.0
+618355,,Manipur,NHIDCL,483.87,18.0,0,0.0
+618356,,Manipur,NHIDCL,234.08,18.0,0,0.0
+618357,,Manipur,NHIDCL,477.86,18.0,0,0.0
+618358,,Manipur,NHIDCL,311.18,18.0,0,0.0
+618359,,Assam,NHIDCL,665.47,11.0,0,0.0
+618362,,Mizoram,NHIDCL,698.45,18.0,0,0.0
+618363,,Mizoram,NHIDCL,740.58,18.0,0,0.0
+618364,,Nagaland,NHIDCL,430.24,30.0,0,0.0
+618365,,Nagaland,NHIDCL,497.18,30.0,0,0.0
+618366,,Nagaland,NHIDCL,442.54,30.0,0,0.0
+618367,,Tripura,NHIDCL,726.9,24.0,0,0.0
+618368,,Tripura,NHIDCL,670.9,24.0,0,0.0
+618369,,Tripura,NHIDCL,657.21,24.0,0,0.0
+618370,,Tripura,NHIDCL,431.78,24.0,0,0.0
+618371,,Assam,NHIDCL,613.89,24.0,0,0.0
+618372,,Assam,NHIDCL,909.02,29.0,0,0.0
+618373,,Assam,NHIDCL,4997.04,93.0,0,0.0
+618374,,Meghalaya,NHIDCL,284.21,30.0,0,0.0
+618375,,Meghalaya,NHIDCL,445.51,24.0,0,0.0
+618376,,Meghalaya,NHIDCL,525.67,30.0,0,0.0
+618377,,Meghalaya,NHIDCL,351.12,24.0,0,0.0
+618379,,Mizoram,NHIDCL,752.89,42.0,0,0.0
+618380,,Mizoram,NHIDCL,867.09,42.0,0,0.0
+618381,,Mizoram,NHIDCL,768.76,42.0,0,0.0
+618382,,Mizoram,NHIDCL,605.76,42.0,1,23.864236661384055
+618383,,Mizoram,NHIDCL,637.06,42.0,0,0.0
+618384,,Mizoram,NHIDCL,899.45,42.0,0,0.0
+618385,,Tripura,NHIDCL,174.43,12.0,0,0.0
+618386,,Tripura,NHIDCL,277.5,18.0,1,8.839639639639628
+618387,,Manipur,NHIDCL,578.98,24.0,0,0.0
+618388,,Manipur,NHIDCL,315.56,18.0,0,0.0
+618389,,Manipur,NHIDCL,310.76,18.0,0,0.0
+618390,,Uttarakhand,NHIDCL,1383.78,48.0,0,0.0
+618391,,Uttarakhand,NHIDCL,250.33,18.0,0,0.0
+618392,,Uttarakhand,NHIDCL,259.64,18.0,0,0.0
+618393,,Uttarakhand,NHIDCL,216.68,18.0,0,0.0
+618394,,Jammu and Kashmir,NHIDCL,228.39,18.0,0,-1.322299575287877
+618395,,Jammu and Kashmir,NHIDCL,512.43,19.0,0,0.0
+618396,,Jammu and Kashmir,NHIDCL,486.45,6.0,0,0.0
+618397,,Jammu and Kashmir,NHIDCL,255.9,24.0,0,0.0
+618398,,Jammu and Kashmir,NHIDCL,210.79,18.0,0,0.0
+618399,,Jammu and Kashmir,NHIDCL,859.67,24.0,0,0.0
+618400,,Jammu and Kashmir,NHIDCL,398.51,17.0,0,0.0
+618401,,Arunachal Pradesh,NHIDCL,1418.67,36.0,0,0.0
+618402,,Arunachal Pradesh,NHIDCL,1262.43,35.0,0,0.0
+618403,,Arunachal Pradesh,NHIDCL,275.5,24.0,0,0.0
+618404,,Arunachal Pradesh,NHIDCL,625.61,30.0,0,0.0
+618405,,Arunachal Pradesh,NHIDCL,898.19,30.0,0,0.0
+618406,,Jammu and Kashmir,NHIDCL,322.49,24.0,0,0.0
+618407,,Jammu and Kashmir,NHIDCL,245.3,24.0,0,0.0
+618408,,Ladakh,NHIDCL,398.37,18.0,0,0.0
+618409,,Ladakh,NHIDCL,381.01,18.0,0,0.0
+618410,,Ladakh,NHIDCL,404.89,18.0,0,0.0
+618412,,Andhra Pradesh,NHIDCL,6808.69,71.0,0,0.0
+618413,,Nagaland,NHIDCL,177.77,24.0,1,11.953647972098778
+618414,,Nagaland,NHIDCL,258.52,24.0,0,0.0
+618415,,Manipur,NHIDCL,188.36,18.0,0,0.0
+618416,,Manipur,NHIDCL,226.32,18.0,0,0.0
+618417,,Tripura,NHIDCL,2026.05,36.0,0,0.0
+618418,,Meghalaya,NHIDCL,359.86,24.0,0,0.0
+618419,,Meghalaya,NHIDCL,562.48,24.0,0,0.0
+618420,,Meghalaya,NHIDCL,686.03,24.0,0,0.0
+618421,,Meghalaya,NHIDCL,620.3,24.0,0,0.0
+618422,,Nagaland,NHIDCL,161.73,24.0,0,0.0
+618423,,Nagaland,NHIDCL,215.79,24.0,0,0.0
+618424,,Arunachal Pradesh,NHIDCL,256.66,24.0,0,0.0
+618426,,Sikkim,NHIDCL,264.84,18.0,1,43.837788853647496
+618427,,West Bengal,NHIDCL,311.02,30.0,0,-11.973506526911457
+618428,,Sikkim,NHIDCL,264.84,24.0,1,43.837788853647496
+618429,,West Bengal,NHIDCL,345.38,18.0,1,14.537610747582367
+618430,,West Bengal,NHIDCL,402.94,30.0,0,0.0
+618431,,West Bengal,NHIDCL,295.97,30.0,0,0.0
+618432,,Arunachal Pradesh,NHIDCL,228.72,18.0,0,0.0
+618433,,Arunachal Pradesh,NHIDCL,184.89,18.0,0,0.0
+618434,,Arunachal Pradesh,NHIDCL,1718.59,48.0,0,0.0
+618435,,Assam,NHIDCL,386.51,30.0,0,0.0
+618436,,Assam,NHIDCL,599.0,30.0,0,0.0
+618437,,Assam,NHIDCL,274.34,11.0,0,0.0
+618438,,Assam,NHIDCL,385.57,31.0,0,0.0
+618439,,Assam,NHIDCL,478.3,6.0,0,0.0
+618440,,Assam,NHIDCL,187.09,12.0,0,-46.43219840718371
+618441,,Assam,NHIDCL,467.79,11.0,1,1.8619465999700675
+618442,,Assam,NHIDCL,358.72,6.0,0,0.0
+618443,,Assam,NHIDCL,438.44,6.0,0,0.0
+618444,,Assam,NHIDCL,279.01,6.0,0,0.0
+618445,,Arunachal Pradesh,NHIDCL,353.9,30.0,0,0.0
+618446,,Sikkim,NHIDCL,493.42,36.0,0,-2.9650196587086044
+618447,,Sikkim,NHIDCL,410.6,36.0,0,-7.6229907452508545
+618448,,Sikkim,NHIDCL,816.79,36.0,0,-3.696176495794506
+618449,,Sikkim,NHIDCL,230.45,30.0,1,6.274679973963987
+618450,,Sikkim,NHIDCL,292.8,19.0,0,0.0
+618452,,Mizoram,NHIDCL,781.85,24.0,0,0.0
+618454,,Assam,NHIDCL,693.97,18.0,0,0.0
+618455,,Assam,NHIDCL,693.97,48.0,0,0.0
+618456,,Rajasthan,National Highways Authority of India [NHAI],1119.35,24.0,1,6.684236387189009
+618457,,Rajasthan,National Highways Authority of India [NHAI],1272.97,24.0,0,-0.6135258489987938
+618458,,Rajasthan,National Highways Authority of India [NHAI],1854.68,30.0,0,0.0
+618459,,Gujarat,National Highways Authority of India [NHAI],1555.2,20.0,1,0.07716049382716342
+618460,,Gujarat,National Highways Authority of India [NHAI],1263.38,24.0,0,0.0
+618461,,Gujarat,National Highways Authority of India [NHAI],1800.73,24.0,0,0.0
+618462,,Gujarat,National Highways Authority of India [NHAI],1644.85,24.0,1,0.38240569048850603
+618463,,Gujarat,National Highways Authority of India [NHAI],1324.84,23.0,1,111.91087225627247
+618464,,Gujarat,National Highways Authority of India [NHAI],2271.86,24.0,1,89.15250059422674
+618465,,Gujarat,National Highways Authority of India [NHAI],1710.3,24.0,1,98.34005729988891
+618466,,Gujarat,National Highways Authority of India [NHAI],3834.24,19.0,0,-0.3661742613920872
+618467,,Gujarat,National Highways Authority of India [NHAI],2594.17,18.0,0,-0.2748470609096593
+618468,,Maharashtra,National Highways Authority of India [NHAI],1524.71,24.0,1,25.528789081202323
+618469,,Maharashtra,National Highways Authority of India [NHAI],3536.9,24.0,1,32.30625689162826
+618470,,Maharashtra,National Highways Authority of India [NHAI],2058.79,18.0,1,12.916810359482989
+618471,,Maharashtra,National Highways Authority of India [NHAI],2610.88,18.0,1,11.778021203578861
+618472,,Maharashtra,National Highways Authority of India [NHAI],4051.8,23.0,1,6.509699392862436
+618473,,Maharashtra,National Highways Authority of India [NHAI],2208.68,30.0,1,11.515475306517928
+618475,,Andhra Pradesh,National Highways Authority of India [NHAI],2548.04,24.0,0,0.0
+618476,,Andhra Pradesh,National Highways Authority of India [NHAI],1407.33,24.0,0,0.0
+618477,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],1481.87,24.0,0,0.0
+618478,,Tamil Nadu,National Highways Authority of India [NHAI],1106.65,24.0,0,0.0
+618479,,Tamil Nadu,National Highways Authority of India [NHAI],1525.1,23.0,0,0.0
+618480,,Tamil Nadu,National Highways Authority of India [NHAI],162.55,18.0,1,0.006151953245149741
+618481,,Tamil Nadu,National Highways Authority of India [NHAI],3605.73,24.0,0,0.0
+618482,,Haryana,National Highways Authority of India [NHAI],1866.49,24.0,1,30.185535416744802
+618483,,Haryana,National Highways Authority of India [NHAI],1533.87,24.0,1,16.863228304875907
+618484,,Haryana,National Highways Authority of India [NHAI],1606.27,24.0,1,12.92684293425141
+618485,,Haryana,National Highways Authority of India [NHAI],1306.95,24.0,1,20.789624698726044
+618486,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],1741.86,24.0,1,30.95311907960457
+618487,,Punjab,National Highways Authority of India [NHAI],1759.82,24.0,1,0.8239479037628848
+618488,,Punjab,National Highways Authority of India [NHAI],1895.74,24.0,1,7.342779073079645
+618489,,Punjab,National Highways Authority of India [NHAI],1851.47,24.0,1,30.012368550395085
+618490,,Punjab,National Highways Authority of India [NHAI],2177.54,24.0,0,-5.272004188212395
+618491,,Punjab,National Highways Authority of India [NHAI],2175.35,24.0,1,1.4416070977084205
+618492,,Punjab,National Highways Authority of India [NHAI],1734.18,23.0,0,-11.285449030665792
+618493,,Punjab,National Highways Authority of India [NHAI],2165.23,36.0,0,-29.818079372630162
+618494,,Jammu and Kashmir,National Highways Authority of India [NHAI],2714.95,24.0,1,36.89239212508518
+618495,,Jammu and Kashmir,National Highways Authority of India [NHAI],2894.74,24.0,0,0.0
+618496,,Jammu and Kashmir,National Highways Authority of India [NHAI],1821.72,24.0,1,38.471334782513225
+618497,,Jammu and Kashmir,National Highways Authority of India [NHAI],975.38,24.0,0,-4.908699170346974
+618498,,Uttar Pradesh,National Highways Authority of India [NHAI],2471.56,30.0,1,0.7056272152001187
+618499,,Uttar Pradesh,National Highways Authority of India [NHAI],1972.94,29.0,0,-1.5038470505945478
+618500,,Uttar Pradesh,National Highways Authority of India [NHAI],1081.39,24.0,1,3.2180804335161186
+618501,,Gujarat,National Highways Authority of India [NHAI],1298.0,24.0,1,9.47996918335901
+618502,,Gujarat,National Highways Authority of India [NHAI],1415.34,24.0,1,22.210210974041583
+618503,,Gujarat,National Highways Authority of India [NHAI],1034.04,24.0,1,11.737456964914328
+618504,,Gujarat,National Highways Authority of India [NHAI],1181.76,24.0,1,14.975121852152723
+618505,,"Multi-States (Haryana, Rajasthan)",National Highways Authority of India [NHAI],409.64,18.0,0,-29.049897470950103
+618506,,Haryana,National Highways Authority of India [NHAI],401.74,24.0,0,-40.254891223179165
+618507,,Gujarat,National Highways Authority of India [NHAI],466.8,10.0,1,7.429305912596402
+618508,,Gujarat,National Highways Authority of India [NHAI],907.39,24.0,0,0.0
+618509,,Delhi,National Highways Authority of India [NHAI],2089.94,24.0,1,5.431256399705243
+618511,,Maharashtra,National Highways Authority of India [NHAI],604.59,12.0,0,-35.69526455945352
+618512,,Maharashtra,National Highways Authority of India [NHAI],907.03,36.0,0,-10.022821736877498
+618513,,Maharashtra,National Highways Authority of India [NHAI],2111.95,24.0,0,-32.03153483747247
+618514,,Maharashtra,National Highways Authority of India [NHAI],2330.71,24.0,0,-86.38183214556938
+618515,,"Multi-States (Karnataka, Maharashtra)",National Highways Authority of India [NHAI],1479.3,30.0,0,-16.376664638680456
+618516,,"Multi-States (Karnataka, Maharashtra)",National Highways Authority of India [NHAI],1388.7,30.0,0,-23.175631885936497
+618517,,Karnataka,National Highways Authority of India [NHAI],1135.39,30.0,0,-32.7667145210016
+618518,,Karnataka,National Highways Authority of India [NHAI],1454.67,51.0,1,24.140870437968736
+618519,,"Multi-States (Karnataka, Tamil Nadu)",National Highways Authority of India [NHAI],1260.74,24.0,0,-3.352792804226088
+618520,,Karnataka,National Highways Authority of India [NHAI],1438.74,24.0,1,24.176015124344907
+618521,,Tamil Nadu,National Highways Authority of India [NHAI],766.51,24.0,0,0.0
+618522,,Tamil Nadu,National Highways Authority of India [NHAI],411.16,21.0,0,0.0
+618523,,Odisha,National Highways Authority of India [NHAI],844.67,30.0,1,65.13194501994862
+618524,,Andhra Pradesh,National Highways Authority of India [NHAI],257.98,24.0,0,-25.246143111869145
+618525,,Andhra Pradesh,National Highways Authority of India [NHAI],326.61,24.0,0,-31.634058969413065
+618526,,Andhra Pradesh,National Highways Authority of India [NHAI],665.59,18.0,0,0.0
+618527,,Andhra Pradesh,National Highways Authority of India [NHAI],1194.57,30.0,1,47.15085763077928
+618529,,Uttar Pradesh,National Highways Authority of India [NHAI],1991.71,36.0,0,-7.98560031329862
+618530,,"Multi-States (Bihar, Uttar Pradesh)",National Highways Authority of India [NHAI],3241.56,30.0,0,0.0
+618531,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1054.46,24.0,0,-25.382660319025863
+618532,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1822.46,24.0,0,-59.49924826882346
+618533,,"Multi-States (Jharkhand, West Bengal)",National Highways Authority of India [NHAI],1560.39,29.0,1,0.5017976275161932
+618534,,(-) (-) Jharkhand,National Highways Authority of India [NHAI],470.75,30.0,0,0.0
+618535,,Jharkhand,National Highways Authority of India [NHAI],687.77,30.0,0,-35.658723119647554
+618536,,Uttar Pradesh,National Highways Authority of India [NHAI],1603.53,30.0,0,-25.654025805566462
+618537,,Uttar Pradesh,National Highways Authority of India [NHAI],1753.75,30.0,0,-25.205987170349246
+618538,,Uttar Pradesh,National Highways Authority of India [NHAI],1792.68,30.0,0,-37.1471762947096
+618539,,Uttar Pradesh,National Highways Authority of India [NHAI],1089.41,30.0,1,1.607292020451436
+618540,,Uttar Pradesh,National Highways Authority of India [NHAI],1089.41,23.0,0,-10.277122479140086
+618541,,Jammu and Kashmir,National Highways Authority of India [NHAI],2919.96,30.0,0,-10.794668420115338
+618542,,(-) (-) Jammu and Kashmir,National Highways Authority of India [NHAI],827.98,24.0,0,0.0
+618543,,Jammu and Kashmir,National Highways Authority of India [NHAI],1912.17,36.0,0,-45.90962100650047
+618544,,Jammu and Kashmir,National Highways Authority of India [NHAI],1401.87,28.0,0,-27.169423698345774
+618545,,Jammu and Kashmir,National Highways Authority of India [NHAI],614.48,30.0,0,-27.620101549277443
+618546,,Jammu and Kashmir,National Highways Authority of India [NHAI],442.14,18.0,0,0.0
+618547,,Jammu and Kashmir,National Highways Authority of India [NHAI],961.0,30.0,0,-33.02393340270552
+618548,,Jammu and Kashmir,National Highways Authority of India [NHAI],2023.88,36.0,0,0.0
+618549,,Jammu and Kashmir,National Highways Authority of India [NHAI],242.65,24.0,1,201.5001030290542
+618550,,Jammu and Kashmir,National Highways Authority of India [NHAI],855.74,18.0,0,-74.79608292238295
+618551,,Punjab,National Highways Authority of India [NHAI],666.81,24.0,1,3.548237129017274
+618552,,Punjab,National Highways Authority of India [NHAI],1754.84,24.0,1,23.509265802010436
+618553,,Uttar Pradesh,National Highways Authority of India [NHAI],957.62,24.0,1,8.019882625676162
+618554,,Uttar Pradesh,National Highways Authority of India [NHAI],879.26,18.0,0,-10.426949935172754
+618555,,Maharashtra,National Highways Authority of India [NHAI],1097.81,36.0,0,0.0
+618556,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",National Highways Authority of India [NHAI],665.91,24.0,0,0.0
+618557,,Maharashtra,National Highways Authority of India [NHAI],1038.84,35.0,0,-11.581186708251506
+618558,,Telangana,National Highways Authority of India [NHAI],955.49,24.0,0,-5.475724497378313
+618559,,Telangana,National Highways Authority of India [NHAI],521.53,23.0,1,1.280846739401389
+618560,,Telangana,National Highways Authority of India [NHAI],541.58,18.0,0,-2.6127257284242567
+618561,,Tamil Nadu,National Highways Authority of India [NHAI],904.99,36.0,0,-19.215681941236916
+618562,,Tamil Nadu,National Highways Authority of India [NHAI],579.0,30.0,0,-48.96373056994819
+618563,,Tamil Nadu,National Highways Authority of India [NHAI],900.05,24.0,0,0.0
+618564,,Gujarat,National Highways Authority of India [NHAI],1553.76,24.0,0,-97.78987745855217
+618565,,Uttar Pradesh,NHAI,526.45,18.0,0,-46.5989172760946
+618566,,Uttar Pradesh,National Highways Authority of India [NHAI],1973.98,24.0,0,-36.95782125452132
+618567,,Uttar Pradesh,NHAI,2289.34,30.0,0,-19.878654983532375
+618568,,Uttar Pradesh,NHAI,2541.13,30.0,0,-21.961883099251125
+618569,,Bihar,National Highways Authority of India [NHAI],210.05,18.0,1,70.57843370626041
+618570,,Bihar,National Highways Authority of India [NHAI],325.57,29.0,0,-23.543324016340573
+618572,,West Bengal,National Highways Authority of India [NHAI],309.99,24.0,0,-1.2806864737572266
+618574,,West Bengal,National Highways Authority of India [NHAI],1818.46,30.0,0,-47.08104659987023
+618575,,Assam,National Highways Authority of India [NHAI],457.72,18.0,0,0.0
+618576,,Assam,National Highways Authority of India [NHAI],280.75,18.0,0,-8.983081032947462
+618577,,"Multi-States (Delhi, Haryana)",National Highways Authority of India [NHAI],2228.26,24.0,0,0.0
+618578,,Delhi,National Highways Authority of India [NHAI],1467.44,30.0,1,71.06934525432045
+618579,,Andhra Pradesh,National Highways Authority of India [NHAI],2527.0,30.0,1,17.026117926394935
+618580,,Haryana,National Highways Authority of India [NHAI],1275.31,24.0,1,53.48738738032323
+618581,,"Multi-States (Karnataka, Tamil Nadu)",National Highways Authority of India [NHAI],1757.27,24.0,0,0.0
+618582,,Bihar,National Highways Authority of India [NHAI],1282.97,24.0,0,0.0
+618583,,Bihar,National Highways Authority of India [NHAI],1358.77,24.0,0,0.0
+618584,,"Multi-States (Bihar, West Bengal)",National Highways Authority of India [NHAI],962.84,24.0,0,-11.142038137177526
+618585,,Maharashtra,National Highways Authority of India [NHAI],856.93,30.0,0,-16.11450176793903
+618586,,Maharashtra,National Highways Authority of India [NHAI],254.78,12.0,0,-42.05196640238638
+618588,,Maharashtra,National Highways Authority of India [NHAI],540.24,24.0,0,-13.201540056271286
+618589,,Chhattisgarh,National Highways Authority of India [NHAI],1072.99,24.0,0,-9.36925601750547
+618590,,Chhattisgarh,National Highways Authority of India [NHAI],1216.23,23.0,0,-20.262902649446122
+618591,,Odisha,National Highways Authority of India [NHAI],374.17,30.0,0,-43.410749124729406
+618592,,Odisha,National Highways Authority of India [NHAI],320.64,18.0,0,-23.637100798403193
+618593,,Odisha,National Highways Authority of India [NHAI],263.32,30.0,0,-38.07154792647729
+618594,,Maharashtra,National Highways Authority of India [NHAI],329.82,19.0,0,-40.30986598750834
+618595,,Kerala,National Highways Authority of India [NHAI],1746.45,30.0,1,45.326805806063724
+618596,,Kerala,National Highways Authority of India [NHAI],2714.6,30.0,1,31.05614086789951
+618597,,Kerala,National Highways Authority of India [NHAI],3205.77,33.0,1,21.607601293916908
+618598,,Kerala,National Highways Authority of India [NHAI],210.0,18.0,1,3.3047619047619032
+618599,,Kerala,National Highways Authority of India [NHAI],4924.11,30.0,0,0.0
+618600,,Kerala,National Highways Authority of India [NHAI],4023.94,30.0,0,0.0
+618601,,Kerala,National Highways Authority of India [NHAI],4225.59,28.0,0,0.0
+618602,,Kerala,National Highways Authority of India [NHAI],4302.06,29.0,0,0.0
+618603,,Kerala,National Highways Authority of India [NHAI],3465.82,30.0,1,4.050412312237786
+618604,,Kerala,National Highways Authority of India [NHAI],2429.52,35.0,0,-1.9217787875794419
+618605,,Kerala,National Highways Authority of India [NHAI],2878.97,30.0,0,-8.346735117073111
+618606,,Kerala,National Highways Authority of India [NHAI],3273.61,30.0,0,-2.2412565944019094
+618607,,Kerala,National Highways Authority of India [NHAI],2842.14,30.0,1,29.49713947940636
+618608,,Tamil Nadu,National Highways Authority of India [NHAI],1564.23,24.0,0,-19.23054793732379
+618609,,Goa,National Highways Authority of India [NHAI],463.08,23.0,0,-31.700786041288765
+618610,,Punjab,National Highways Authority of India [NHAI],789.26,24.0,1,67.10716367230066
+618611,,Rajasthan,National Highways Authority of India [NHAI],520.63,24.0,1,5.337763863012112
+618612,,Rajasthan,National Highways Authority of India [NHAI],846.59,24.0,0,-12.517275186335775
+618613,,Rajasthan,National Highways Authority of India [NHAI],662.08,24.0,0,-9.713327694538433
+618614,,Gujarat,National Highways Authority of India [NHAI],752.3,24.0,1,1.7213877442509697
+618615,,Gujarat,National Highways Authority of India [NHAI],778.15,24.0,1,7.376469832294543
+618616,,Gujarat,National Highways Authority of India [NHAI],625.58,24.0,0,-27.181175868793762
+618617,,Punjab,National Highways Authority of India [NHAI],1229.38,24.0,1,26.02450015454943
+618618,,Punjab,National Highways Authority of India [NHAI],2029.17,24.0,1,31.93719599639261
+618619,,Madhya Pradesh,National Highways Authority of India [NHAI],998.95,24.0,0,0.0
+618620,,Madhya Pradesh,National Highways Authority of India [NHAI],207.77,18.0,1,1.6845550368195599
+618621,,Madhya Pradesh,National Highways Authority of India [NHAI],1162.8,24.0,1,31.649466804265565
+618622,,Madhya Pradesh,National Highways Authority of India [NHAI],1001.69,24.0,0,-11.268955465263716
+618623,,Madhya Pradesh,National Highways Authority of India [NHAI],1504.37,23.0,0,-24.72995340242095
+618624,,"Multi-States (Maharashtra, Telangana)",National Highways Authority of India [NHAI],1082.65,24.0,1,22.21124093659075
+618625,,Madhya Pradesh,National Highways Authority of India [NHAI],1175.0,30.0,0,-81.5131914893617
+618626,,Maharashtra,National Highways Authority of India [NHAI],819.52,24.0,0,-51.19094103865678
+618627,,Maharashtra,National Highways Authority of India [NHAI],168.52,18.0,0,-33.52124376928555
+618628,,Maharashtra,National Highways Authority of India [NHAI],150.21,23.0,0,-41.6883030424073
+618629,,Andhra Pradesh,National Highways Authority of India [NHAI],416.07,15.0,1,6.852212368111132
+618630,,Karnataka,National Highways Authority of India [NHAI],2355.56,30.0,0,-18.350625753536313
+618631,,"Multi-States (Karnataka, Telangana)",National Highways Authority of India [NHAI],1499.73,30.0,0,-2.817173757943096
+618632,,"Multi-States (Karnataka, Telangana)",National Highways Authority of India [NHAI],972.06,24.0,1,7.406950188259985
+618633,,(-) (12088) Andhra Pradesh,National Highways Authority of India [NHAI],1732.66,24.0,0,0.0
+618634,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],1439.77,24.0,0,0.0
+618635,,Tamil Nadu,National Highways Authority of India [NHAI],1359.81,24.0,0,0.0
+618636,,"Multi-States (Karnataka, Maharashtra)",National Highways Authority of India [NHAI],1370.75,24.0,1,2.3884734634324283
+618637,,"Multi-States (Gujarat, Maharashtra)",National Highways Authority of India [NHAI],1654.07,24.0,1,1.1377994885343525
+618638,,Maharashtra,National Highways Authority of India [NHAI],2267.99,30.0,1,12.897323180437315
+618639,,Chhattisgarh,National Highways Authority of India [NHAI],1855.59,24.0,1,36.01388237703374
+618640,,Chhattisgarh,National Highways Authority of India [NHAI],2261.3,30.0,1,26.491840976429483
+618641,,Jharkhand,National Highways Authority of India [NHAI],1325.8,24.0,0,0.0
+618642,,Jharkhand,National Highways Authority of India [NHAI],1882.93,23.0,1,0.6808537757643639
+618644,,Jharkhand,National Highways Authority of India [NHAI],1214.93,24.0,1,20.35178981505107
+618645,,Jharkhand,National Highways Authority of India [NHAI],1007.97,24.0,1,2.249074873260124
+618646,,(-) (-) Chhattisgarh,National Highways Authority of India [NHAI],3147.07,36.0,0,0.0
+618647,,Punjab,National Highways Authority of India [NHAI],906.51,24.0,1,12.576805550959172
+618648,,(-) (-) Punjab,NHAI,1424.55,24.0,0,0.0
+618649,,Karnataka,National Highways Authority of India [NHAI],1246.15,24.0,0,-18.727280022469213
+618650,,Karnataka,National Highways Authority of India [NHAI],1363.9,24.0,0,-10.578488158955949
+618651,,Karnataka,National Highways Authority of India [NHAI],1427.88,23.0,0,-9.380340084600949
+618652,,Maharashtra,National Highways Authority of India [NHAI],1241.38,24.0,1,169.2253782081232
+618653,,Maharashtra,National Highways Authority of India [NHAI],1236.08,24.0,1,180.44948547019612
+618654,,Madhya Pradesh,National Highways Authority of India [NHAI],521.21,24.0,0,-9.88661000364537
+618655,,Madhya Pradesh,National Highways Authority of India [NHAI],200.99,24.0,0,-39.92238419821882
+618661,,Madhya Pradesh,National Highways Authority of India [NHAI],1032.3,24.0,1,0.5696018599244511
+618662,,(-) (12086) Madhya Pradesh,National Highways Authority of India [NHAI],980.2,24.0,0,0.0
+618663,,Madhya Pradesh,National Highways Authority of India [NHAI],1003.87,24.0,0,-6.250809367746819
+618664,,Madhya Pradesh,National Highways Authority of India [NHAI],524.84,24.0,0,-10.199298833930346
+618665,,Madhya Pradesh,National Highways Authority of India [NHAI],790.78,24.0,0,-16.490047800905433
+618666,,Madhya Pradesh,National Highways Authority of India [NHAI],710.92,24.0,0,-24.171496089574063
+618667,,Madhya Pradesh,National Highways Authority of India [NHAI],1005.59,24.0,0,-12.269413975874858
+618668,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",National Highways Authority of India [NHAI],996.5,24.0,0,-15.03462117410939
+618669,,Uttar Pradesh,National Highways Authority of India [NHAI],1632.93,24.0,0,-12.707219537885885
+618671,,Madhya Pradesh,National Highways Authority of India [NHAI],618.33,24.0,0,-44.57813788753578
+618672,,Madhya Pradesh,National Highways Authority of India [NHAI],903.44,24.0,0,-34.423979456300366
+618673,,Chhattisgarh,National Highways Authority of India [NHAI],1368.19,24.0,0,-17.471988539603416
+618674,,Chhattisgarh,National Highways Authority of India [NHAI],1470.73,24.0,0,-0.6065015332521995
+618675,,Chhattisgarh,National Highways Authority of India [NHAI],1307.16,24.0,0,-0.2700511031549292
+618676,,"Multi-States (Chhattisgarh, Odisha)",National Highways Authority of India [NHAI],477.76,24.0,1,33.60683188211656
+618677,,Odisha,National Highways Authority of India [NHAI],1539.75,24.0,1,24.59749959408995
+618678,,Odisha,National Highways Authority of India [NHAI],1265.59,23.0,1,29.223524206101516
+618680,,Odisha,National Highways Authority of India [NHAI],1492.74,24.0,1,28.14287819714082
+618682,,Andhra Pradesh,National Highways Authority of India [NHAI],1112.7,24.0,1,1.3417812528084894
+618684,,Madhya Pradesh,National Highways Authority of India [NHAI],917.26,24.0,0,-14.258770686610116
+618685,,Madhya Pradesh,National Highways Authority of India [NHAI],911.24,24.0,0,-15.145296519029014
+618686,,Madhya Pradesh,National Highways Authority of India [NHAI],612.94,24.0,0,-16.82383267530265
+618687,,Madhya Pradesh,National Highways Authority of India [NHAI],652.33,24.0,0,-0.06898348995141193
+618688,,Madhya Pradesh,National Highways Authority of India [NHAI],794.7,24.0,0,-32.06241348936707
+618689,,Uttar Pradesh,National Highways Authority of India [NHAI],364.47,18.0,0,0.0
+618690,,Uttar Pradesh,National Highways Authority of India [NHAI],1663.38,24.0,1,1.34124493501184
+618691,,"Multi-States (Haryana, Uttar Pradesh)",National Highways Authority of India [NHAI],939.17,24.0,0,-3.7511845565765416
+618692,,Uttar Pradesh,National Highways Authority of India [NHAI],1226.64,40.0,0,0.0
+618693,,Maharashtra,National Highways Authority of India [NHAI],1344.78,30.0,0,-3.8727524204702575
+618694,,Madhya Pradesh,National Highways Authority of India [NHAI],1011.29,23.0,0,-19.60466335076981
+618695,,Madhya Pradesh,National Highways Authority of India [NHAI],1146.22,24.0,1,8.23751112351905
+618696,,"Multi-States (Andhra Pradesh, Karnataka)",National Highways Authority of India [NHAI],1281.47,24.0,0,0.0
+618697,,Karnataka,National Highways Authority of India [NHAI],626.01,23.0,0,-54.62532547403396
+618698,,Karnataka,National Highways Authority of India [NHAI],1167.52,24.0,1,60.47519528573386
+618699,,Gujarat,National Highways Authority of India [NHAI],819.14,31.0,1,58.38318236198942
+618700,,Andhra Pradesh,National Highways Authority of India [NHAI],1863.09,24.0,1,34.729937898866936
+618701,,Madhya Pradesh,National Highways Authority of India [NHAI],178.18,24.0,0,-14.047592322370637
+618702,,Karnataka,National Highways Authority of India [NHAI],1660.19,24.0,0,-20.597040097820134
+618704,,Odisha,National Highways Authority of India [NHAI],150.86,31.0,0,-29.524062044279475
+618705,,(-) (12085) Odisha,National Highways Authority of India [NHAI],973.12,24.0,0,0.0
+618706,,Karnataka,National Highways Authority of India [NHAI],3496.01,30.0,1,16.916713624961023
+618707,,Karnataka,National Highways Authority of India [NHAI],738.37,24.0,0,0.0
+618708,,Kerala,National Highways Authority of India [NHAI],1187.47,24.0,1,6.568586995882002
+618709,,Karnataka,National Highways Authority of India [NHAI],1340.15,24.0,0,-25.933664142073653
+618710,,Uttar Pradesh,National Highways Authority of India [NHAI],2002.79,30.0,0,-5.6426285331961905
+618711,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],796.65,24.0,0,-29.701876608297244
+618712,,Andhra Pradesh,National Highways Authority of India [NHAI],912.94,24.0,0,-12.562709488027696
+618713,,Andhra Pradesh,National Highways Authority of India [NHAI],1200.42,24.0,0,-15.055563885973244
+618714,,Andhra Pradesh,National Highways Authority of India [NHAI],1253.26,24.0,0,-12.56562883998532
+618715,,Andhra Pradesh,National Highways Authority of India [NHAI],1058.9,24.0,0,-10.652563981490232
+618716,,Andhra Pradesh,National Highways Authority of India [NHAI],992.91,24.0,0,-10.558862333947681
+618717,,Andhra Pradesh,National Highways Authority of India [NHAI],750.81,24.0,0,-16.502177648140005
+618718,,Andhra Pradesh,National Highways Authority of India [NHAI],1092.18,24.0,0,-12.432016700543874
+618719,,Andhra Pradesh,National Highways Authority of India [NHAI],909.02,24.0,0,-17.29444896701943
+618720,,Andhra Pradesh,National Highways Authority of India [NHAI],987.1,24.0,0,-14.08570560226928
+618721,,Andhra Pradesh,National Highways Authority of India [NHAI],1292.65,24.0,0,-14.104359261981214
+618722,,Uttar Pradesh,National Highways Authority of India [NHAI],1843.59,24.0,0,-32.33039884139098
+618723,,"Multi-States (Haryana, Uttar Pradesh)",National Highways Authority of India [NHAI],1554.21,24.0,0,-20.095096544225036
+618724,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1719.2,23.0,1,0.24546300604932686
+618725,,Bihar,National Highways Authority of India [NHAI],1915.99,24.0,1,0.22025167145966457
+618726,,Bihar,National Highways Authority of India [NHAI],1240.93,24.0,1,8.106017261247606
+618727,,Bihar,National Highways Authority of India [NHAI],1576.94,24.0,1,8.529176760054282
+618728,,"Multi-States (Bihar, Uttar Pradesh)",National Highways Authority of India [NHAI],1433.39,24.0,1,9.122430043463396
+618729,,(-) (-) Jharkhand,NHAI,1856.12,24.0,0,0.0
+618730,,(-) (-) Jharkhand,National Highways Authority of India [NHAI],1546.27,24.0,0,0.0
+618731,,(-) (-) Jharkhand,NHAI,1418.16,24.0,0,0.0
+618733,,(-) (-) Jharkhand,NHAI,1525.52,24.0,0,0.0
+618734,,"Multi-States (Jharkhand, West Bengal)",National Highways Authority of India [NHAI],1154.49,24.0,1,14.265173366594777
+618735,,Madhya Pradesh,National Highways Authority of India [NHAI],909.84,20.0,1,7.332058383891664
+618736,,Jharkhand,National Highways Authority of India [NHAI],936.26,30.0,0,-11.114434024736711
+618737,,Jharkhand,National Highways Authority of India [NHAI],303.53,24.0,0,-98.16163146970645
+618738,,Bihar,National Highways Authority of India [NHAI],6291.69,48.0,0,-46.7294161028277
+618739,,Bihar,National Highways Authority of India [NHAI],1390.92,20.0,1,2.6248813734794227
+618740,,Bihar,National Highways Authority of India [NHAI],1494.31,24.0,1,3.463806037569179
+618741,,Bihar,NHAI,1857.58,24.0,1,6.014276639498704
+618742,,(-) (12151) Bihar,National Highways Authority of India [NHAI],1113.46,24.0,0,0.0
+618743,,Tamil Nadu,National Highways Authority of India [NHAI],876.88,207.0,0,-58.84499589453517
+618744,,Tamil Nadu,National Highways Authority of India [NHAI],1076.97,24.0,0,-26.49748832372304
+618745,,Tamil Nadu,National Highways Authority of India [NHAI],1317.6,24.0,0,-13.694596235579832
+618746,,Telangana,National Highways Authority of India [NHAI],797.36,24.0,1,67.70091301294272
+618747,,"Multi-States (Andhra Pradesh, Telangana)",National Highways Authority of India [NHAI],829.5,25.0,1,47.92887281494876
+618748,,Andhra Pradesh,National Highways Authority of India [NHAI],569.37,24.0,1,32.0793157349351
+618749,,Andhra Pradesh,National Highways Authority of India [NHAI],711.94,24.0,0,0.0
+618751,,Madhya Pradesh,National Highways Authority of India [NHAI],581.65,24.0,1,1.9014871486289109
+618754,,Maharashtra,National Highways Authority of India [NHAI],538.11,24.0,0,-42.903867239040345
+618755,,"Multi-States (Rajasthan, Uttar Pradesh)",National Highways Authority of India [NHAI],159.53,11.0,0,-36.852002758101925
+618756,,Tamil Nadu,National Highways Authority of India [NHAI],1103.86,24.0,0,-1.6714076060369811
+618757,,Rajasthan,National Highways Authority of India [NHAI],2010.2,24.0,0,-22.10327330613869
+618758,,Rajasthan,National Highways Authority of India [NHAI],1764.86,24.0,0,-29.782532325510235
+618759,,Andhra Pradesh,National Highways Authority of India [NHAI],1063.57,24.0,1,3.78912530439933
+618760,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],646.42,19.0,0,-13.973886946567237
+618761,,Uttar Pradesh,National Highways Authority of India [NHAI],991.89,24.0,0,-1.4275776547802648
+618762,,Madhya Pradesh,National Highways Authority of India [NHAI],950.27,24.0,0,-17.041472423626963
+618764,,Punjab,National Highways Authority of India [NHAI],864.23,24.0,1,22.427100785403713
+618765,,Telangana,National Highways Authority of India [NHAI],2146.86,24.0,1,15.820780116076506
+618766,,Maharashtra,NHAI,862.0,24.0,0,-28.314385150812072
+618768,,(-) (12084) Uttar Pradesh,National Highways Authority of India [NHAI],1309.08,24.0,0,0.0
+618769,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],1338.14,24.0,0,-9.224744795013978
+618770,,Uttar Pradesh,National Highways Authority of India [NHAI],516.16,24.0,0,-47.028053316800985
+618771,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],1924.75,24.0,0,-1.9415508507598334
+618772,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],702.52,24.0,1,13.784660934920007
+618773,,Tamil Nadu,National Highways Authority of India [NHAI],449.85,24.0,1,0.5846393242191831
+618774,,Bihar,National Highways Authority of India [NHAI],984.63,30.0,0,-15.95726313437535
+618775,,Bihar,National Highways Authority of India [NHAI],226.32,18.0,0,0.0
+618776,,Punjab,National Highways Authority of India [NHAI],1237.65,24.0,1,5.1306912293459375
+618777,,Andhra Pradesh,National Highways Authority of India [NHAI],1877.47,25.0,0,-68.42293085908163
+618778,,Andhra Pradesh,National Highways Authority of India [NHAI],1877.47,24.0,1,6.212083282289458
+618779,,Bihar,NHAI,1505.0,18.0,0,-76.74684385382061
+618782,,Uttar Pradesh,National Highways Authority of India [NHAI],1394.14,24.0,0,0.0
+618783,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],1471.19,24.0,0,0.0
+618784,,Madhya Pradesh,NHAI,355.36,24.0,0,0.0
+618785,,Punjab,National Highways Authority of India [NHAI],1501.02,24.0,1,20.92643668971767
+618786,,Punjab,National Highways Authority of India [NHAI],1196.38,24.0,1,25.69501329009176
+618787,,Gujarat,National Highways Authority of India [NHAI],1373.06,29.0,1,22.882466898751698
+618788,,Haryana,National Highways Authority of India [NHAI],927.22,23.0,1,26.57837406440759
+618789,,Punjab,National Highways Authority of India [NHAI],1525.31,24.0,0,0.0
+618790,,(-) (10564) Bihar,National Highways Authority of India [NHAI],1422.37,30.0,1,8.128686628655
+618791,,Bihar,National Highways Authority of India [NHAI],1538.76,23.0,0,0.0
+618792,,Haryana,National Highways Authority of India [NHAI],1330.23,24.0,0,-13.98404787142073
+618793,,Punjab,National Highways Authority of India [NHAI],1409.88,24.0,1,18.736346355718204
+618794,,Punjab,National Highways Authority of India [NHAI],524.88,18.0,0,-20.633287608596255
+618795,,Punjab,National Highways Authority of India [NHAI],1474.77,24.0,0,-16.704299653505288
+618796,,Rajasthan,National Highways Authority of India [NHAI],828.58,24.0,1,0.21603224794225825
+618797,,Rajasthan,National Highways Authority of India [NHAI],1237.71,24.0,0,-25.102002892438456
+618798,,Uttar Pradesh,National Highways Authority of India [NHAI],2555.5,24.0,0,-10.959499119546082
+618799,,Karnataka,National Highways Authority of India [NHAI],456.32,24.0,1,3.778171573973099
+618800,,Tamil Nadu,National Highways Authority of India [NHAI],1616.97,30.0,0,0.0
+618801,,Tamil Nadu,National Highways Authority of India [NHAI],1388.59,30.0,0,0.0
+618803,,Andhra Pradesh,National Highways Authority of India [NHAI],645.63,24.0,1,16.196583182318054
+618804,,Andhra Pradesh,National Highways Authority of India [NHAI],348.72,24.0,0,-2.110575820142238
+618805,,Andhra Pradesh,National Highways Authority of India [NHAI],977.33,24.0,0,0.0
+618806,,Andhra Pradesh,National Highways Authority of India [NHAI],685.99,24.0,0,-0.8425778801440215
+618807,,Andhra Pradesh,National Highways Authority of India [NHAI],609.43,24.0,0,-8.114139441773451
+618808,,West Bengal,National Highways Authority of India [NHAI],1212.56,30.0,0,-0.7793428778782119
+618809,,Punjab,National Highways Authority of India [NHAI],809.51,24.0,1,19.45374362268533
+618810,,Punjab,National Highways Authority of India [NHAI],1003.38,24.0,0,-0.9747054954254591
+618811,,Telangana,National Highways Authority of India [NHAI],1183.71,24.0,0,-1.1041555786467916
+618812,,Telangana,National Highways Authority of India [NHAI],1129.33,24.0,1,1.4238530810303593
+618813,,Telangana,National Highways Authority of India [NHAI],1127.9,24.0,0,-2.095043886869413
+618814,,Telangana,National Highways Authority of India [NHAI],1142.6,24.0,0,-0.15578505163661585
+618815,,Telangana,National Highways Authority of India [NHAI],1092.88,24.0,0,-0.8939682307298339
+618816,,Telangana,National Highways Authority of India [NHAI],1105.25,24.0,0,-0.65143632662294
+618817,,Telangana,National Highways Authority of India [NHAI],973.45,32.0,1,4.983306795418356
+618818,,"Multi-States (Andhra Pradesh, Telangana)",National Highways Authority of India [NHAI],1183.23,24.0,1,3.541999442204819
+618819,,Odisha,National Highways Authority of India [NHAI],183.03,12.0,1,9.703327323389603
+618820,,Odisha,National Highways Authority of India [NHAI],861.84,24.0,1,8.90072403230297
+618821,,Odisha,National Highways Authority of India [NHAI],920.47,24.0,1,3.2515997262268135
+618822,,Odisha,National Highways Authority of India [NHAI],929.91,24.0,0,-6.501704466023586
+618823,,West Bengal,National Highways Authority of India [NHAI],352.01,18.0,0,-1.5965455526831638
+618824,,West Bengal,National Highways Authority of India [NHAI],201.1,18.0,0,-1.6708105420188888
+618825,,West Bengal,National Highways Authority of India [NHAI],622.04,36.0,1,3.8679184618352616
+618826,,Andhra Pradesh,National Highways Authority of India [NHAI],907.76,24.0,0,-0.19608707147263293
+618827,,Andhra Pradesh,National Highways Authority of India [NHAI],1097.57,24.0,0,-3.857612726295354
+618828,,"Multi-States (Jharkhand, Uttar Pradesh)",National Highways Authority of India [NHAI],1436.49,24.0,1,2.0229865853573603
+618829,,Jharkhand,National Highways Authority of India [NHAI],1129.48,24.0,0,0.0
+618830,,Jharkhand,National Highways Authority of India [NHAI],1517.87,24.0,1,8.842654509279454
+618831,,Jharkhand,National Highways Authority of India [NHAI],1436.8,24.0,0,-9.413975501113585
+618832,,Jharkhand,National Highways Authority of India [NHAI],1274.82,24.0,0,0.0
+618833,,Gujarat,National Highways Authority of India [NHAI],894.01,29.0,0,0.0
+618834,,Gujarat,National Highways Authority of India [NHAI],162.73,17.0,1,17.99299453081792
+618835,,Gujarat,National Highways Authority of India [NHAI],698.4,18.0,1,5.313573883161514
+618836,,Maharashtra,National Highways Authority of India [NHAI],1985.38,24.0,0,-9.437991719469325
+618837,,Maharashtra,National Highways Authority of India [NHAI],1939.23,24.0,0,-1.48615687669848
+618838,,Rajasthan,National Highways Authority of India [NHAI],736.75,24.0,0,-30.40108585001697
+618839,,Bihar,National Highways Authority of India [NHAI],1309.47,42.0,1,60.95672294897935
+618840,,Bihar,National Highways Authority of India [NHAI],664.02,30.0,1,34.27908797927773
+618841,,Bihar,National Highways Authority of India [NHAI],491.04,30.0,0,-29.05262300423591
+618842,,(-) (-) Uttar Pradesh,NHAI,1280.68,24.0,0,0.0
+618843,,Uttar Pradesh,National Highways Authority of India [NHAI],197.6,18.0,0,-16.356275303643724
+618844,,"Multi-States (Puducherry, Tamil Nadu)",National Highways Authority of India [NHAI],1358.31,24.0,0,-14.420125008282344
+618845,,"Multi-States (Puducherry, Tamil Nadu)",National Highways Authority of India [NHAI],1588.4,24.0,0,-10.859984890455804
+618846,,Tamil Nadu,National Highways Authority of India [NHAI],2565.63,24.0,0,-9.599201755514247
+618847,,"Multi-States (Puducherry, Tamil Nadu)",National Highways Authority of India [NHAI],2899.77,24.0,0,0.0
+618848,,Uttar Pradesh,National Highways Authority of India [NHAI],649.44,24.0,0,0.0
+618849,,Chhattisgarh,National Highways Authority of India [NHAI],444.21,18.0,0,-7.052970441908103
+618850,,Himachal Pradesh,National Highways Authority of India [NHAI],1464.12,30.0,1,12.809742370843932
+618851,,Himachal Pradesh,National Highways Authority of India [NHAI],3419.95,42.0,1,30.584950072369477
+618852,,Himachal Pradesh,National Highways Authority of India [NHAI],191.11,24.0,1,0.5232588561561404
+618853,,Rajasthan,National Highways Authority of India [NHAI],353.3,24.0,0,-31.689782054910843
+618854,,Uttar Pradesh,National Highways Authority of India [NHAI],706.41,24.0,1,6.527370790334228
+618855,,Uttar Pradesh,National Highways Authority of India [NHAI],838.68,24.0,0,0.0
+618856,,Uttar Pradesh,National Highways Authority of India [NHAI],1101.79,24.0,1,10.026411566632483
+618858,,Uttar Pradesh,National Highways Authority of India [NHAI],955.34,24.0,0,0.0
+618859,,Uttar Pradesh,National Highways Authority of India [NHAI],575.66,24.0,0,-3.830385991731223
+618861,,Bihar,National Highways Authority of India [NHAI],897.45,27.0,1,55.71563875424814
+618862,,Bihar,National Highways Authority of India [NHAI],2156.22,30.0,1,41.29402380091087
+618863,,Jharkhand,National Highways Authority of India [NHAI],662.44,57.0,1,24.77960268099752
+618864,,Uttar Pradesh,National Highways Authority of India [NHAI],1722.11,24.0,1,5.7290184715262145
+618865,,Uttar Pradesh,National Highways Authority of India [NHAI],1384.79,24.0,1,8.062594328381929
+618866,,Uttar Pradesh,National Highways Authority of India [NHAI],2077.0,24.0,0,-46.44005777563794
+618867,,Uttar Pradesh,National Highways Authority of India [NHAI],2009.11,24.0,0,-3.608562995555246
+618868,,Uttar Pradesh,National Highways Authority of India [NHAI],2289.52,24.0,0,-2.874401621300532
+618869,,Uttar Pradesh,National Highways Authority of India [NHAI],1122.02,30.0,1,66.62715459617475
+618870,,Karnataka,National Highways Authority of India [NHAI],883.62,24.0,1,95.40639641474843
+618871,,Karnataka,National Highways Authority of India [NHAI],909.86,24.0,0,-1.4771503308201321
+618872,,Karnataka,National Highways Authority of India [NHAI],1062.76,24.0,0,-10.419097444390081
+618873,,Karnataka,National Highways Authority of India [NHAI],1272.71,24.0,0,-5.461574121363075
+618874,,Tamil Nadu,National Highways Authority of India [NHAI],1003.11,30.0,0,-56.5541166970721
+618875,,Uttarakhand,National Highways Authority of India [NHAI],183.92,18.0,0,-22.732709873858187
+618876,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],2125.03,30.0,0,0.0
+618878,,Himachal Pradesh,National Highways Authority of India [NHAI],696.65,24.0,1,11.474915667838951
+618879,,Himachal Pradesh,National Highways Authority of India [NHAI],930.86,24.0,0,0.0
+618880,,Himachal Pradesh,National Highways Authority of India [NHAI],815.68,21.0,0,-18.25348175755198
+618881,,Himachal Pradesh,National Highways Authority of India [NHAI],1113.02,30.0,0,-0.05660275646438355
+618882,,"Multi-States (Bihar, Uttar Pradesh)",National Highways Authority of India [NHAI],531.61,30.0,0,-16.307067210925304
+618883,,Uttar Pradesh,National Highways Authority of India [NHAI],1706.47,24.0,0,-7.435231794288802
+618884,,Uttar Pradesh,National Highways Authority of India [NHAI],1493.65,24.0,0,-12.198975663642756
+618885,,Uttar Pradesh,National Highways Authority of India [NHAI],617.88,24.0,0,-11.144558814009194
+618886,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],238.66,24.0,0,-99.95809938825107
+618887,,Karnataka,National Highways Authority of India [NHAI],2082.98,24.0,1,22.18600274606574
+618888,,Himachal Pradesh,National Highways Authority of India [NHAI],1146.19,24.0,1,18.53357645765535
+618889,,Himachal Pradesh,National Highways Authority of India [NHAI],1322.95,24.0,1,38.28867304130919
+618890,,Himachal Pradesh,National Highways Authority of India [NHAI],739.39,24.0,1,2.0868553807868735
+618891,,Himachal Pradesh,National Highways Authority of India [NHAI],1244.43,24.0,0,-36.7654267415604
+618892,,(-) (-) Himachal Pradesh,NHAI,992.85,24.0,0,0.0
+618893,,Uttar Pradesh,National Highways Authority of India [NHAI],2966.63,30.0,1,17.15818959560174
+618895,,Tamil Nadu,National Highways Authority of India [NHAI],1319.42,24.0,0,0.0
+618896,,Karnataka,National Highways Authority of India [NHAI],1386.41,24.0,1,47.04957407981765
+618897,,Tamil Nadu,National Highways Authority of India [NHAI],2356.19,24.0,1,0.030133393317178854
+618898,,Tamil Nadu,National Highways Authority of India [NHAI],1163.17,24.0,0,-28.259841639657147
+618899,,Tamil Nadu,National Highways Authority of India [NHAI],1499.12,24.0,0,0.0
+618901,,Gujarat,National Highways Authority of India [NHAI],1181.34,24.0,0,-7.035231178153614
+618902,,Bihar,National Highways Authority of India [NHAI],662.44,24.0,1,97.93792645371656
+618903,,Bihar,National Highways Authority of India [NHAI],1028.28,24.0,0,-0.09957200099572075
+618904,,Bihar,National Highways Authority of India [NHAI],2127.86,30.0,1,2.055586363764523
+618905,,Bihar,National Highways Authority of India [NHAI],470.5,24.0,1,12.323060573857603
+618906,,Punjab,National Highways Authority of India [NHAI],857.91,24.0,1,68.25424578335723
+618907,,"Multi-States (Himachal Pradesh, Punjab)",National Highways Authority of India [NHAI],571.34,24.0,0,-15.657926978681703
+618908,,Odisha,National Highways Authority of India [NHAI],153.61,29.0,0,-32.50439424516633
+618909,,"Multi-States (Jharkhand, West Bengal)",National Highways Authority of India [NHAI],1652.4,32.0,1,7.230694747034618
+618910,,West Bengal,National Highways Authority of India [NHAI],557.55,18.0,1,0.9003676800287143
+618911,,Uttar Pradesh,National Highways Authority of India [NHAI],646.27,18.0,0,-1.3059557151035854
+618912,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],1051.73,24.0,1,6.222129253705804
+618913,,Odisha,National Highways Authority of India [NHAI],609.63,30.0,1,3.50048390007054
+618914,,Bihar,National Highways Authority of India [NHAI],4432.97,30.0,0,-40.7755973985838
+618915,,Bihar,NHAI,1637.29,24.0,0,-52.53131699332433
+618916,,Bihar,National Highways Authority of India [NHAI],1077.46,24.0,0,-25.779147253726354
+618917,,Bihar,National Highways Authority of India [NHAI],488.24,17.0,0,-14.046370637391442
+618919,,Andhra Pradesh,National Highways Authority of India [NHAI],887.28,24.0,1,2.902127851411054
+618920,,Andhra Pradesh,National Highways Authority of India [NHAI],1346.82,24.0,0,-6.4188235992931535
+618921,,Himachal Pradesh,National Highways Authority of India [NHAI],1703.48,36.0,1,55.49346044567592
+618922,,Himachal Pradesh,National Highways Authority of India [NHAI],1956.26,36.0,1,47.25649964728614
+618923,,Uttar Pradesh,National Highways Authority of India [NHAI],2158.2,24.0,1,18.298582151793166
+618924,,Uttar Pradesh,National Highways Authority of India [NHAI],188.87,18.0,0,-47.47710065124159
+618925,,Uttar Pradesh,National Highways Authority of India [NHAI],300.58,18.0,1,11.278195488721817
+618926,,Bihar,National Highways Authority of India [NHAI],1431.36,24.0,1,34.63000223563604
+618927,,Uttar Pradesh,National Highways Authority of India [NHAI],2006.82,24.0,0,-5.818658374941449
+618928,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],936.12,18.0,0,-23.353843524334486
+618929,,Uttar Pradesh,National Highways Authority of India [NHAI],1841.92,24.0,1,0.08795170257122409
+618930,,Gujarat,National Highways Authority of India [NHAI],1188.46,24.0,0,-24.44003163758141
+618931,,Gujarat,National Highways Authority of India [NHAI],764.02,24.0,0,-25.792518520457573
+618932,,Madhya Pradesh,National Highways Authority of India [NHAI],1534.7,23.0,0,-4.041180686779174
+618933,,Madhya Pradesh,National Highways Authority of India [NHAI],1430.56,24.0,0,0.0
+618934,,Assam,National Highways Authority of India [NHAI],5729.47,48.0,0,0.0
+618935,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],1183.7,24.0,1,0.5609529441581375
+618936,,Haryana,National Highways Authority of India [NHAI],1269.5,24.0,0,-27.57542339503742
+618937,,Maharashtra,National Highways Authority of India [NHAI],1166.96,24.0,1,22.782271885925816
+618938,,"Multi-States (Maharashtra, Telangana)",National Highways Authority of India [NHAI],1013.33,24.0,1,25.786269033779725
+618939,,Maharashtra,National Highways Authority of India [NHAI],191.31,24.0,0,-43.67257331033401
+618941,,"Multi-States (Maharashtra, Telangana)",National Highways Authority of India [NHAI],968.05,24.0,1,22.637260472083064
+618942,,"Multi-States (Goa, Karnataka)",National Highways Authority of India [NHAI],226.76,18.0,0,-34.09772446639619
+618943,,Tamil Nadu,National Highways Authority of India [NHAI],861.23,36.0,1,18.417844246020227
+618944,,Telangana,National Highways Authority of India [NHAI],958.86,24.0,1,27.07694553949482
+618945,,Telangana,National Highways Authority of India [NHAI],1149.17,28.0,1,39.83918828371781
+618946,,Jharkhand,National Highways Authority of India [NHAI],1479.72,24.0,1,5.978158029897551
+618947,,Jharkhand,National Highways Authority of India [NHAI],1504.8,19.0,1,0.2266081871345084
+618948,,"Multi-States (Jharkhand, West Bengal)",National Highways Authority of India [NHAI],782.18,23.0,0,0.0
+618949,,Jharkhand,National Highways Authority of India [NHAI],1444.94,24.0,1,7.531108558140817
+618950,,Jharkhand,National Highways Authority of India [NHAI],1565.47,24.0,0,0.0
+618951,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1125.78,23.0,1,5.398923413100248
+618952,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1954.77,47.0,1,1.1888866720892999
+618953,,Bihar,NHAI,1199.58,42.0,1,2.0307107487620777
+618954,,Bihar,NHAI,1473.2,30.0,1,15.60005430355688
+618955,,Bihar,NHAI,638.29,24.0,1,67.24529602531766
+618956,,Bihar,NHAI,498.97,30.0,0,-23.78299296550895
+618957,,Chhattisgarh,National Highways Authority of India [NHAI],1002.33,24.0,1,30.14376502748595
+618958,,Assam,National Highways Authority of India [NHAI],1200.14,61.0,0,0.0
+618959,,Uttar Pradesh,National Highways Authority of India [NHAI],1017.99,15.0,0,-58.00155207811471
+618960,,Uttar Pradesh,National Highways Authority of India [NHAI],1377.51,30.0,0,-26.852073669156667
+618961,,Uttar Pradesh,National Highways Authority of India [NHAI],775.94,24.0,0,-35.69477021419182
+618962,,Madhya Pradesh,National Highways Authority of India [NHAI],1102.97,24.0,0,-30.16945157166559
+618963,,Madhya Pradesh,National Highways Authority of India [NHAI],784.14,24.0,1,6.695232994108196
+618964,,Madhya Pradesh,National Highways Authority of India [NHAI],1425.98,24.0,0,0.0
+618966,,Madhya Pradesh,National Highways Authority of India [NHAI],1123.17,24.0,0,-1.7762226555196492
+618967,,Jammu and Kashmir,National Highways Authority of India [NHAI],295.06,24.0,0,0.0
+618968,,Uttar Pradesh,National Highways Authority of India [NHAI],1428.19,24.0,1,0.7814086361058301
+618969,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],2155.95,24.0,1,21.16700294533734
+618970,,Uttar Pradesh,National Highways Authority of India [NHAI],1335.45,24.0,0,-0.005241678834844909
+618971,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],3626.24,48.0,0,0.0
+618972,,Gujarat,Western Railway (WR) - II,1456.77,36.0,0,0.0
+618976,,Madhya Pradesh,National Thermal Power Corporation [NTPC],20446.0,58.0,0,0.0
+618977,,Rajasthan,Airport Authority of India [AAI],1507.0,24.0,0,0.0
+618978,,"Multi-States (Chhattisgarh, Maharashtra)",South Eastern Central Railway,2222.53,60.0,0,0.0
+618981,,(-) (10776) Rajasthan,NLC India Limited [NLCIL],4147.07,30.0,0,0.0
+618982,,Odisha,NLC India Limited [NLCIL],522.45,37.0,0,0.0
+618985,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],9857.85,60.0,0,0.0
+618986,,Assam,Northeast Frontier Railway [NFR],3633.58,45.0,0,0.0
+618991,,Gujarat,NLC India Limited [NLCIL],1221.41,33.0,0,0.0
+618992,,Gujarat,NLC India Limited [NLCIL],480.68,32.0,0,0.0
+618995,,Odisha,Indian Railway,2864.51,60.0,0,0.0
+619003,,Himachal Pradesh,National Highways Authority of India [NHAI],881.74,30.0,1,72.33311406990723
+619004,,West Bengal,MoRTH,560.79,24.0,0,0.0
+619005,,Jharkhand,MoRTH,235.42,24.0,0,-15.385268881148587
+619007,,Madhya Pradesh,MoRTH,461.23,24.0,0,0.0
+619008,,Maharashtra,MoRTH,157.69,18.0,0,0.0
+619009,,(-) (12154) Telangana,MoRTH,690.33,23.0,0,0.0
+619010,,Mizoram,NHIDCL,500.88,18.0,0,0.0
+619013,,Assam,NHIDCL,508.76,12.0,1,6.704536520166683
+619014,,(-) (-) Arunachal Pradesh,NHIDCL,316.73,24.0,0,0.0
+619022,,Haryana,Gurugram Metro Rail Limited (GMRL,5452.72,35.0,0,0.0
+619024,,Madhya Pradesh,Adani Transmission Limited,3125.32,25.0,0,0.0
+619025,,"Multi-States (Madhya Pradesh, Rajasthan, Uttar Pradesh)",Adani Transmission Limited,25000.0,54.0,0,0.0
+619026,,Gujarat,Adani Transmission Limited,19000.0,48.0,0,0.0
+619027,,Maharashtra,Adani Transmission Limited,2000.0,32.0,0,0.0
+619028,,Kerala,Power Grid Corporation of India Limited [POWERGRID],173.14,24.0,0,0.0
+619029,,Gujarat,Power Grid Corporation of India Limited [POWERGRID],319.42,18.0,0,0.0
+619030,,"Multi-States (Andhra Pradesh, Odisha)",Power Grid Corporation of India Limited [POWERGRID],2722.5,30.0,0,0.0
+619031,,Delhi,Delhi Metro Rail Corporation Limited [DMRC],12014.91,35.0,0,0.0
+619032,,Madhya Pradesh,Northern Coalfields Limited [NCL],25560.48,85.0,0,0.0
+619033,,Odisha,NIT Rourkela,198.97,29.0,0,0.0
+619038,,Jammu and Kashmir,NHIDCL,497.09,18.0,0,0.0
+619039,,(-) (-) Chhattisgarh,MoRTH,307.96,24.0,0,0.0
+619042,,Maharashtra,MoRTH,163.51,23.0,0,0.0
+619043,,(-) (-) Maharashtra,NHAI,341.63,6.0,0,0.0
+619045,,Tamil Nadu,National Highways Authority of India [NHAI],1205.4,30.0,1,0.39903766384602163
+619049,,Gujarat,Adani Transmission Limited,4500.0,24.0,0,0.0
+619051,,Bihar,National Thermal Power Corporation [NTPC],29948.0,64.0,0,0.0
+619052,,Uttar Pradesh,Uttar Pradesh metro rail corporation [UPMRC],5801.05,59.0,0,0.0
+619053,,Madhya Pradesh,SECL - CIL,1604.69,58.0,0,0.0
+619054,,Gujarat,Airport Authority of India [AAI],363.1,18.0,0,0.0
+619055,,Maharashtra,Western Coalfields Limited [WCL],444.42,79.0,0,0.0
+619056,,(-) (-) Odisha,National Thermal Power Corporation [NTPC],11131.0,62.0,0,0.0
+619057,,Assam,NHIDCL,574.26,30.0,0,0.0
+619059,,Nagaland,NHIDCL,323.98,24.0,0,0.0
+619060,,Assam,NHIDCL,344.71,11.0,1,79.77430303733576
+619061,,(-) (-) Gujarat,MoRTH,705.09,24.0,0,0.0
+619063,,Rajasthan,National Highways Authority of India [NHAI],1636.15,24.0,1,32.65226293432752
+619064,,"Multi-States (Dadra & Nagar Haveli and Daman & Diu, Gujarat, Maharashtra)",National Highways Authority of India [NHAI],1909.74,24.0,1,38.87963806591472
+619065,,Karnataka,NHAI,1745.0,24.0,0,-0.8808022922636041
+619066,,"Multi-States (Jammu and Kashmir, Punjab)",National Highways Authority of India [NHAI],3044.02,24.0,1,21.80964645435969
+619067,,Gujarat,National Highways Authority of India [NHAI],356.6,24.0,1,29.84576556365674
+619068,,"Multi-States (Haryana, Uttar Pradesh)",National Highways Authority of India [NHAI],2920.69,24.0,1,19.347482957794217
+619069,,Maharashtra,National Highways Authority of India [NHAI],361.72,139.0,1,17.63518743779718
+619070,,Karnataka,National Highways Authority of India [NHAI],839.0,30.0,0,0.0
+619071,,Karnataka,National Highways Authority of India [NHAI],2032.15,36.0,0,-18.10643899318456
+619072,,Karnataka,National Highways Authority of India [NHAI],1181.68,24.0,1,9.823302416897969
+619073,,Karnataka,National Highways Authority of India [NHAI],1317.74,24.0,1,40.12779455734818
+619074,,Tamil Nadu,National Highways Authority of India [NHAI],1673.17,30.0,0,-53.27790959675347
+619075,,Odisha,National Highways Authority of India [NHAI],639.3,30.0,0,-1.0026591584545548
+619076,,Andhra Pradesh,National Highways Authority of India [NHAI],1581.24,24.0,1,19.12865852116061
+619077,,"Multi-States (Andhra Pradesh, Tamil Nadu)",National Highways Authority of India [NHAI],464.62,24.0,1,1.6680297877835653
+619078,,"Multi-States (Bihar, Jharkhand)",National Highways Authority of India [NHAI],1772.7,29.0,0,-4.7120212105827255
+619080,,Haryana,National Highways Authority of India [NHAI],1093.35,24.0,1,12.07847441349981
+619083,,Tamil Nadu,National Highways Authority of India [NHAI],255.53,30.0,1,54.74895315618519
+619084,,Tamil Nadu,National Highways Authority of India [NHAI],461.54,30.0,1,11.589461368462093
+619086,,Tamil Nadu,National Highways Authority of India [NHAI],852.0,30.0,0,-77.10893597235918
+619087,,Gujarat,National Highways Authority of India [NHAI],2070.44,24.0,0,-32.85050520662275
+619089,,Assam,NHAI,1909.98,36.0,1,43.75752625681943
+619090,,Delhi,National Highways Authority of India [NHAI],2067.67,24.0,1,29.141497434310104
+619092,,Haryana,National Highways Authority of India [NHAI],994.22,24.0,1,61.616141296694884
+619093,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],609.32,24.0,0,-25.434911048381814
+619094,,Tamil Nadu,National Highways Authority of India [NHAI],1243.57,24.0,1,2.2950055083348717
+619095,,Maharashtra,National Highways Authority of India [NHAI],546.44,18.0,0,-13.604421345435917
+619096,,Karnataka,National Highways Authority of India [NHAI],1644.92,29.0,1,21.03871312890596
+619097,,"Multi-States (Kerala, Puducherry)",National Highways Authority of India [NHAI],1181.12,29.0,1,33.19391763749663
+619098,,Kerala,National Highways Authority of India [NHAI],1424.77,24.0,1,50.14212820314857
+619099,,Punjab,National Highways Authority of India [NHAI],1801.37,24.0,1,20.6143102194441
+619100,,Madhya Pradesh,National Highways Authority of India [NHAI],866.0,24.0,1,36.840646651270205
+619101,,"Multi-States (Madhya Pradesh, Maharashtra)",National Highways Authority of India [NHAI],784.35,24.0,0,-15.915088927137125
+619102,,(-) (12087) Andhra Pradesh,National Highways Authority of India [NHAI],1500.11,24.0,0,0.0
+619103,,Chhattisgarh,National Highways Authority of India [NHAI],1096.52,24.0,1,6.916426512968292
+619104,,"Multi-States (Jharkhand, West Bengal)",National Highways Authority of India [NHAI],1139.65,24.0,1,1.329355503882759
+619105,,Punjab,National Highways Authority of India [NHAI],1555.13,24.0,1,0.6128105045880391
+619106,,Karnataka,National Highways Authority of India [NHAI],1141.88,24.0,0,-23.92808351140226
+619107,,Karnataka,National Highways Authority of India [NHAI],1311.41,24.0,0,-14.340290221974833
+619108,,Karnataka,National Highways Authority of India [NHAI],1452.43,24.0,0,-13.486364230978436
+619109,,Odisha,National Highways Authority of India [NHAI],1101.76,24.0,1,24.748584083647987
+619112,,Andhra Pradesh,National Highways Authority of India [NHAI],1012.57,24.0,0,0.0
+619113,,Tamil Nadu,National Highways Authority of India [NHAI],555.8,30.0,0,0.0
+619114,,Madhya Pradesh,National Highways Authority of India [NHAI],1081.51,24.0,1,6.021211084502235
+619115,,Karnataka,National Highways Authority of India [NHAI],796.77,24.0,0,0.0
+619117,,Karnataka,National Highways Authority of India [NHAI],1021.57,24.0,1,6.8355570347602255
+619118,,Odisha,National Highways Authority of India [NHAI],2510.04,29.0,1,4.895141113289027
+619119,,Odisha,National Highways Authority of India [NHAI],999.32,30.0,1,17.911179602129437
+619120,,Karnataka,National Highways Authority of India [NHAI],2919.8,30.0,1,40.8962942667306
+619121,,Karnataka,National Highways Authority of India [NHAI],2531.99,36.0,1,42.943692510633944
+619122,,"Multi-States (Delhi, Uttar Pradesh)",National Highways Authority of India [NHAI],1479.22,30.0,0,-0.16697989480942843
+619123,,Andhra Pradesh,National Highways Authority of India [NHAI],813.66,24.0,0,-16.647002433448854
+619124,,Andhra Pradesh,National Highways Authority of India [NHAI],747.29,24.0,0,-16.119578744530227
+619125,,Andhra Pradesh,National Highways Authority of India [NHAI],1103.9,24.0,0,-14.515807591267334
+619126,,Andhra Pradesh,National Highways Authority of India [NHAI],976.41,24.0,0,-18.19932200612447
+619127,,Bihar,NHAI,2185.75,24.0,0,-3.0785771474322297
+619128,,Telangana,National Highways Authority of India [NHAI],615.78,24.0,1,59.41407645587711
+619129,,Tamil Nadu,National Highways Authority of India [NHAI],1360.54,24.0,1,8.628926749672932
+619130,,Tamil Nadu,National Highways Authority of India [NHAI],1116.13,24.0,1,31.145117504233365
+619131,,Tamil Nadu,National Highways Authority of India [NHAI],837.61,24.0,0,-1.63321832356348
+619132,,Haryana,National Highways Authority of India [NHAI],1810.04,24.0,1,5.936885372698948
+619134,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],1641.66,24.0,1,16.028288439750003
+619136,,Bihar,National Highways Authority of India [NHAI],610.78,23.0,1,2.9257670519663392
+619137,,Gujarat,National Highways Authority of India [NHAI],1024.69,30.0,0,0.0
+619138,,Karnataka,National Highways Authority of India [NHAI],309.9,24.0,1,5.186341728328006
+619139,,Tamil Nadu,National Highways Authority of India [NHAI],1299.36,30.0,0,0.0
+619140,,Andhra Pradesh,National Highways Authority of India [NHAI],1398.84,24.0,0,-30.97280603928969
+619141,,Andhra Pradesh,National Highways Authority of India [NHAI],864.2,24.0,0,-2.2922934505901478
+619142,,Uttarakhand,National Highways Authority of India [NHAI],216.97,18.0,1,9.236299949301744
+619143,,"Multi-States (Andhra Pradesh, Telangana)",National Highways Authority of India [NHAI],826.01,24.0,1,4.427307175457931
+619144,,Karnataka,National Highways Authority of India [NHAI],1519.72,30.0,0,-74.50319795751848
+619145,,Gujarat,National Highways Authority of India [NHAI],877.71,30.0,1,28.363582504471868
+619146,,Gujarat,National Highways Authority of India [NHAI],750.53,30.0,0,0.0
+619147,,Gujarat,National Highways Authority of India [NHAI],603.08,18.0,1,4.213371360350196
+619148,,Gujarat,National Highways Authority of India [NHAI],1185.66,30.0,1,13.283740701381507
+619149,,Maharashtra,National Highways Authority of India [NHAI],1774.03,24.0,1,18.848610226433593
+619150,,Karnataka,National Highways Authority of India [NHAI],2082.69,24.0,1,37.3190441208245
+619152,,Bihar,National Highways Authority of India [NHAI],1182.94,30.0,0,0.0
+619153,,Himachal Pradesh,National Highways Authority of India [NHAI],1002.11,24.0,1,36.01700412130404
+619154,,"Multi-States (Bihar, Uttar Pradesh)",National Highways Authority of India [NHAI],1493.5,24.0,1,0.006026113157008245
+619155,,Uttarakhand,National Highways Authority of India [NHAI],1602.89,24.0,0,-11.167329011972123
+619156,,(-) (-) Tamil Nadu,National Highways Authority of India [NHAI],1853.16,24.0,0,0.0
+619157,,Odisha,National Highways Authority of India [NHAI],795.18,30.0,1,1.953016926985096
+619158,,Odisha,National Highways Authority of India [NHAI],789.0,30.0,1,15.032953105196453
+619160,,Andhra Pradesh,National Highways Authority of India [NHAI],166.52,18.0,0,-31.864040355512856
+619161,,Tamil Nadu,National Highways Authority of India [NHAI],1376.1,24.0,0,-9.3307172443863
+619162,,Uttar Pradesh,National Highways Authority of India [NHAI],578.02,18.0,0,-1.9238088647451654
+619163,,Maharashtra,National Highways Authority of India [NHAI],1471.32,24.0,0,-11.815240736209658
+619164,,Karnataka,National Highways Authority of India [NHAI],1214.3,30.0,0,-1.5284526064399198
+619165,,Telangana,National Highways Authority of India [NHAI],177.18,107.0,0,-89.47398126199346
+619166,,Bihar,NHAI,768.35,24.0,1,26.038914557167946
+619167,,Chhattisgarh,National Highways Authority of India [NHAI],865.1,24.0,1,47.41185990058952
+619168,,Uttar Pradesh,National Highways Authority of India [NHAI],1602.48,24.0,0,-6.523638360541159
+619171,,Chhattisgarh,SECL - CIL,2415.91,78.0,0,0.0
+619172,,Chhattisgarh,SECL - CIL,1859.19,51.0,0,0.0
+619181,,Odisha,National Highways Authority of India [NHAI],882.45,23.0,1,14.445011048784623
+619183,,Dadra & Nagar Haveli and Daman & Diu,MoRTH,198.06,24.0,1,20.958295466020395
+619184,,Andaman & Nicobar,NHIDCL,207.45,18.0,1,81.47987466859486
+619185,,Andaman & Nicobar,NHIDCL,183.56,17.0,1,81.4774460666812
+619186,,Andaman & Nicobar,NHIDCL,262.96,21.0,1,41.420748402798914
+619187,,West Bengal,NHIDCL,152.27,24.0,0,0.0
+619191,,Uttar Pradesh,MinistryofPetroleumNaturalGas,202.0,24.0,0,0.0
+619193,,Telangana,MoRTH,295.47,24.0,1,13.317764916912026
+619194,,(-) (-) Uttar Pradesh,MoRTH,168.05,17.0,0,0.0
+619196,,Haryana,IOCL,359.0,22.0,0,0.0
+619197,,Gujarat,National Highways Authority of India [NHAI],1185.69,24.0,1,6.205669272744134
+619198,,Maharashtra,National Highways Authority of India [NHAI],1711.38,24.0,1,39.566899227523976
+619199,,"Multi-States (Andhra Pradesh, Karnataka)",National Highways Authority of India [NHAI],1410.01,24.0,0,0.0
+619200,,Punjab,National Highways Authority of India [NHAI],1641.75,23.0,1,18.879244708390438
+619201,,Haryana,National Highways Authority of India [NHAI],1741.45,24.0,1,17.232191564500845
+619202,,Delhi,National Highways Authority of India [NHAI],2144.67,24.0,1,83.22166114134109
+619203,,Maharashtra,National Highways Authority of India [NHAI],1252.92,30.0,1,9.445934297481076
+619204,,(-) (-) Maharashtra,NHAI,372.03,18.0,0,0.0
+619205,,"Multi-States (Karnataka, Kerala)",National Highways Authority of India [NHAI],1981.07,30.0,1,35.35513636570137
+619206,,Kerala,National Highways Authority of India [NHAI],3041.65,27.0,1,27.15664195420248
+619207,,Kerala,National Highways Authority of India [NHAI],2641.37,29.0,1,25.278170040547142
+619208,,Kerala,National Highways Authority of India [NHAI],3635.64,30.0,0,-3.0066233180402886
+619209,,Maharashtra,National Highways Authority of India [NHAI],1709.56,24.0,1,19.885233627366123
+619210,,Maharashtra,National Highways Authority of India [NHAI],1411.71,24.0,0,-3.7564372286092733
+619211,,Karnataka,National Highways Authority of India [NHAI],2104.7,30.0,0,-1.8468190240889388
+619212,,"Multi-States (Andhra Pradesh, Telangana)",National Highways Authority of India [NHAI],1227.57,24.0,1,7.193072492810998
+619213,,Odisha,National Highways Authority of India [NHAI],791.17,24.0,1,35.32237066622852
+619214,,Karnataka,National Highways Authority of India [NHAI],688.0,24.0,0,-0.5029069767441914
+619215,,Odisha,National Highways Authority of India [NHAI],991.41,30.0,1,17.894715607064683
+619216,,"Multi-States (Haryana, Punjab)",National Highways Authority of India [NHAI],1491.72,24.0,0,-24.727160593140812
+619217,,"Multi-States (Uttar Pradesh, Uttarakhand)",National Highways Authority of India [NHAI],1659.12,60.0,0,-2.207796904383039
+619218,,Karnataka,National Highways Authority of India [NHAI],1364.14,24.0,1,24.042986790212133
+619219,,(-) (11908) Karnataka,National Highways Authority of India [NHAI],1505.85,24.0,1,32.14397184314508
+619220,,Karnataka,National Highways Authority of India [NHAI],1444.5,24.0,1,27.020422291450323
+619221,,(-) (-) Uttarakhand,NHAI,252.97,15.0,0,0.0
+619222,,Tamil Nadu,National Highways Authority of India [NHAI],467.99,24.0,1,49.507468108292905
+619223,,Maharashtra,Ministry of Petroleum & Natural Gas,13626.0,52.0,0,0.0
+619224,,Maharashtra,Ministry of Petroleum & Natural Gas,844.0,33.0,0,0.0
+619225,,Maharashtra,Ministry of Petroleum & Natural Gas,260.2,24.0,0,0.0
+619226,,Andhra Pradesh,Ministry of Petroleum and Natural Gas,258.34,30.0,0,0.0
+619227,,(-) (11952) Maharashtra,Power Grid Corporation of India Limited [POWERGRID],1420.0,24.0,0,0.0
+619228,,(-) (11953) Karnataka,Power Grid Corporation of India Limited [POWERGRID],1111.0,24.0,0,0.0
+619229,,(-) (12116) West Bengal,Syama Prasad Mookerjee Port Kolkata,832.25,18.0,0,0.0
+619248,,(-) (-) Arunachal Pradesh,NHIDCL,441.41,24.0,0,0.0
+619251,,Rajasthan,MoRTH,170.49,18.0,0,0.0
+619253,,(-) (12153) Telangana,MoRTH,516.17,24.0,0,0.0
+619265,,(-) (-) Telangana,MoRTH,675.45,24.0,0,0.0
+619270,,(-) (-) Rajasthan,NHAI,910.91,30.0,0,0.0
+619271,,(-) (-) Rajasthan,NHAI,363.89,30.0,0,0.0
+619289,,Bihar,NHAI,1659.81,24.0,1,2.2201336297528114
+619291,,"Multi-States (Himachal Pradesh, Uttarakhand)",NHAI,524.54,24.0,0,0.0
+619292,,Uttarakhand,NHAI,1092.9,24.0,0,-1.866593466922874
+619293,,Uttarakhand,NHAI,715.97,24.0,0,-52.91562495635292
+619294,,Uttarakhand,NHAI,720.67,30.0,0,-46.13484673983931
+619295,,Uttarakhand,NHAI,742.43,23.0,0,-10.440041485392562
+619297,,(-) (-) Gujarat,NHAI,647.2,24.0,0,0.0
+619298,,(-) (-) Maharashtra,NHAI,1039.0,36.0,0,0.0
+619299,,(-) (-) Maharashtra,NHAI,357.99,24.0,0,0.0
+619300,,(-) (-) Maharashtra,NHAI,300.68,18.0,0,0.0
+619301,,Bihar,NHAI,537.88,59.0,1,17.85342455566297
+619305,,Bihar,NHAI,1769.5,24.0,1,14.415936705283974
+619306,,Bihar,NHAI,1020.84,24.0,1,21.04247482465421
+619307,,"Multi-States (Bihar, Jharkhand)",NHAI,1376.56,24.0,1,7.629162550124949
+619308,,Uttar Pradesh,NHAI,836.24,24.0,0,-0.05979144743135942
+619311,,(-) (12136) Arunachal Pradesh,THDC India Limited,14105.83,78.0,0,0.0
+619312,,(-) (-) Uttar Pradesh,MinistryofPetroleumNaturalGas,186.0,24.0,0,0.0
+619313,,(-) (-) Maharashtra,MinistryofPetroleumNaturalGas,483.14,47.0,0,0.0
+619314,,(-) (12147) Offshore,Ministry of Petroleum & Natural Gas,6175.0,21.0,0,-7.615200478755237
+619316,,(-) (-) Assam,Ministry of Petroleum & Natural Gas,495.59,24.0,0,0.0
+619317,,(-) (-) Bihar,NHAI,2723.39,30.0,1,6.7338868101887845
+619318,,(-) (12155) Punjab,National Highways Authority of India [NHAI],1368.91,24.0,1,0.9912996471645277
+619320,,(-) (-) Bihar,NHAI,2290.72,30.0,1,0.8896766082279856
+619321,,(-) (-) Mizoram,MoRTH,170.96,24.0,0,0.0
+619326,,(-) (12527) Andhra Pradesh,South Central Railway [SCR] - II,9889.24,69.0,0,0.0
+619328,,(-) (12528) Maharashtra,Ministry of Petroleum & Natural Gas,3713.4,16.0,1,5.240480422254535
+619341,,(-) (-) Telangana,National Thermal Power Corporation [NTPC],29344.85,70.0,0,0.0
+619347,,(-) (-) Chhattisgarh,MoRTH,201.16,24.0,0,0.0
+635651,,(-) (-) Odisha,Steel Authority of India Limited (SAIL,155.26,25.0,0,0.0
+660056,,(-) (-) PAN India,Department of Telecommunications,765.0,36.0,0,0.0
+665021,,(-) (-) PAN India,Department of Telecommunications,1821.0,36.0,0,0.0
+701091,,Uttar Pradesh,Adani Airport Holdings Limited,3100.0,90.0,0,0.0
+701101,,Bihar,Airport Authority of India [AAI],1216.9,28.0,0,0.0
+701105,,Goa,Airport Authority of India [AAI],255.69,45.0,0,0.0
+701107,,Andhra Pradesh,Airport Authority of India [AAI],611.8,39.0,1,34.73030402092188
+701113,,Uttar Pradesh,Airport Authority of India [AAI],2869.65,0.0,0,0.0
+701121,,Andhra Pradesh,Airport Authority of India [AAI],347.15,4.0,0,0.0
+701122,,Uttar Pradesh,Airport Authority of India [AAI],579.0,24.0,0,0.0
+701126,,Gujarat,Airport Authority of India [AAI],1305.0,0.0,1,18.850574712643677
+701127,,Rajasthan,Airport Authority of India [AAI],480.0,11.0,0,0.0
+701128,,Rajasthan,Airport Authority of India [AAI],887.0,7.0,0,0.0
+701167,,Jammu and Kashmir,Central Public Works Department [CPWD],1828.0,11.0,1,40.6012035010941
+701168,,Tamil Nadu,PMSSY AND Institute of NATIONAL Importance,1264.0,44.0,1,59.929588607594944
+701170,,Gujarat,PMSSY AND Institute of NATIONAL Importance,1195.0,86.0,0,0.0
+701171,,Telangana,Ministry of Health & Family Welfare,1028.0,39.0,1,32.87451361867705
+701172,,Bihar,PMSSY AND Institute of NATIONAL Importance,1264.0,48.0,0,0.0
+701173,,Haryana,Ministry of Health & Family Welfare,1299.0,46.0,1,26.745958429561206
+701228,,"Multi-States (Karnataka, Kerala, Tamil Nadu)",Ministry of Petroleum & Natural Gas,2915.0,156.0,1,102.71012006861065
+701263,,"Multi-States (Arunachal Pradesh, Gujarat, Rajasthan)",MinistryofPetroleumNaturalGas,43129.0,41.0,1,84.23566509773006
+701269,,Karnataka,Ministry of Petroleum & Natural Gas,854.0,32.0,0,0.0
+701289,,Haryana,Ministry of Petroleum & Natural Gas,34627.0,15.0,1,4.61489589049008
+701324,,Bihar,Ministry of Petroleum & Natural Gas,14810.0,40.0,1,12.923700202565833
+701329,,Gujarat,Ministry of Petroleum & Natural Gas,18936.0,16.0,0,-5.867131389945078
+701330,,"Multi-States (Gujarat, Haryana, Punjab, Rajasthan)",Ministry of Petroleum & Natural Gas,7392.0,18.0,0,0.0
+701338,,"Multi-States (Karnataka, Maharashtra)",Ministry of Petroleum & Natural Gas,5535.0,0.0,0,0.0
+701341,,"Multi-States (Andhra Pradesh, Telangana)",Ministry of Petroleum & Natural Gas,1932.0,5.0,1,14.285714285714285
+701343,,"Multi-States (Andhra Pradesh, Odisha)",Ministry of Petroleum & Natural Gas,2658.34,41.0,0,0.0
+701344,,"Multi-States (Odisha, West Bengal)",Ministry of Petroleum & Natural Gas,1030.65,37.0,1,9.154417115412594
+701346,,"Multi-States (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, West Bengal)",Ministry of Petroleum & Natural Gas,9265.0,24.0,0,0.0
+701349,,"Multi-States (Assam, Bihar, Jharkhand, Odisha, West Bengal)",Ministry of Petroleum & Natural Gas,10228.0,14.0,1,21.3042628079781
+701350,,"Multi-States (Assam, West Bengal)",Ministry of Petroleum & Natural Gas,860.0,10.0,0,0.0
+701354,,"Multi-States (Chhattisgarh, Madhya Pradesh, Maharashtra, Odisha)",Ministry of Petroleum & Natural Gas,7844.25,28.0,0,0.0
+701370,,Assam,"Department of Water Resources, River Development & GR",256.16,27.0,0,0.0
+701371,,Bihar,Irrigation and CAD-TG,691.15,60.0,0,0.0
+701372,,Gujarat,"Narmada and Water Resources, Water Supply and Kalpsar Department-GJ",20718.17,63.0,1,61.2714829543343
+701376,,Jharkhand,Department of Water Resources-JH,3807.77,64.0,1,151.57979604860589
+701377,,Karnataka,Water Resources-KA,770.16,63.0,1,108.53718707800977
+701383,,Maharashtra,Department of water resources-MH - II,1058.99,75.0,1,66.05539240219454
+701384,,Maharashtra,Department of water resources-MH - II,368.34,61.0,1,76.35879893576588
+701386,,Maharashtra,Department of water resources-MH - II,7196.47,78.0,1,77.44949954630535
+701388,,Maharashtra,Department of water resources-MH - II,1352.53,66.0,1,98.54716716080235
+701390,,Maharashtra,Department of water resources-MH - II,333.87,60.0,1,83.0053613681972
+701391,,Maharashtra,Department of water resources-MH - II,210.45,61.0,1,599.52007602756
+701392,,Maharashtra,Department of water resources-MH - II,973.62,48.0,1,185.00852488650605
+701395,,Uttar Pradesh,"Department of Water Resources, River Development & GR",219.9,216.0,0,0.0
+701396,,Maharashtra,Department of water resources-MH - II,255.97,78.0,1,478.4662265109192
+701398,,Maharashtra,Department of water resources-MH - II,211.46,63.0,1,269.7389577225007
+701399,,Chhattisgarh,"Department of Water Resources, River Development & GR",382.29,192.0,0,0.0
+701400,,Manipur,Water Resources Department-MN,1449.44,75.0,1,25.72027817639916
+701402,,Odisha,"Department of Water Resources, River Development & GR",3055.88,75.0,1,129.82545126117515
+701404,,Odisha,Irrigation and CAD-TG,989.43,60.0,1,132.5864386566003
+701405,,Telangana,Irrigation and CAD-TG,8200.71,72.0,1,79.61859399978785
+701406,,Telangana,Irrigation and CAD-TG,1402.0,75.0,0,0.0
+701408,,Uttar Pradesh,Irrigation & Water Resources-UP,1060.67,60.0,1,316.45469373132073
+701410,,Punjab,Department of Water Resources-PB,1441.26,48.0,1,70.8338537113359
+701411,,Punjab,Department of Water Resources-PB,2285.81,40.0,1,18.806899961064126
+701412,,"Multi-States (Bihar, Jharkhand)","Department of Water Resources, River Development & GR",1622.27,60.0,1,49.83695685675013
+701415,,Andhra Pradesh,Water Resources-AP,10151.04,47.0,1,447.2234372044637
+701530,,"Multi-States (Madhya Pradesh, Uttar Pradesh)","Department of Water Resources, River Development, ",21030.0,84.0,0,0.0
+701564,,Kerala,Cochin Shipyard,1799.0,55.0,0,0.0
+701565,,"Multi-States (Bihar, Jharkhand, Uttar Pradesh, West Bengal)",Inland Waterways Authority of India [IWAI],5369.18,24.0,0,-5.737002670798905
+701568,,Gujarat,Deendayal Port Trust [DPT],100.0,24.0,0,0.0
+701570,,Gujarat,Deendayal Port Trust [DPT],171.0,24.0,1,23.748538011695913
+701574,,Odisha,Paradip Port Trust [PPT],3004.63,10.0,0,0.0
+701576,,West Bengal,"Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",298.26,4.0,0,0.0
+701577,,West Bengal,"Haldia Dock Complex, Syama Prasad Mookerjee Port Authority",253.65,36.0,0,0.0
+701586,,Maharashtra,Mumbai Port Trust [MPT],900.0,0.0,0,0.0
+701593,,PAN India,Department of Telecommunications [DoT],28466.0,24.0,0,-31.174032178739548
+701597,,"Multi-States (Arunachal Pradesh, Assam)",Department of Telecommunications [DoT],1255.49,29.0,0,-77.96716819727756
+701598,,Meghalaya,Department of Telecommunications [DoT],971.96,36.0,0,-81.43339232067163
+701599,,"Multi-States (Andhra Pradesh, Bihar, Chhattisgarh, Jharkhand, Madhya Pradesh, Maharashtra, Odisha, Telangana, Uttar Pradesh, West Bengal)",Department of Telecommunications [DoT],1577.57,32.0,0,-61.67523469640016
+701600,,"Multi-States (Bihar, Gujarat, Himachal Pradesh, Jammu and Kashmir, Ladakh, Rajasthan, Uttar Pradesh)",Department of Telecommunications [DoT],336.89,46.0,0,0.0
+701602,,"Multi-States (Andhra Pradesh, Chhattisgarh, Jharkhand, Maharashtra, Odisha)",Department of Telecommunications [DoT],3685.0,24.0,0,-60.68900949796473
+701657,,Karnataka,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],1701.81,43.0,0,0.0
+701658,,Andhra Pradesh,National Industrial Corridor Development Corporation,2139.44,48.0,0,0.0
+701661,,(-) (-) Uttarakhand,National Industrial Corridor Development Corporation,1265.37,30.0,0,0.0
+701662,,(-) (-) Punjab,National Industrial Corridor Development Corporation,1367.72,30.0,0,0.0
+701668,,(-) (9941) Kerala,National Industrial Corridor Development Corporation,3805.0,42.0,0,0.0
+701719,,Gujarat,Ministry of Housing & Urban Affairs,539.0,73.0,0,0.0
+701745,,Maharashtra,Ministry of Housing & Urban Affairs,262.76,40.0,0,0.0
+701766,,Uttarakhand,Ministry of Housing & Urban Affairs,150.97,51.0,1,36.45095051997085
+701991,,Maharashtra,Ministry of Housing & Urban Affairs,600.0,36.0,1,20.616666666666674
+702355,,Dadra & Nagar Haveli and Daman & Diu,Ministry of Housing & Urban Affairs,210.0,27.0,0,0.0
+702522,,Bihar,"PMAY, Ministry of Housing and Urban Affairs",454.65,,0,0.0
+702524,,Chhattisgarh,"PMAY, Ministry of Housing and Urban Affairs",3797.69,,0,0.0
+702540,,Gujarat,"PMAY, Ministry of Housing and Urban Affairs",5477.4,,0,0.0
+702544,,Chandigarh,"PMAY, Ministry of Housing and Urban Affairs",285.85,,0,0.0
+702555,,Jharkhand,"PMAY, Ministry of Housing and Urban Affairs",212.74,,0,0.0
+702612,,Uttar Pradesh,"PMAY, Ministry of Housing and Urban Affairs",576.99,,0,0.0
+702625,,Madhya Pradesh,Madhya Pradesh Metro Rail Co Limited [MPMRCL],6941.4,67.0,0,0.0
+702626,,Madhya Pradesh,Madhya Pradesh Metro Rail Co Limited [MPMRCL],7500.8,73.0,0,0.0
+702627,,Bihar,Patna Metro Rail Corporation Ltd. [PMRCL],13365.77,40.0,0,0.0
+702628,,Uttar Pradesh,Uttar Pradesh metro rail corporation [UPMRC],11076.48,34.0,0,0.0
+702629,,Uttar Pradesh,Uttar Pradesh metro rail corporation [UPMRC],8379.62,37.0,0,0.0
+702630,,Gujarat,Gujarat Metro Rail Corporation Limited [GMRCL],12020.32,27.0,0,0.0
+702631,,Gujarat,Gujarat Metro Rail Corporation Limited [GMRCL],5384.17,21.0,0,0.0
+702632,,Delhi,Delhi Metro Rail Corporation Limited [DMRC],24948.65,12.0,0,0.0
+702633,,"Multi-States (Delhi, Uttar Pradesh)",National Capital Region Transport Corporation [NCRTC],30274.0,75.0,0,0.0
+702635,,Karnataka,Bengaluru Metro Rail,26405.14,66.0,1,16.246761047280945
+702637,,Maharashtra,Mumbai Metro Rail Corporation Limited [MMRC],23136.0,15.0,1,61.11687413554634
+702639,,Gujarat,Gujarat Metro Rail Corporation Limited [GMRCL],10773.0,89.0,0,0.0
+702658,,Maharashtra,Maharashtra Metro Rail Corporation Limited [MMRCL],6708.0,60.0,0,0.0
+702664,,Kerala,CSPCC Projects,1957.05,0.0,0,0.0
+702665,,Karnataka,Bengaluru Metro Rail,14788.1,0.0,0,0.0
+702668,,Tamil Nadu,Chennai Metro Rail Limited [CMRL],63246.0,105.0,0,0.0
+702674,,Andhra Pradesh,Ministry of Housing & Urban Affairs,172.22,56.0,0,0.0
+702682,,Assam,Ministry of Housing & Urban Affairs,186.8,38.0,0,0.0
+702699,,Bihar,Ministry of Housing & Urban Affairs,158.78,56.0,0,0.0
+702734,,Haryana,Ministry of Housing & Urban Affairs,278.01,70.0,0,0.0
+702735,,Haryana,Ministry of Housing & Urban Affairs,213.19,53.0,0,0.0
+702741,,Jharkhand,Ministry of Housing & Urban Affairs,216.55,51.0,0,0.0
+702742,,Jharkhand,Ministry of Housing & Urban Affairs,159.31,58.0,0,0.0
+702746,,Jharkhand,Ministry of Housing & Urban Affairs,278.28,51.0,0,0.0
+702760,,Karnataka,Ministry of Housing & Urban Affairs,162.73,81.0,0,0.0
+702764,,Karnataka,Ministry of Housing & Urban Affairs,174.96,62.0,0,0.0
+702793,,Madhya Pradesh,Ministry of Housing & Urban Affairs,287.17,64.0,0,0.0
+702798,,Madhya Pradesh,Ministry of Housing & Urban Affairs,362.31,63.0,0,0.0
+702808,,Madhya Pradesh,Ministry of Housing & Urban Affairs,191.56,87.0,1,12.700981415744405
+702810,,Madhya Pradesh,Ministry of Housing & Urban Affairs,402.01,64.0,1,8.977388622173587
+702833,,Maharashtra,Ministry of Housing & Urban Affairs,194.2,49.0,0,0.0
+702840,,Maharashtra,Ministry of Housing & Urban Affairs,204.55,55.0,0,0.0
+702842,,Maharashtra,Ministry of Housing & Urban Affairs,273.78,55.0,0,0.0
+702851,,Maharashtra,Ministry of Housing & Urban Affairs,235.95,68.0,0,0.0
+702854,,Maharashtra,Ministry of Housing & Urban Affairs,180.24,59.0,0,0.0
+702948,,Uttar Pradesh,Ministry of Housing & Urban Affairs,235.73,46.0,0,0.0
+702949,,Uttar Pradesh,Ministry of Housing & Urban Affairs,561.74,49.0,0,0.0
+702958,,(-) (-) Uttar Pradesh,Ministry of Housing & Urban Affairs,142.46,46.0,1,21.585006317562826
+703021,,Punjab,Ministry of Housing & Urban Affairs,258.53,36.0,1,3.1369666963215157
+703057,,Punjab,Ministry of Housing & Urban Affairs,287.0,38.0,0,0.0
+703585,,Karnataka,Karnataka Rail Infrastructure Development Company Limited [K-RIDE],314.0,18.0,1,117.62814390321554
+703586,,"Multi-States (Karnataka, Tamil Nadu)",Karnataka Rail Infrastructure Development Company Limited [K-RIDE],499.0,13.0,1,132.60477240826148
+704495,,"Multi-States (Bihar, Madhya Pradesh, Rajasthan, Uttar Pradesh)",Department of Telecommunications [DoT],421.65,45.0,0,-45.70378275821179
+705237,,"Multi-States (Gujarat, Haryana, Maharashtra, Rajasthan, Uttar Pradesh)",DFCCIL,51101.0,45.0,1,142.6664840218391
+705244,,Tamil Nadu,CPM/ICF,520.0,41.0,0,0.0
+705252,,Telangana,RVNL,385.0,77.0,0,0.0
+705253,,Andhra Pradesh,WPO/Patna,563.0,77.0,0,-0.404973357015981
+705298,,Delhi,RCIL,274.39,11.0,0,0.0
+705300,,Maharashtra,RCIL,227.59,8.0,0,0.0
+705356,,Maharashtra,Central Railways,2539.0,0.0,1,134.07847416166732
+705357,,Maharashtra,Central Railway [CR] - II,736.0,0.0,1,1192.9664933564413
+705358,,Odisha,East Coast Railway [ECoR] - II,3792.0,0.0,1,64.0817510548523
+705359,,Odisha,East Coast Railway [ECoR] - II,1928.0,24.0,1,135.83195020746888
+705362,,Offshore,East Central Railway [ECR] - I,819.0,48.0,0,0.0
+705363,,Bihar,East Central Railway [ECR] - I,735.0,3.0,0,0.0
+705364,,Bihar,East Central Railway [ECR] - I,614.0,27.0,1,125.43322475570034
+705366,,Bihar,East Central Railway [ECR] - I,2067.0,81.0,1,93.09772617319787
+705368,,Bihar,East Central Railway [ECR] - II,1605.0,34.0,1,63.305295950155774
+705373,,Bihar,East Central Railway [ECR] - II,1473.0,29.0,1,121.27291242362526
+705375,,"Multi-States (Bihar, Jharkhand)",East Central Railway [ECR] - II,1626.0,12.0,1,49.638991389913905
+705385,,"Multi-States (Bihar, Jharkhand)",Eastern Railway [ER] - I,2555.0,0.0,1,5.691976516634044
+705391,,Manipur,Northeast Frontier Railway [NFR],14323.0,228.0,1,52.80318369056762
+705392,,"Multi-States (Assam, Nagaland)",Northeast Frontier Railway [NFR],6663.0,9.0,1,129.77982890589823
+705394,,"(-) (1521) Multi-States (Assam, Meghalaya)",Northeast Frontier Railway [NFR],1304.62,56.0,1,9.77449372230996
+705396,,(-) (651) Meghalaya,Northeast Frontier Railway [NFR],8324.28,132.0,1,0.21623491761449637
+705400,,Bihar,Northeast Frontier Railway [NFR],2650.0,7.0,1,66.49056603773586
+705401,,"Multi-States (Arunachal Pradesh, Assam)",Northeast Frontier Railway [NFR],435.0,9.0,1,206.77011494252872
+705410,,"Multi-States (Himachal Pradesh, Punjab)",Northen Railway [NR],2018.0,13.0,1,101.98959365708622
+705419,,"Multi-States (Madhya Pradesh, Rajasthan)",North Central Railway,2913.0,11.0,1,35.49605217988328
+705424,,"Multi-States (Haryana, Himachal Pradesh)",Northen Railway [NR],1540.0,0.0,1,26.114935064935068
+705428,,"Multi-States (Himachal Pradesh, Punjab)",RVNL - II,13447.0,12.0,0,0.0
+705429,,Uttarakhand,RVNL - II,38953.0,15.0,0,0.0
+705432,,"Multi-States (Sikkim, West Bengal)",Indian Railway Construction International Limited [IRCON],7877.0,151.0,1,49.48647962422241
+705433,,Chhattisgarh,RVNL - II,1628.0,3.0,0,0.0
+705434,,Karnataka,South Western Railway [SWR] - II,2565.0,96.0,1,18.32280701754386
+705436,,Andhra Pradesh,South Central Railway [SCR] - II,2501.0,0.0,0,0.0
+705437,,Telangana,South Central Railway [SCR] - II,1160.0,9.0,1,139.74137931034483
+705444,,Chhattisgarh,Indian Railway Construction International Limited [IRCON],4970.0,45.0,1,49.869617706237435
+705450,,Bihar,Indian Railway Construction International Limited [IRCON],402.0,57.0,1,20.8955223880597
+705453,,"Multi-States (Gujarat, Madhya Pradesh)",Western Railway [WR] - II,1942.0,0.0,1,1921.0121253316377
+705454,,"Multi-States (Gujarat, Madhya Pradesh)",Western Railway [WR] - II,1794.0,0.0,1,11.128762541806026
+705457,,"Multi-States (Madhya Pradesh, Maharashtra)",Western Railway [WR] - II,5678.0,18.0,1,703.8925283018867
+705458,,Gujarat,Western Railway [WR] - II,844.0,69.0,1,109.77721749194016
+705464,,(-) (6110) Karnataka,South Western Railway [SWR] - II,1382.78,65.0,0,0.0
+705479,,Maharashtra,South East Central Railway,1886.0,0.0,0,-0.28579003181336693
+705480,,Madhya Pradesh,North Central Railway,8914.0,9.0,0,-0.0006730984967409769
+705481,,"Multi-States (Madhya Pradesh, Rajasthan)",West Central Railway [WCR] - II,3032.0,24.0,1,67.37335092348286
+705482,,Rajasthan,North Central Railway,747.0,96.0,0,0.0
+705489,,(-) (1508) Tamil Nadu,Ministry of Railways,601.43,58.0,1,241.41795387659414
+705490,,Karnataka,South Western Railway [SWR] - II,2842.0,9.0,1,29.070021111893034
+705491,,"Multi-States (Andhra Pradesh, Karnataka)",South Western Railway [SWR] - II,297.0,0.0,1,69.06734006734007
+705492,,Karnataka,South Western Railway [SWR] - II,825.0,6.0,1,26.442424242424256
+705493,,(-) (652) Karnataka,South Western Railway [SWR] - II,5174.0,62.0,0,-89.6923076923077
+705494,,"Multi-States (Andhra Pradesh, Karnataka)",South Western Railway [SWR] - II,2496.0,149.0,1,84.77564102564102
+705495,,Karnataka,South Western Railway [SWR] - II,1378.0,-2.0,1,24.12481857764877
+705496,,Karnataka,South Western Railway [SWR] - II,1876.0,105.0,0,-3.9973347547974414
+705497,,(-) (6638) Maharashtra,Central Railways,3445.34,164.0,1,16.989614958175387
+705498,,Maharashtra,Central Railway [CR] - II,793.0,0.0,1,76.00171524423313
+705500,,Maharashtra,Central Railway [CR] - II,540.0,0.0,1,66.57160845894596
+705502,,Maharashtra,Central Railway [CR] - II,1385.0,2.0,1,87.98818533710786
+705503,,Maharashtra,Central Railway [CR] - II,3627.0,6.0,0,0.0
+705504,,Maharashtra,Central Railway [CR] - II,2081.0,0.0,1,70.79667702892945
+705505,,Maharashtra,Central Railway [CR] - II,638.0,2.0,1,87.25448702876399
+705506,,Maharashtra,Central Railway [CR] - II,1035.0,8.0,1,80.64840217937322
+705507,,"Multi-States (Madhya Pradesh, Maharashtra)",Central Railway [CR] - II,2450.0,0.0,1,2.421721614263378
+705510,,Odisha,East Coast Railway [ECoR] - II,1284.0,14.0,1,24.610591900311526
+705511,,"Multi-States (Chhattisgarh, Odisha)",East Coast Railway [ECoR] - II,1547.0,33.0,1,0.024563671622502208
+705512,,"Multi-States (Andhra Pradesh, Odisha)",East Coast Railway [ECoR] - II,2500.0,72.0,1,43.21639999999999
+705513,,Odisha,East Coast Railway [ECoR] - II,2362.0,3.0,1,4.240897544453856
+705514,,Odisha,East Coast Railway [ECoR] - II,1000.0,88.0,0,-7.1460000000000035
+705515,,Odisha,East Coast Railway [ECoR] - II,1173.0,0.0,1,158.7212276214834
+705520,,"Multi-States (Andhra Pradesh, Odisha)",RVNL,4803.16,99.0,0,0.0
+705526,,Bihar,East Central Railway [ECR] - I,519.0,7.0,1,87.58381502890172
+705527,,Bihar,East Central Railway [ECR] - II,1216.0,0.0,1,28.188322368421055
+705528,,Bihar,East Central Railway [ECR] - II,1586.0,14.0,1,10.015132408575028
+705562,,"Multi-States (Bihar, Uttar Pradesh)",North Eastern Railway [NER],963.0,13.0,1,4.967808930425756
+705566,,Uttar Pradesh,North Eastern Railway [NER],351.0,7.0,0,0.0
+705567,,Uttar Pradesh,North Eastern Railway [NER],1016.0,6.0,1,28.7027559055118
+705572,,Assam,Northeast Frontier Railway [NFR],4060.0,0.0,1,22.75714285714285
+705583,,Delhi,CAO/C/NR,667.0,120.0,1,5.229385307346327
+705588,,Uttar Pradesh,CAO/C/II/NR,722.0,12.0,1,111.74930747922436
+705598,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",CAO/C/NCR,2002.0,48.0,0,-0.01848151848151303
+705608,,"Multi-States (Madhya Pradesh, Uttar Pradesh)",North Central Railway,4330.0,0.0,0,0.0
+705610,,"Multi-States (Andhra Pradesh, Karnataka)",South Central Railway [SCR] - I,302.0,0.0,1,181.7019867549669
+705612,,"Multi-States (Andhra Pradesh, Telangana)",South Central Railway [SCR] - II,1953.0,10.0,1,72.19662058371735
+705613,,"Multi-States (Maharashtra, Telangana)",South Central Railway [SCR] - II,2595.0,10.0,1,18.34296724470135
+705616,,"Multi-States (Chhattisgarh, Odisha)",SECR,2140.0,14.0,1,39.184579439252346
+705617,,"Multi-States (Chhattisgarh, Maharashtra)",South East Central Railway [SECR] - II,3545.0,18.0,0,-0.002256699576866777
+705628,,"Multi-States (Jharkhand, Odisha)",South Eastern Railway - JH,3029.0,12.0,1,0.0013205678441717934
+705629,,"Multi-States (Odisha, West Bengal)",South Eastern Railway [SER] - I,2400.0,6.0,1,42.72166666666667
+705632,,"Multi-States (Andhra Pradesh, Telangana)",South Central Railway [SCR] - II,647.0,11.0,1,27.8918083462133
+705633,,Andhra Pradesh,South Central Railway [SCR] - II,3733.0,12.0,1,15.054915617465845
+705635,,"Multi-States (Kerala, Tamil Nadu)",SR-ERS,1432.0,45.0,1,164.34706703910612
+705638,,Kerala,Southern Railway [SR] - II,813.0,0.0,1,44.0910209102091
+705639,,Kerala,SR-ERS,601.0,0.0,1,37.68718801996672
+705648,,Andhra Pradesh,RVNL - II,6654.0,13.0,0,0.0
+705650,,"Multi-States (Goa, Karnataka)",RVNL - II,5060.0,9.0,0,0.0
+705651,,Madhya Pradesh,West Central Railway WCR I,2478.23,45.0,0,0.0
+705659,,Madhya Pradesh,West Central Railway [WCR] - II,500.0,0.0,1,29.220000000000006
+705660,,Madhya Pradesh,Indian Railway Construction International Limited [IRCON],2445.0,12.0,1,79.01840490797547
+705661,,Madhya Pradesh,Indian Railway Construction International Limited [IRCON],1248.0,18.0,1,84.2948717948718
+705662,,"Multi-States (Karnataka, Maharashtra)",South Western Railway [SWR] - II,1878.0,15.0,0,0.0
+705663,,Karnataka,South Western Railway [SWR] - II,493.0,0.0,1,45.54563894523326
+705667,,"Multi-States (Madhya Pradesh, Rajasthan, Uttar Pradesh)",RVNL - II,5961.0,24.0,0,-0.004026170105683303
+705668,,"Multi-States (Jharkhand, West Bengal)",RVNL - II,3250.0,9.0,1,6.153846153846154
+705694,,Delhi,EDTK[MC]/RB,187.72,25.0,0,0.0
+705708,,Delhi,EDTK[MC]/RB,176.0,45.0,0,0.0
+705710,,Delhi,EDTK[MC]/RB,336.0,38.0,0,0.0
+705712,,Delhi,EDTK[MC]/RB,480.0,42.0,0,0.0
+705717,,Delhi,EDTK[MC]/RB,440.0,27.0,0,0.0
+705720,,Delhi,EDTK[MC]/RB,384.0,32.0,0,0.0
+705721,,Delhi,EDTK[MC]/RB,447.6,24.0,0,0.0
+705722,,Delhi,EDTK[MC]/RB,210.0,42.0,0,0.0
+705726,,Delhi,EDTK[MC]/RB,6339.0,34.0,0,0.0
+705728,,"Multi-States (Dadra & Nagar Haveli and Daman & Diu, Gujarat, Maharashtra)",National High Speed Rail Corporation [NHSRC],108000.0,28.0,0,0.0
+705730,,West Bengal,RVNL - II,4835.0,24.0,1,114.31230610134438
+705735,,Maharashtra,WR,905.0,0.0,1,82.10118021482562
+705741,,Odisha,East Coast Railway [ECoR] - II,748.0,17.0,0,-0.012032085561501583
+705742,,Odisha,East Coast Railway [ECoR] - II,2344.0,0.0,0,-0.01535836177474946
+705743,,Odisha,CAO/C/ECoR,495.0,,0,0.0
+705747,,(-) (2266) Jharkhand,East Central Railway [ECR] - I,902.86,60.0,0,0.0
+705752,,Rajasthan,North Western Railway [NWR],819.48,0.0,0,-34.10455410748279
+705755,,Tamil Nadu,Southern Railway [SR] - I,359.0,0.0,0,0.0
+705756,,Chhattisgarh,South East Central Railway [SECR] - II,241.0,0.0,1,172.41493775933608
+705761,,Karnataka,South Western Railway [SWR] - II,1454.0,6.0,0,-68.64786795048144
+705762,,(-) (6107) Karnataka,South Western Railway [SWR] - II,748.86,55.0,0,0.0
+705763,,Madhya Pradesh,RVNL - II,7474.0,0.0,0,0.0
+705764,,"Multi-States (Madhya Pradesh, Rajasthan)",Western Railway [WR] - II,495.0,-3.0,1,80.94343434343433
+705765,,Jharkhand,East Central Railway [ECR] - II,686.0,0.0,1,0.00437317784256162
+705766,,Uttar Pradesh,North Central Railway,304.44,11.0,1,16.968860859282625
+705767,,Odisha,CAO/C/ECoR,257.97,0.0,1,0.01162925921617735
+705771,,Uttar Pradesh,North Central Railway,494.0,65.0,0,0.0
+705772,,Uttar Pradesh,North Central Railway,2649.0,3.0,1,0.01661004152510587
+705774,,Uttar Pradesh,CAO/C/NCR,758.0,26.0,1,2.8350923482849613
+705777,,Uttar Pradesh,CAO/C/NCR,250.18,12.0,0,0.0
+705779,,Uttar Pradesh,South Eastern Railway [SER] - I,1178.0,15.0,0,0.0
+705780,,Uttar Pradesh,RVNL - II,2529.0,10.0,1,0.01818900751285237
+705782,,Uttar Pradesh,CAO/C/NR,407.0,12.0,1,17.968058968058966
+705783,,Punjab,CAO/C/NR,237.64,12.0,1,9.548055882848006
+705784,,Uttar Pradesh,RVNL,357.0,0.0,0,0.0
+705785,,Jharkhand,South Eastern Railway [SER] - I,473.0,11.0,0,-0.10570824524312897
+705789,,Andhra Pradesh,South Western Railway [SWR] - II,307.66,0.0,0,0.0
+705793,,"Multi-States (Delhi, Gujarat, Madhya Pradesh, Maharashtra, Rajasthan)",PCE/WR,6806.44,54.0,1,18.933245573309986
+705794,,"Multi-States (Bihar, Delhi, Jharkhand, Uttar Pradesh, West Bengal)",PCE/NCR,6684.81,54.0,0,0.0
+705799,,Maharashtra,MRIDC,1400.0,0.0,0,0.0
+705863,,Uttar Pradesh,North Eastern Railway [NER],950.0,1.0,0,0.0
+705912,,Rajasthan,North Western Railway [NWR],1203.89,47.0,0,0.0
+705918,,Uttar Pradesh,North Central Railway,1457.0,9.0,0,0.0
+705919,,Rajasthan,CAO/C/NCR,1390.0,0.0,0,0.0
+705933,,Madhya Pradesh,Western Railway [WR] - II,1095.88,0.0,1,61.5669598861189
+705941,,Karnataka,Karnataka Rail Infrastructure Development Company Limited [K-RIDE],15767.0,74.0,0,0.0
+706718,,Manipur,Airport Authority of India [AAI],499.0,29.0,0,0.0
+706724,,Assam,Adani Airport Holdings Limited,1712.0,84.0,1,47.19626168224299
+706757,,Gujarat,SECR,262.0,24.0,0,0.0
+706759,,Bihar,Indian Railway Construction International Limited [IRCON],2374.0,12.0,1,6.803474831903753
+706763,,Gujarat,Western Railway [WR] - II,1080.58,0.0,1,11.530844546447291
+706775,,PAN India,Department of Telecommunications [DoT],61109.0,43.0,0,-79.20273609451964
+706776,,West Bengal,"Metro Railway, Kolkata",4830.0,31.0,0,0.0
+706777,,West Bengal,RVNL - II,2298.0,-12.0,1,18.97302001740644
+706779,,Maharashtra,Mumbai Rail Vikas Corporation Ltd.[MRVC],8087.0,165.0,0,0.0
+706780,,Maharashtra,Mumbai Rail Vikas Corporation Ltd.[MRVC],33690.0,0.0,0,0.0
+706781,,Maharashtra,Mumbai Rail Vikas Corporation Ltd.[MRVC],10947.0,57.0,0,0.0
+706811,,Chhattisgarh,National Mineral Development Corporation Limited [NMDC],2907.0,30.0,1,86.687306501548
+706835,,Karnataka,South Western Railway [SWR] - II,1591.0,15.0,0,0.0
+706836,,(-) (-) Rajasthan,North Western Railway [NWR],466.42,50.0,1,32.75374126323915
+706837,,Jharkhand,East Central Railway [ECR] - I,349.22,60.0,0,0.0
+706844,,"Multi-States (Bihar, West Bengal)",GM/C/ NFR,,,0,
+706854,,Chhattisgarh,South East Central Railway [SECR] - II,1376.0,0.0,1,14.587209302325583
+706856,,Odisha,South Eastern Railway [SER] - I,245.0,0.0,0,0.0
+706860,,Bihar,East Central Railway [ECR] - I,645.0,0.0,0,-24.716279069767445
+706865,,(-) (6111) Goa,South Western Railway [SWR] - II,1892.0,59.0,0,0.0
+706866,,Rajasthan,North Western Railway [NWR],304.0,14.0,0,-21.38157894736842
+706898,,Odisha,CORE,267.61,18.0,0,0.0
+706922,,Assam,Central Organisation for Railway Electrification [CORE],890.36,45.0,0,-0.1123141201311829
+706940,,Assam,GM/C/ NFR,183.99,28.0,0,0.0
+706942,,Assam,GM/C/ NFR,237.52,28.0,0,0.0
+706950,,"Multi-States (Goa, Karnataka)",RVNL,744.49,12.0,1,50.79047401576917
+706965,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",189.0,0.0,0,0.0
+706966,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",189.0,0.0,0,0.0
+706988,,Maharashtra (),"Medical Education, Ministry of Health and Family Welfare",189.0,0.0,0,0.0
+706989,,Meghalaya (),"Medical Education, Ministry of Health and Family Welfare",189.0,0.0,0,0.0
+707016,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",250.0,0.0,0,0.0
+707017,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",250.0,0.0,0,0.0
+707018,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",250.0,0.0,0,0.0
+707019,,Bihar (),"Medical Education, Ministry of Health and Family Welfare",250.0,0.0,0,0.0
+707020,,Bihar,"Medical Education, Ministry of Health and Family Welfare",250.0,36.0,1,100.0
+707021,,Jharkhand,"Medical Education, Ministry of Health and Family Welfare",250.0,30.0,1,101.92000000000002
+707022,,Jharkhand,"Medical Education, Ministry of Health and Family Welfare",250.0,30.0,1,81.64000000000001
+707039,,Sikkim,"Medical Education, Ministry of Health and Family Welfare",250.0,96.0,1,154.08400000000003
+707044,,Chhattisgarh,"Medical Education, Ministry of Health and Family Welfare",325.0,38.0,0,-0.6615384615384545
+707045,,Chhattisgarh,"Medical Education, Ministry of Health and Family Welfare",325.0,31.0,0,0.0
+707046,,Chhattisgarh,"Medical Education, Ministry of Health and Family Welfare",325.0,30.0,0,0.0
+707049,,Gujarat,"Medical Education, Ministry of Health and Family Welfare",325.0,42.0,1,104.15384615384615
+707050,,Gujarat,"Medical Education, Ministry of Health and Family Welfare",325.0,23.0,1,90.45538461538463
+707051,,(-) (-) Jammu and Kashmir,"Medical Education, Ministry of Health and Family Welfare",325.0,62.0,0,0.0
+707052,,Jammu and Kashmir (),"Medical Education, Ministry of Health and Family Welfare",325.0,0.0,0,0.0
+707057,,Ladakh (),"Medical Education, Ministry of Health and Family Welfare",325.0,0.0,0,0.0
+707058,,Madhya Pradesh,"Medical Education, Ministry of Health and Family Welfare",325.0,17.0,0,0.0
+707059,,Madhya Pradesh,"Medical Education, Ministry of Health and Family Welfare",325.0,30.0,0,0.0
+707067,,Nagaland (),"Medical Education, Ministry of Health and Family Welfare",325.0,0.0,0,0.0
+707069,,Punjab,"Medical Education, Ministry of Health and Family Welfare",325.0,17.0,1,69.23076923076923
+707070,,Punjab,"Medical Education, Ministry of Health and Family Welfare",325.0,33.0,1,15.307692307692308
+707086,,Uttarakhand,"Medical Education, Ministry of Health and Family Welfare",325.0,34.0,0,0.0
+707087,,Uttarakhand,"Medical Education, Ministry of Health and Family Welfare",325.0,44.0,1,136.58153846153846
+707215,,Gujarat,Indian Port Rail & Ropeway Corporation Ltd. [IPRCL],573.0,18.0,1,116.06457242582897
+707229,,Andaman & Nicobar,Smart City Mission,209.88,18.0,1,9.586430341147324
+707267,,Gujarat,Smart City Mission,200.0,27.0,0,0.0
+707410,,Haryana,National Highways & Infrastructure Development Corporation Ltd. [NHIDCL],763.0,24.0,0,0.0
+707414,,(-) (4804) Uttar Pradesh,National Industrial Corridor Development Corporation,1480.0,40.0,0,0.0
+707419,,(-) (9938) Uttar Pradesh,National Industrial Corridor Development Corporation,658.0,32.0,0,0.0
+707420,,(-) (-) Bihar,National Industrial Corridor Development Corporation,1339.02,36.0,0,0.0
+708655,,Maharashtra,Jawaharlal Nehru Port Authority [JNPA],366.8,54.0,0,0.0
+708662,,Maharashtra,Mumbai Port Trust [MPT],693.0,18.0,0,0.0
+708687,,(-) (-) Uttar Pradesh,Department of Telecommunications,1917.0,36.0,0,0.0
+709747,,Gujarat,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,339.35,0.0,0,0.0
+709748,,Rajasthan,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,5491.89,20.0,0,0.0
+709749,,"Multi-States (Maharashtra, Telangana)",BSNL,461.42,54.0,0,0.0
+709750,,Tamil Nadu,Chennai Petroleum Corporation Limited [CPCL],205.0,3.0,0,0.0
+709752,,Andhra Pradesh,Hindustan Petroleum Corporation Limited,160.0,21.0,1,37.5
+709753,,West Bengal,Hindustan Petroleum Corporation Limited,1010.0,0.0,1,9.603960396039604
+709754,,Assam,Hindustan Petroleum Corporation Limited,156.36,0.0,0,0.0
+709755,,Assam,Hindustan Petroleum Corporation Limited [HPCL],384.04,0.0,0,0.0
+709757,,"Multi-States (Bihar, Jharkhand)",Hindustan Petroleum Corporation Limited,1377.0,0.0,0,0.0
+709758,,West Bengal,Hindustan Petroleum Corporation Limited,2628.0,0.0,0,0.0
+709759,,Rajasthan,Hindustan Petroleum Corporation Limited [HPCL],461.05,0.0,0,0.0
+709760,,Maharashtra,Hindustan Petroleum Corporation Limited,240.0,0.0,0,0.0
+709761,,Andhra Pradesh,Hindustan Petroleum Corporation Limited,193.0,0.0,0,0.0
+709766,,Andhra Pradesh,MinistryofPetroleumNaturalGas,1420.0,0.0,0,0.0
+709768,,Tamil Nadu,MinistryofPetroleumNaturalGas,501.0,0.0,0,0.0
+709770,,Punjab,MinistryofPetroleumNaturalGas,151.0,0.0,0,0.0
+709771,,Maharashtra,MinistryofPetroleumNaturalGas,865.0,0.0,0,0.0
+709772,,West Bengal,MinistryofPetroleumNaturalGas,609.0,0.0,0,0.0
+709773,,Jammu and Kashmir,MinistryofPetroleumNaturalGas,538.0,0.0,0,0.0
+709774,,Karnataka,Ministry of Petroleum & Natural Gas,463.0,0.0,1,8.125269978401729
+709776,,Assam,MinistryofPetroleumNaturalGas,277.0,0.0,1,16.63898916967508
+709777,,Bihar,MinistryofPetroleumNaturalGas,389.35,18.0,1,5.380762809811221
+709778,,Gujarat,MinistryofPetroleumNaturalGas,328.29,13.0,1,4.8950622924853
+709779,,Assam,MinistryofPetroleumNaturalGas,768.0,0.0,0,-3.6458333333333335
+709780,,Maharashtra,MinistryofPetroleumNaturalGas,341.43,0.0,1,27.739214480274132
+709781,,Uttar Pradesh,MinistryofPetroleumNaturalGas,260.12,-6.0,0,0.0
+709782,,Maharashtra,Indian Oil Corporation Limited [IOCL],165.0,7.0,0,0.0
+709783,,Haryana,MinistryofPetroleumNaturalGas,165.13,36.0,1,49.99697208260159
+709785,,Jharkhand,MinistryofPetroleumNaturalGas,202.07,0.0,0,0.0
+709786,,Nagaland,MinistryofPetroleumNaturalGas,227.62,0.0,0,0.0
+709789,,Maharashtra,Bharat Petroleum Corporation Limited [BPCL],405.0,5.0,0,0.0
+709790,,Kerala,Bharat Petroleum Corporation Limited [BPCL],621.87,0.0,0,0.0
+709792,,Bihar,Bharat Petroleum Corporation Limited [BPCL],3638.0,0.0,0,0.0
+709793,,Bihar,Bharat Petroleum Corporation Limited [BPCL],3919.0,0.0,0,0.0
+709794,,"Multi-States (Punjab, Rajasthan)",Bharat Petroleum Corporation Limited [BPCL],3207.0,0.0,0,0.0
+709795,,Uttar Pradesh,Bharat Petroleum Corporation Limited [BPCL],16654.0,0.0,0,0.0
+709797,,Maharashtra,Bharat Petroleum Corporation Limited [BPCL],2585.0,0.0,0,0.0
+709798,,Madhya Pradesh,MinistryofPetroleumNaturalGas,43367.0,0.0,0,0.0
+709799,,Kerala,MinistryofPetroleumNaturalGas,4460.0,0.0,1,8.74439461883408
+709800,,Odisha,MinistryofPetroleumNaturalGas,393.54,0.0,0,0.0
+709801,,Uttar Pradesh,Bharat Petroleum Corporation Limited [BPCL],308.32,,0,0.0
+709808,,Maharashtra,CR,955.0,7.0,1,119.1586681878605
+709809,,Maharashtra,Central Railway [CR] - II,836.0,0.0,1,15.09511879525369
+709810,,Odisha,Indian Railway,190.9,0.0,0,0.0
+709811,,Odisha,East Coast Railway [ECoR] - II,190.0,0.0,0,-0.036842105263154304
+709812,,Gujarat,WR,461.91,80.0,0,0.0
+709813,,Gujarat,SECR,437.21,35.0,1,6.116054070126486
+709814,,Chhattisgarh,SECR,170.0,0.0,1,8.235294117647058
+709815,,Chhattisgarh,SECR,177.03,11.0,0,0.0
+709816,,Chhattisgarh,SECR,177.34,0.0,0,0.0
+709817,,Chhattisgarh,SECR,169.06,0.0,0,0.0
+709818,,Chhattisgarh,SECR,328.34,0.0,0,0.0
+709819,,Chhattisgarh,SECR,177.0,0.0,0,0.0
+709820,,Madhya Pradesh,Satluj Jal Vidyut Nigam [SJVN] Thermal Limited,646.17,,0,0.0
+709826,,Chhattisgarh,National Mineral Development Corporation Limited [NMDC],2718.84,51.0,1,12.63590354710096
+709827,,Chhattisgarh,National Mineral Development Corporation Limited [NMDC],349.75,38.0,0,0.0
+709829,,Odisha,National Aluminium Company Limited [NALCO],1021.97,109.0,0,0.0
+709830,,Odisha,Ministry of Mines,355.0,115.0,1,63.66197183098592
+709831,,Odisha,National Aluminium Company Limited [NALCO],483.0,13.0,0,0.0
+709832,,Tamil Nadu,National Aluminium Company Limited [NALCO],166.0,12.0,0,0.0
+709837,,Tripura,Oil and Natural Gas Corporation Limited [ONGC],209.33,19.0,0,-37.17575120622941
+709838,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],621.4,12.0,1,18.928226585130353
+709839,,Offshore,Oil and Natural Gas Corporation Limited [ONGC],4144.41,4.0,1,54.59136523654754
+709840,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],249.43,10.0,0,0.0
+709841,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],173.03,8.0,0,-1.8436109345200242
+709842,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],1487.41,0.0,0,0.0
+709845,,Gujarat,Oil and Natural Gas Corporation Limited [ONGC],837.34,0.0,1,33.740177227888296
+709846,,Maharashtra,Oil and Natural Gas Corporation Limited [ONGC],1219.48,18.0,0,0.0
+709847,,Assam,Ministry of Petroleum & Natural Gas,344.99,0.0,0,0.0
+709848,,Offshore,Ministry of Petroleum & Natural Gas,2329.45,0.0,1,1.0637704179098157
+709849,,Offshore,Ministry of Petroleum & Natural Gas,2379.84,0.0,1,31.477482429620313
+709850,,Assam,Ministry of Petroleum & Natural Gas,198.7,0.0,0,0.0
+709851,,Offshore,Ministry of Petroleum & Natural Gas,6183.79,0.0,0,0.0
+709855,,PAN India,BSNL,239.6,12.0,0,0.0
+709856,,PAN India,BSNL,645.13,12.0,0,0.0
+709857,,PAN India,BSNL,24544.55,9.0,0,0.0
+709858,,PAN India,BSNL,810.99,18.0,0,0.0
+709859,,Delhi,National Communication Academy - Finance (Erstwhile NICF,248.2,68.0,0,0.0
+709864,,Assam,NRL,370.0,15.0,0,0.0
+709865,,Assam,NRL,293.5,10.0,0,0.0
+738679,,(-) (-) Odisha,Steel Authority of India Limited (SAIL,2584.41,41.0,0,0.0
+834015,,(-) (-) Odisha,Steel Authority of India Limited (SAIL,1140.07,41.0,0,0.0
+900808,,"Multi-States (Andhra Pradesh, Telangana)",Power Grid Corporation of India Limited [POWERGRID],3546.94,13.0,0,0.0
+900872,,Uttar Pradesh,Northen Railway [NR],,,0,
+900874,,Bihar,East Central Railway [ECR] - I,588.18,60.0,0,0.0
+914467,,(-) (-) PAN India,Department of Telecommunications,1550.0,36.0,0,0.0
+938832,,(-) (-) PAN India,Department of Telecommunications,2839.0,36.0,0,0.0
+944288,,(-) (-) Chhattisgarh,Steel Authority of India Limited (SAIL,192.21,18.0,0,0.0
+946208,,(-) (-) PAN India,Department of Telecommunications,160.0,36.0,0,0.0
+976009,,(-) (-) PAN India,Department of Telecommunications,1168.0,36.0,0,0.0

@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+fastapi
+uvicorn
+joblib
+pandas
+numpy
+shap
+scikit-learn
+python-dotenv
+google-genai
+torch

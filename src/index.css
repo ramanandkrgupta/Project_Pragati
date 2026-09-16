@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #003B6F;
+  --gov-blue: #005A9C;
+  --deep-navy: #0B1F33;
+  --saffron: #E87500;
+  --green: #138808;
+  --bg-main: #F5F7FA;
+  --surface: #FFFFFF;
+  --border-color: #D9E1E8;
+  --text-primary: #172033;
+  --text-secondary: #667085;
+  
+  --risk-low: #138808;
+  --risk-medium: #C98200;
+  --risk-high: #E87500;
+  --risk-critical: #8B0000;
+
+  --font-scale: 1;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --bg-main: #050B14;
+  --surface: #0E1726;
+  --border-color: #334155;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --primary-blue: #38BDF8;
+  --gov-blue: #0284C7;
+  --deep-navy: #0F172A;
+}
+
+/* Font Scale Utilities */
+.text-scale-sm {
+  font-size: calc(0.875rem * var(--font-scale, 1));
+}
+.text-scale-base {
+  font-size: calc(1rem * var(--font-scale, 1));
+}
+.text-scale-lg {
+  font-size: calc(1.125rem * var(--font-scale, 1));
+}
+.text-scale-xl {
+  font-size: calc(1.25rem * var(--font-scale, 1));
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  /* Accessibility focus indicator */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #005A9C;
+    outline-offset: 2px;
+  }
+
+  /* Compact institutional tables */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Screen Reader Only Utility */
+.sr-only-focusable:not(:focus):not(:focus-within) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, #btn-open-ai-assistant, #ai-assistant-modal {
+    display: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

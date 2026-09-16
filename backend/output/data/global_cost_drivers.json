@@ -1,0 +1,51 @@
+{
+    "macro_stats": {
+        "average_national_escalation_pct": 25.11,
+        "projects_with_escalation": 1004,
+        "top_driver": "Project Scale & Complexity"
+    },
+    "global_drivers": [
+        {
+            "driver_key": "planned_duration_months",
+            "driver_name": "Project Scale & Complexity",
+            "importance_score": 52.99,
+            "correlation": "Positive"
+        },
+        {
+            "driver_key": "physical_progress",
+            "driver_name": "Execution Stagnation",
+            "importance_score": 31.79,
+            "correlation": "Negative"
+        },
+        {
+            "driver_key": "financial_progress",
+            "driver_name": "Fund Disbursement Issues",
+            "importance_score": 15.22,
+            "correlation": "Negative"
+        },
+        {
+            "driver_key": "milestones_completed",
+            "driver_name": "Lack of Completion Momentum",
+            "importance_score": 0.0,
+            "correlation": "Negative"
+        },
+        {
+            "driver_key": "milestones_total",
+            "driver_name": "Scope Creep / High Milestone Count",
+            "importance_score": 0.0,
+            "correlation": "Positive"
+        },
+        {
+            "driver_key": "milestones_overdue",
+            "driver_name": "Regulatory & Administrative Bottlenecks (Milestones)",
+            "importance_score": 0.0,
+            "correlation": "Positive"
+        },
+        {
+            "driver_key": "predicted_delay_months",
+            "driver_name": "Compounding Time Delays (Months)",
+            "importance_score": 0.0,
+            "correlation": "Positive"
+        }
+    ]
+}
