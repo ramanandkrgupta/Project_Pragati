@@ -26,7 +26,7 @@ import {
   RotateCcw,
   Check,
 } from 'lucide-react';
-import { fetchProjects, fetchPaginatedProjects, createProject, fetchUsers, updateProject, fetchSectors, fetchStates } from '../services/api';
+import { fetchProjects, fetchPaginatedProjects, createProject, fetchUsers, updateProject, fetchSectors, fetchStates, fetchStatuses, fetchRisks } from '../services/api';
 import { Project, RiskLevel, UserProfile } from '../types';
 import { RiskBadge } from '../components/RiskBadge';
 import { StatusBadge } from '../components/StatusBadge';
@@ -118,14 +118,18 @@ export const Projects: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [totalCount, setTotalCount] = useState<number>(0);
-  const [availableSectors, setAvailableSectors] = useState<string[]>([]);
-  const [availableStates, setAvailableStates] = useState<string[]>([]);
+  const [availableSectors, setAvailableSectors] = useState<FilterOption[]>([]);
+  const [availableStates, setAvailableStates] = useState<FilterOption[]>([]);
+  const [availableStatuses, setAvailableStatuses] = useState<FilterOption[]>([]);
+  const [availableRisks, setAvailableRisks] = useState<FilterOption[]>([]);
 
   const loadFilterOptions = async () => {
     try {
-      const [sec, st] = await Promise.all([fetchSectors(), fetchStates()]);
+      const [sec, st, statuses, risks] = await Promise.all([fetchSectors(), fetchStates(), fetchStatuses(), fetchRisks()]);
       setAvailableSectors(sec);
       setAvailableStates(st);
+      setAvailableStatuses(statuses);
+      setAvailableRisks(risks);
     } catch (e) {
       console.error("Failed to load options", e);
     }
@@ -192,22 +196,13 @@ export const Projects: React.FC = () => {
     if (sortBy !== 'risk_desc') newParams.sort_by = sortBy;
     setSearchParams(newParams, { replace: true });
   }, [searchTerm, selectedStates, selectedSectors, selectedRisks, selectedStatuses, sortBy]);
-
-  // Use dynamically loaded sectors/states
-  const availableStatesWithCount = useMemo(() => {
-    return availableStates.map(name => ({ name, count: 0 })); // Counts not available server-side yet
-  }, [availableStates]);
-
-  const availableSectorsWithCount = useMemo(() => {
-    return availableSectors.map(name => ({ name, count: 0 }));
-  }, [availableSectors]);
-
-  // Available statuses
-  const availableStatusesWithCount = useMemo(() => {
-    const map = new Map<string, number>();
-    ['On-Going', 'Delayed', 'Under Risk', 'Completed', 'Tendering'].forEach((st) => map.set(st, 0));
-    return Array.from(map.entries()).map(([name, count]) => ({ name, count }));
-  }, []);
+  // Use dynamically loaded filter options with counts from backend
+  const availableStatesWithCount = availableStates;
+  const availableSectorsWithCount = availableSectors;
+  const availableStatusesWithCount = availableStatuses;
+  
+  // Also optionally expose risks if the UI uses them later
+  const availableRisksWithCount = availableRisks;
 
   // Filtered projects are just the raw projects now, since the server does the filtering!
   const filteredProjects = rawProjects;
@@ -658,6 +653,8 @@ export const Projects: React.FC = () => {
               { label: 'LOW', bgActive: 'bg-emerald-600 text-white border-emerald-600', text: 'Low' },
             ].map((riskItem) => {
               const isSelected = selectedRisks.includes(riskItem.label);
+              const countMatch = availableRisksWithCount.find(r => r.name.toUpperCase() === riskItem.label);
+              const displayCount = countMatch ? countMatch.count : 0;
               return (
                 <button
                   key={riskItem.label}
@@ -669,7 +666,7 @@ export const Projects: React.FC = () => {
                       : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'
                   }`}
                 >
-                  {riskItem.text}
+                  {riskItem.text} ({displayCount})
                 </button>
               );
             })}

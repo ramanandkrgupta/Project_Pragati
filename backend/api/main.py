@@ -157,12 +157,13 @@ def generate_ai_overview(project_name: str, snapshots: list) -> str:
     
     try:
         response = gemini_client.models.generate_content(
-            model='gemini-2.5-pro',
+            model='gemini-2.5-flash',
             contents=prompt,
         )
         return response.text
     except Exception as e:
-        return f"Warning: LLM generation failed: {e}"
+        print(f"Gemini API Error: {str(e)}")
+        return f"AI Overview currently unavailable. (Error: {str(e)})"
 
 from api.schemas import CostForecastResponse, HistoricalBacktest, FutureForecast, TimeOverrunResponse, DelayFactor
 
@@ -410,7 +411,9 @@ async def predict_overrun_risk(request: ProjectInferenceRequest):
                 
             filtered_impacts.append((fname, shap_val))
         
-        for fname, shap_val in filtered_impacts[:5]:
+        for fname, shap_val in filtered_impacts:
+            if abs(shap_val) < 0.01:
+                continue
             original_feature_name = fname.split('__')[-1] if '__' in fname else fname
             direction = "Increases Risk" if shap_val > 0 else "Decreases Risk"
             
@@ -933,6 +936,7 @@ User Query: {req.query}
             engine="Gemini 2.5 Flash"
         )
     except Exception as e:
+        print(f"Gemini API Error: {str(e)}")
         return ProjectAssistantResponse(
             answer=f"Error generating AI response: {str(e)}",
             engine="Offline Fallback"
@@ -1302,11 +1306,33 @@ def get_me(email: str = ""):
 @app.get("/api/v1/options/sectors")
 def get_sectors():
     with engine.connect() as conn:
-        res = conn.execute(text("SELECT DISTINCT sector FROM projects WHERE sector IS NOT NULL AND sector != '' ORDER BY sector"))
-        return {"sectors": [row[0] for row in res]}
+        res = conn.execute(text("SELECT sector, COUNT(*) FROM projects WHERE sector IS NOT NULL AND sector != '' GROUP BY sector ORDER BY sector"))
+        return {"sectors": [{"name": row[0], "count": row[1]} for row in res]}
 
 @app.get("/api/v1/options/states")
 def get_states():
     with engine.connect() as conn:
-        res = conn.execute(text("SELECT DISTINCT state FROM projects WHERE state IS NOT NULL AND state != '' ORDER BY state"))
-        return {"states": [row[0] for row in res]}
+        res = conn.execute(text("SELECT state, COUNT(*) FROM projects WHERE state IS NOT NULL AND state != '' GROUP BY state ORDER BY state"))
+        return {"states": [{"name": row[0], "count": row[1]} for row in res]}
+
+@app.get("/api/v1/options/statuses")
+def get_statuses():
+    with engine.connect() as conn:
+        res = conn.execute(text("""
+            SELECT 
+                CASE WHEN physical_progress >= 100 THEN 'Completed' ELSE 'On-Going' END as status,
+                COUNT(*)
+            FROM projects 
+            GROUP BY CASE WHEN physical_progress >= 100 THEN 'Completed' ELSE 'On-Going' END
+        """))
+        return {"statuses": [{"name": row[0], "count": row[1]} for row in res]}
+
+@app.get("/api/v1/options/risks")
+def get_risks():
+    with engine.connect() as conn:
+        res = conn.execute(text("""
+            SELECT risk_level, COUNT(*) 
+            FROM early_warnings 
+            GROUP BY risk_level
+        """))
+        return {"risks": [{"name": row[0].title(), "count": row[1]} for row in res if row[0]]}

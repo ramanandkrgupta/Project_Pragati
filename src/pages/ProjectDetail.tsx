@@ -251,15 +251,51 @@ export const ProjectDetail: React.FC = () => {
             </div>
           </div>
 
-          <div className="space-y-2.5">
-            {(pred?.top_risk_factors || []).map((factor, idx) => (
-              <div key={idx} className="bg-[#F5F7FA] p-3 rounded border border-slate-200 flex items-start gap-2.5">
-                <span className="h-5 w-5 rounded-full bg-[#C62828] text-white flex items-center justify-center text-xs font-bold shrink-0">
-                  {idx + 1}
-                </span>
-                <p className="text-xs font-semibold text-[#172033]">{factor}</p>
+          <div className="space-y-4">
+            {(pred?.feature_contributions && pred.feature_contributions.length > 0) ? (
+              <div className="space-y-3">
+                {(() => {
+                  const maxImpact = Math.max(...pred.feature_contributions.map(c => Math.abs(c.impact)), 0.01);
+                  return pred.feature_contributions.map((c, idx) => {
+                    const widthPct = Math.min((Math.abs(c.impact) / maxImpact) * 100, 100);
+                    const isIncrease = c.impact > 0;
+                    
+                    // Format feature name nicely
+                    let niceName = c.feature;
+                    if (niceName.includes('_') && niceName !== 'planned_duration_months' && niceName !== 'approved_cost') {
+                      const parts = niceName.split('_');
+                      niceName = `${parts[0].charAt(0).toUpperCase() + parts[0].slice(1)}: ${parts.slice(1).join(' ')}`;
+                    } else {
+                      niceName = niceName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    }
+
+                    return (
+                      <div key={idx} className="relative pt-1 pb-2">
+                        <div className="flex justify-between items-end mb-1">
+                          <div className="flex flex-col">
+                            <span className="text-[11px] font-bold text-[#172033]">{niceName}</span>
+                            <span className="text-[10px] text-slate-500">
+                              {c.value !== 'Categorical/Transformed' ? `Value: ${c.value}` : 'Matches Risk Profile'}
+                            </span>
+                          </div>
+                          <span className={`text-[10px] font-bold ${isIncrease ? 'text-[#C62828]' : 'text-[#138808]'}`}>
+                            {isIncrease ? '↑ Increases Risk' : '↓ Decreases Risk'}
+                          </span>
+                        </div>
+                        <div className="flex w-full h-2 bg-slate-100 rounded overflow-hidden">
+                          <div
+                            style={{ width: `${widthPct}%` }}
+                            className={`h-full rounded ${isIncrease ? 'bg-[#C62828]' : 'bg-[#138808]'}`}
+                          />
+                        </div>
+                      </div>
+                    );
+                  });
+                })()}
               </div>
-            ))}
+            ) : (
+              <div className="text-sm text-slate-500 italic">No AI explanation available.</div>
+            )}
           </div>
 
           <div className="p-3 bg-blue-50 border border-blue-200 rounded text-xs text-[#003B6F] space-y-1">

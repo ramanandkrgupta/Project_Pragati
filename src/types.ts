@@ -4,6 +4,11 @@ export type AlertType = 'SCHEDULE_DELAY' | 'COST_OVERRUN' | 'PROGRESS_DIVERGENCE
 export type AlertStatus = 'NEW' | 'REVIEWED' | 'RESOLVED';
 export type DataSource = 'Official Data' | 'Imported Data' | 'Demo Data' | 'PAIMANA Public Dashboard';
 
+export interface FilterOption {
+  name: string;
+  count: number;
+}
+
 export interface Project {
   id: string;
   project_code: string;

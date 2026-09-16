@@ -3,6 +3,7 @@ import {
   AlertStatus,
   AuthResponse,
   DashboardSummary,
+  FilterOption,
   ModelInsightsData,
   Prediction,
   Project,
@@ -268,18 +269,32 @@ export async function fetchPaginatedProjects(params: {
   };
 }
 
-export async function fetchSectors(): Promise<string[]> {
+export async function fetchSectors(): Promise<FilterOption[]> {
   const res = await fetch(`${BASE_URL}/options/sectors`);
   if (!res.ok) return [];
   const data = await res.json();
   return data.sectors || [];
 }
 
-export async function fetchStates(): Promise<string[]> {
+export async function fetchStates(): Promise<FilterOption[]> {
   const res = await fetch(`${BASE_URL}/options/states`);
   if (!res.ok) return [];
   const data = await res.json();
   return data.states || [];
+}
+
+export async function fetchStatuses(): Promise<FilterOption[]> {
+  const res = await fetch(`${BASE_URL}/options/statuses`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.statuses || [];
+}
+
+export async function fetchRisks(): Promise<FilterOption[]> {
+  const res = await fetch(`${BASE_URL}/options/risks`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.risks || [];
 }
 
 export async function fetchProjectById(id: string): Promise<{ project: Project; history: ProjectMonitoringData[] }> {
