@@ -9,11 +9,13 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
+const isPlaceholder = !supabaseUrl || supabaseUrl.includes('placeholder.supabase.co');
+
 // Browser-side Supabase client with persistent sessions
 export const supabase = createClient(supabaseUrl || 'https://placeholder.supabase.co', supabaseAnonKey || 'placeholder', {
   auth: {
-    persistSession: true,
-    autoRefreshToken: true,
+    persistSession: !isPlaceholder,
+    autoRefreshToken: !isPlaceholder,
     detectSessionInUrl: true,
     storageKey: 'project_sentinel_auth_session',
   },

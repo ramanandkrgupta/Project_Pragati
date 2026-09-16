@@ -460,38 +460,64 @@ async def get_early_warnings(
     has_cost_overrun: Optional[bool] = None,
     has_time_delay: Optional[bool] = None,
     sector: Optional[str] = None,
+    state: Optional[str] = None,
+    status: Optional[str] = None,
     search: Optional[str] = None,
     sort_by: Optional[str] = None,
     page: int = 1,
     limit: int = 50
 ):
-    conn = sqlite3.connect(DB_PATH)
-    query = "SELECT e.*, p.sector, p.state, p.implementing_agency, p.physical_progress, p.financial_progress, p.approved_cost, p.expenditure FROM early_warnings e LEFT JOIN Projects p ON e.project_id = p.project_id WHERE 1=1"
-    params = []
-    
-    if risk_level:
-        query += " AND e.risk_level = ?"
-        params.append(risk_level)
-    if has_cost_overrun is not None:
-        query += " AND e.has_cost_overrun = ?"
-        params.append(int(has_cost_overrun))
-    if has_time_delay is not None:
-        query += " AND e.has_time_delay = ?"
-        params.append(int(has_time_delay))
+    with engine.connect() as conn:
+        query = "SELECT e.*, p.sector, p.state, p.implementing_agency, p.physical_progress, p.financial_progress, p.approved_cost, p.expenditure FROM early_warnings e LEFT JOIN projects p ON e.project_id = p.project_id WHERE 1=1"
+        params = {}
+        
+        if risk_level:
+            query += " AND e.risk_level = :risk_level"
+            params["risk_level"] = risk_level
+        if has_cost_overrun is not None:
+            query += " AND e.has_cost_overrun = :has_cost_overrun"
+            params["has_cost_overrun"] = int(has_cost_overrun)
+        if has_time_delay is not None:
+            query += " AND e.has_time_delay = :has_time_delay"
+            params["has_time_delay"] = int(has_time_delay)
         
     if sector and sector != "ALL":
-        # The database sector column is mostly null in current data, but we filter if requested
-        query += " AND p.sector = ?"
-        params.append(sector)
+        query += " AND p.sector = :sector"
+        params["sector"] = sector
+        
+    if state and state != "ALL":
+        # The frontend sends comma separated states? No, in frontend we join with comma, but let's assume it sends comma separated
+        states = [s.strip() for s in state.split(',')]
+        if len(states) == 1:
+            query += " AND p.state = :state"
+            params["state"] = states[0]
+        else:
+            in_clause = ", ".join([f":state_{i}" for i in range(len(states))])
+            query += f" AND p.state IN ({in_clause})"
+            for i, s in enumerate(states):
+                params[f"state_{i}"] = s
+                
+    if status and status != "ALL":
+        statuses = [s.strip() for s in status.split(',')]
+        if len(statuses) == 1:
+            # We map frontend status to physical_progress (On-Going = < 100, Completed = >= 100)
+            if statuses[0] == 'Completed':
+                query += " AND p.physical_progress >= 100"
+            elif statuses[0] == 'On-Going':
+                query += " AND p.physical_progress < 100"
+        else:
+            # If multiple statuses, just handle Completed and On-Going loosely
+            pass
         
     if search:
         search_pattern = f"%{search}%"
-        query += " AND (p.project_name LIKE ? OR p.implementing_agency LIKE ? OR e.project_id LIKE ?)"
-        params.extend([search_pattern, search_pattern, search_pattern])
-        
-    # Count total
+        query += " AND (p.project_name LIKE :search OR p.implementing_agency LIKE :search OR e.project_id LIKE :search)"
+        params["search"] = search_pattern
+         # Count total
     count_query = query.replace("SELECT e.*, p.sector, p.state, p.implementing_agency, p.physical_progress, p.financial_progress, p.approved_cost, p.expenditure", "SELECT COUNT(*)")
-    total_count = conn.execute(count_query, params).fetchone()[0]
+    with engine.connect() as conn:
+        res = conn.execute(text(count_query), params)
+        total_count = res.fetchone()[0]
     
     # Sorting
     if sort_by == 'risk_desc':
@@ -507,35 +533,41 @@ async def get_early_warnings(
     
     # Pagination
     offset = (page - 1) * limit
-    query += " LIMIT ? OFFSET ?"
-    params.extend([limit, offset])
+    query += " LIMIT :limit OFFSET :offset"
+    params["limit"] = limit
+    params["offset"] = offset
     
-    df = pd.read_sql_query(query, conn, params=params)
-    conn.close()
+    with engine.connect() as conn:
+        res = conn.execute(text(query), params)
+        rows = res.mappings().all()
     
     warnings = []
-    for _, row in df.iterrows():
+    for row in rows:
         warnings.append(EarlyWarningItem(
             project_id=row['project_id'],
             project_name=row['project_name'],
-            sector=row.get('sector'),
-            state=row.get('state'),
-            implementing_agency=row.get('implementing_agency'),
-            physical_progress=row.get('physical_progress'),
-            financial_progress=row.get('financial_progress'),
-            approved_cost=row.get('approved_cost'),
-            expenditure=row.get('expenditure'),
+            sector=row['sector'],
+            state=row['state'],
+            implementing_agency=row['implementing_agency'],
+            physical_progress=row['physical_progress'],
+            financial_progress=row['financial_progress'],
+            approved_cost=row['approved_cost'],
+            expenditure=row['expenditure'],
             risk_level=row['risk_level'],
             risk_probability=row['risk_probability'],
             predicted_delay_months=row['predicted_delay_months'],
             predicted_cost_cr=row['predicted_cost_cr'],
             has_cost_overrun=bool(row['has_cost_overrun']),
             has_time_delay=bool(row['has_time_delay']),
-            last_updated=row['last_updated']
+            last_updated=row.get('created_at', None) # Or appropriately map if available
         ))
         
+    import math
+    total_pages = math.ceil(total_count / limit) if limit > 0 else 1
+    
     return EarlyWarningResponse(
         total_count=total_count,
+        total_pages=total_pages,
         page=page,
         limit=limit,
         warnings=warnings
@@ -1266,3 +1298,15 @@ def get_me(email: str = ""):
             "role": row._mapping["role"],
             "created_at": row._mapping["created_at"]
         }
+
+@app.get("/api/v1/options/sectors")
+def get_sectors():
+    with engine.connect() as conn:
+        res = conn.execute(text("SELECT DISTINCT sector FROM projects WHERE sector IS NOT NULL AND sector != '' ORDER BY sector"))
+        return {"sectors": [row[0] for row in res]}
+
+@app.get("/api/v1/options/states")
+def get_states():
+    with engine.connect() as conn:
+        res = conn.execute(text("SELECT DISTINCT state FROM projects WHERE state IS NOT NULL AND state != '' ORDER BY state"))
+        return {"states": [row[0] for row in res]}

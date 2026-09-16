@@ -79,6 +79,7 @@ class EarlyWarningItem(BaseModel):
 
 class EarlyWarningResponse(BaseModel):
     total_count: int
+    total_pages: int
     page: int
     limit: int
     warnings: List[EarlyWarningItem]

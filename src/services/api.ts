@@ -201,6 +201,87 @@ export async function fetchProjects(params?: {
   }));
 }
 
+export async function fetchPaginatedProjects(params: {
+  sector?: string;
+  state?: string;
+  status?: string;
+  risk_level?: string;
+  search?: string;
+  sort_by?: string;
+  page?: number;
+  limit?: number;
+}): Promise<{ projects: Project[], totalCount: number, totalPages: number, page: number }> {
+  const query = new URLSearchParams();
+  if (params.sector && params.sector !== 'ALL') query.append('sector', params.sector);
+  if (params.state && params.state !== 'ALL') query.append('state', params.state);
+  if (params.status && params.status !== 'ALL') query.append('status', params.status);
+  if (params.search) query.append('search', params.search);
+  if (params.sort_by) query.append('sort_by', params.sort_by);
+  if (params.risk_level && params.risk_level !== 'ALL') {
+    const rl = params.risk_level;
+    query.append('risk_level', rl.charAt(0).toUpperCase() + rl.slice(1).toLowerCase());
+  }
+  query.append('page', String(params.page || 1));
+  query.append('limit', String(params.limit || 50));
+
+  const url = `${BASE_URL}/early-warnings?${query.toString()}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Failed to fetch paginated projects from backend');
+  
+  const data = await res.json();
+  
+  const projects = (data.warnings || []).map((w: any) => ({
+    id: String(w.project_id),
+    project_code: `PRJ-${w.project_id}`,
+    project_name: w.project_name,
+    sector: w.sector || 'Infrastructure',
+    state: w.state || 'All India',
+    ministry: 'N/A',
+    implementing_agency: w.implementing_agency || 'N/A',
+    project_status: w.physical_progress >= 100 ? 'Completed' : 'On-Going',
+    data_source: 'Official Data',
+    created_at: w.last_updated || new Date().toISOString(),
+    latest_monitoring: {
+      id: String(w.project_id), project_id: String(w.project_id), update_date: new Date().toISOString(),
+      original_completion_date: new Date().toISOString(), revised_completion_date: new Date().toISOString(),
+      original_cost: w.approved_cost || 0,
+      revised_cost: w.predicted_cost_cr || w.approved_cost || 0,
+      expenditure: w.expenditure || 0,
+      physical_progress: w.physical_progress || 0,
+      financial_progress: w.financial_progress || 0,
+    },
+    prediction: {
+      id: String(w.project_id), project_id: String(w.project_id), prediction_date: new Date().toISOString(),
+      risk_score: Math.round((w.risk_probability || 0) * 100),
+      risk_level: (w.risk_level || 'LOW').toUpperCase() as any,
+      delay_probability: w.predicted_delay_months > 0 ? 80 : 20,
+      cost_overrun_probability: w.has_cost_overrun ? 80 : 20,
+      top_risk_factors: [], recommended_action: '', feature_contributions: [], delay_model_used: '', cost_model_used: ''
+    }
+  }));
+
+  return {
+    projects,
+    totalCount: data.total_count,
+    totalPages: data.total_pages,
+    page: data.page
+  };
+}
+
+export async function fetchSectors(): Promise<string[]> {
+  const res = await fetch(`${BASE_URL}/options/sectors`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.sectors || [];
+}
+
+export async function fetchStates(): Promise<string[]> {
+  const res = await fetch(`${BASE_URL}/options/states`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.states || [];
+}
+
 export async function fetchProjectById(id: string): Promise<{ project: Project; history: ProjectMonitoringData[] }> {
   const res = await fetch(`${BASE_URL}/early-warnings?search=${id}`);
   if (!res.ok) throw new Error(`Failed to fetch project ${id} from backend`);

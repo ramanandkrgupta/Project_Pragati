@@ -26,7 +26,7 @@ import {
   RotateCcw,
   Check,
 } from 'lucide-react';
-import { fetchProjects, createProject, fetchUsers, updateProject } from '../services/api';
+import { fetchProjects, fetchPaginatedProjects, createProject, fetchUsers, updateProject, fetchSectors, fetchStates } from '../services/api';
 import { Project, RiskLevel, UserProfile } from '../types';
 import { RiskBadge } from '../components/RiskBadge';
 import { StatusBadge } from '../components/StatusBadge';
@@ -115,12 +115,39 @@ export const Projects: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, []);
 
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(1);
+  const [totalCount, setTotalCount] = useState<number>(0);
+  const [availableSectors, setAvailableSectors] = useState<string[]>([]);
+  const [availableStates, setAvailableStates] = useState<string[]>([]);
+
+  const loadFilterOptions = async () => {
+    try {
+      const [sec, st] = await Promise.all([fetchSectors(), fetchStates()]);
+      setAvailableSectors(sec);
+      setAvailableStates(st);
+    } catch (e) {
+      console.error("Failed to load options", e);
+    }
+  };
+
   const loadProjects = async () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await fetchProjects();
-      setRawProjects(data);
+      const data = await fetchPaginatedProjects({
+        search: searchTerm,
+        state: selectedStates.join(','),
+        sector: selectedSectors.join(','),
+        risk_level: selectedRisks.join(','),
+        status: selectedStatuses.join(','),
+        sort_by: sortBy,
+        page: currentPage,
+        limit: 50
+      });
+      setRawProjects(data.projects);
+      setTotalPages(data.totalPages);
+      setTotalCount(data.totalCount);
     } catch (err: any) {
       setError(err.message || 'Failed to fetch projects');
     } finally {
@@ -140,8 +167,13 @@ export const Projects: React.FC = () => {
   };
 
   useEffect(() => {
-    loadProjects();
+    loadFilterOptions();
   }, []);
+
+  // Reload projects whenever filters or page changes
+  useEffect(() => {
+    loadProjects();
+  }, [searchTerm, selectedStates, selectedSectors, selectedRisks, selectedStatuses, sortBy, currentPage]);
 
   useEffect(() => {
     if (isAdmin) {
@@ -161,112 +193,24 @@ export const Projects: React.FC = () => {
     setSearchParams(newParams, { replace: true });
   }, [searchTerm, selectedStates, selectedSectors, selectedRisks, selectedStatuses, sortBy]);
 
-  // Dynamically extract unique available states with project count
+  // Use dynamically loaded sectors/states
   const availableStatesWithCount = useMemo(() => {
-    const map = new Map<string, number>();
-    rawProjects.forEach((p) => {
-      const st = p.state?.trim() || 'Unspecified';
-      map.set(st, (map.get(st) || 0) + 1);
-    });
-    return Array.from(map.entries())
-      .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [rawProjects]);
+    return availableStates.map(name => ({ name, count: 0 })); // Counts not available server-side yet
+  }, [availableStates]);
 
-  // Dynamically extract unique available sectors with project count
   const availableSectorsWithCount = useMemo(() => {
-    const map = new Map<string, number>();
-    const defaultSectors = ['Highways', 'Railways', 'Metro Rail', 'Renewable Energy', 'Ports & Shipping', 'Urban Water & Sanitation'];
-    defaultSectors.forEach((s) => map.set(s, 0));
+    return availableSectors.map(name => ({ name, count: 0 }));
+  }, [availableSectors]);
 
-    rawProjects.forEach((p) => {
-      const sec = p.sector?.trim() || 'Unclassified';
-      map.set(sec, (map.get(sec) || 0) + 1);
-    });
-    return Array.from(map.entries())
-      .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [rawProjects]);
-
-  // Available statuses with count
+  // Available statuses
   const availableStatusesWithCount = useMemo(() => {
     const map = new Map<string, number>();
     ['On-Going', 'Delayed', 'Under Risk', 'Completed', 'Tendering'].forEach((st) => map.set(st, 0));
-    rawProjects.forEach((p) => {
-      if (p.project_status) {
-        map.set(p.project_status, (map.get(p.project_status) || 0) + 1);
-      }
-    });
     return Array.from(map.entries()).map(([name, count]) => ({ name, count }));
-  }, [rawProjects]);
+  }, []);
 
-  // Multi-Filter Logic: Live evaluation with instant response
-  const filteredProjects = useMemo(() => {
-    let result = [...rawProjects];
-
-    // 1. Text Search Filter
-    if (searchTerm.trim()) {
-      const q = searchTerm.trim().toLowerCase();
-      result = result.filter((p) => {
-        return (
-          (p.project_name || '').toLowerCase().includes(q) ||
-          (p.project_code || '').toLowerCase().includes(q) ||
-          (p.sector || '').toLowerCase().includes(q) ||
-          (p.state || '').toLowerCase().includes(q) ||
-          (p.ministry || '').toLowerCase().includes(q) ||
-          (p.implementing_agency || '').toLowerCase().includes(q)
-        );
-      });
-    }
-
-    // 2. State Multi-Filter
-    if (selectedStates.length > 0) {
-      result = result.filter((p) => {
-        const pState = p.state?.trim() || 'Unspecified';
-        return selectedStates.includes(pState);
-      });
-    }
-
-    // 3. Sector Multi-Filter
-    if (selectedSectors.length > 0) {
-      result = result.filter((p) => {
-        const pSector = p.sector?.trim() || 'Unclassified';
-        return selectedSectors.includes(pSector);
-      });
-    }
-
-    // 4. Risk Level Multi-Filter
-    if (selectedRisks.length > 0) {
-      result = result.filter((p) => {
-        const lvl = (p.prediction?.risk_level || 'LOW').toUpperCase();
-        return selectedRisks.includes(lvl);
-      });
-    }
-
-    // 5. Status Multi-Filter
-    if (selectedStatuses.length > 0) {
-      result = result.filter((p) => {
-        return selectedStatuses.includes(p.project_status);
-      });
-    }
-
-    // 6. Sorting
-    if (sortBy === 'risk_desc') {
-      result.sort((a, b) => (b.prediction?.risk_score || 0) - (a.prediction?.risk_score || 0));
-    } else if (sortBy === 'risk_asc') {
-      result.sort((a, b) => (a.prediction?.risk_score || 0) - (b.prediction?.risk_score || 0));
-    } else if (sortBy === 'cost_desc') {
-      result.sort((a, b) => (b.latest_monitoring?.revised_cost || 0) - (a.latest_monitoring?.revised_cost || 0));
-    } else if (sortBy === 'progress_asc') {
-      result.sort((a, b) => (a.latest_monitoring?.physical_progress || 0) - (b.latest_monitoring?.physical_progress || 0));
-    } else if (sortBy === 'progress_desc') {
-      result.sort((a, b) => (b.latest_monitoring?.physical_progress || 0) - (a.latest_monitoring?.physical_progress || 0));
-    } else if (sortBy === 'name_asc') {
-      result.sort((a, b) => (a.project_name || '').localeCompare(b.project_name || ''));
-    }
-
-    return result;
-  }, [rawProjects, searchTerm, selectedStates, selectedSectors, selectedRisks, selectedStatuses, sortBy]);
+  // Filtered projects are just the raw projects now, since the server does the filtering!
+  const filteredProjects = rawProjects;
 
   // Toggle Handlers
   const toggleState = (st: string) => {
@@ -929,11 +873,11 @@ export const Projects: React.FC = () => {
                           <div className="w-16 h-2 rounded bg-slate-200 overflow-hidden">
                             <div
                               className="h-full bg-[#005A9C]"
-                              style={{ width: `${feat?.financial_progress || 0}%` }}
+                              style={{ width: `${mon?.financial_progress || 0}%` }}
                             />
                           </div>
                           <span className="font-bold text-[#005A9C]">
-                            {feat?.financial_progress || 0}%
+                            {mon?.financial_progress || 0}%
                           </span>
                         </div>
                       </td>
@@ -990,6 +934,48 @@ export const Projects: React.FC = () => {
                 })}
               </tbody>
             </table>
+          </div>
+        )}
+
+        {/* Pagination Controls */}
+        {!loading && totalPages > 1 && (
+          <div className="flex items-center justify-between border-t border-slate-200 px-4 py-3 sm:px-6 mt-4">
+            <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm text-slate-700">
+                  Showing <span className="font-medium">{(currentPage - 1) * 50 + 1}</span> to{' '}
+                  <span className="font-medium">{Math.min(currentPage * 50, totalCount)}</span> of{' '}
+                  <span className="font-medium">{totalCount}</span> results
+                </p>
+              </div>
+              <div>
+                <nav className="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                  <button
+                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="relative inline-flex items-center rounded-l-md px-2 py-2 text-slate-400 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 disabled:opacity-50"
+                  >
+                    <span className="sr-only">Previous</span>
+                    <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-inset ring-slate-300 focus:outline-offset-0">
+                    Page {currentPage} of {totalPages}
+                  </span>
+                  <button
+                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="relative inline-flex items-center rounded-r-md px-2 py-2 text-slate-400 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 disabled:opacity-50"
+                  >
+                    <span className="sr-only">Next</span>
+                    <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                </nav>
+              </div>
+            </div>
           </div>
         )}
       </div>
