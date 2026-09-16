@@ -160,10 +160,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const userObj = data.user;
         
         if (selectedRole) {
-          if (selectedRole === 'admin' && userObj.role !== 'admin') {
+          const userRole = (userObj.role || '').toLowerCase();
+          if (selectedRole === 'admin' && userRole !== 'admin') {
             throw new Error('These credentials belong to a Project Officer account. Please select Officer.');
           }
-          if (selectedRole === 'officer' && userObj.role === 'admin') {
+          if (selectedRole === 'officer' && userRole === 'admin') {
             throw new Error('These credentials belong to an Administrator account. Please select Admin.');
           }
         }
@@ -190,7 +191,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       );
 
       if (selectedRole) {
-        if (selectedRole === 'admin' && userObj.role !== 'admin') {
+        const userRole = (userObj.role || '').toLowerCase();
+        if (selectedRole === 'admin' && userRole !== 'admin') {
           await supabase.auth.signOut().catch(() => {});
           clearAuthSession();
           setUser(null);
@@ -198,7 +200,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           throw new Error('These credentials belong to a Project Officer account. Please select Officer.');
         }
 
-        if (selectedRole === 'officer' && userObj.role === 'admin') {
+        if (selectedRole === 'officer' && userRole === 'admin') {
           await supabase.auth.signOut().catch(() => {});
           clearAuthSession();
           setUser(null);

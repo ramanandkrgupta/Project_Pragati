@@ -37,6 +37,7 @@ export interface ProjectMonitoringData {
   financial_progress: number; // 0 - 100
   original_completion_date: string; // YYYY-MM-DD
   revised_completion_date: string; // YYYY-MM-DD
+  predicted_cost?: number; // Added from LSTM backtest model
 }
 
 export interface FeatureMetrics {

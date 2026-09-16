@@ -120,6 +120,7 @@ export const ProjectDetail: React.FC = () => {
     date: h.update_date,
     original_cost: h.original_cost,
     revised_cost: h.revised_cost,
+    predicted_cost: h.predicted_cost, // LSTM forecast data
     expenditure: h.expenditure,
     physical_progress: h.physical_progress,
     financial_progress: h.financial_progress,
@@ -339,6 +340,14 @@ export const ProjectDetail: React.FC = () => {
                 stroke={colors.navy}
                 fill={colors.navy}
                 fillOpacity={0.15}
+              />
+              <Area
+                type="monotone"
+                dataKey="predicted_cost"
+                name="LSTM Predicted Cost (Cr)"
+                stroke="#C62828" // Red color to indicate AI forecast
+                strokeDasharray="5 5" // Dotted line for prediction
+                fill="none"
               />
               <Area
                 type="monotone"

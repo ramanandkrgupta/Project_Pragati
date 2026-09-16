@@ -316,12 +316,103 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
       id: String(w.project_id), project_id: String(w.project_id), prediction_date: new Date().toISOString(),
       risk_score: Math.round((w.risk_probability || 0) * 100),
       risk_level: (w.risk_level || 'LOW').toUpperCase() as any,
-      delay_probability: 20, cost_overrun_probability: 20,
+      delay_probability: w.predicted_delay_months > 0 ? 80 : 20, 
+      cost_overrun_probability: w.has_cost_overrun ? 80 : 20,
       top_risk_factors: [], recommended_action: '', feature_contributions: [], delay_model_used: '', cost_model_used: ''
     }
   };
 
-  const history = [project.latest_monitoring!];
+  let history: ProjectMonitoringData[] = [project.latest_monitoring!];
+
+  try {
+    const payload = JSON.stringify({ project_id: parseInt(id.replace('PRJ-', ''), 10) || 0 });
+    
+    // Fetch AI explanations and historical timeline
+    const riskRes = await fetch(`${BASE_URL}/predict/overrun-risk`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: payload
+    });
+    
+    let riskData = null;
+    if (riskRes.ok) {
+      riskData = await riskRes.json();
+      project.prediction = {
+        ...project.prediction!,
+        cost_overrun_probability: Math.round((riskData.risk_probability || 0) * 100),
+        top_risk_factors: (riskData.top_factors || []).map((f: any) => `${f.feature_name}: ${f.impact_direction}`),
+        recommended_action: riskData.ai_overview,
+        feature_contributions: (riskData.top_factors || []).map((f: any) => ({
+          feature: f.feature_name,
+          value: f.feature_value,
+          impact: f.shap_value,
+          explanation: f.impact_direction
+        }))
+      };
+
+      if (riskData.historical_timeline && riskData.historical_timeline.length > 0) {
+        history = riskData.historical_timeline.map((h: any) => ({
+          id: String(w.project_id),
+          project_id: String(w.project_id),
+          update_date: h.report_month,
+          original_cost: project.latest_monitoring?.original_cost || 0,
+          revised_cost: h.revised_cost,
+          expenditure: h.expenditure,
+          physical_progress: h.physical_progress,
+          financial_progress: h.financial_progress,
+          original_completion_date: project.latest_monitoring?.original_completion_date || '',
+          revised_completion_date: project.latest_monitoring?.revised_completion_date || '',
+        }));
+      }
+    }
+
+    // Fetch Cost Overrun Forecast (LSTM)
+    const costRes = await fetch(`${BASE_URL}/predict/cost-overrun`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: payload
+    });
+
+    if (costRes.ok) {
+      const costData = await costRes.json();
+      const historicalBacktest = costData.historical_backtest || [];
+      const futureForecasts = costData.future_forecast || [];
+      
+      // Merge predicted_cost into the history array
+      if (historicalBacktest.length > 0) {
+        history = history.map(h => {
+          const match = historicalBacktest.find((b: any) => b.report_month === h.update_date);
+          if (match) {
+            return { ...h, predicted_cost: match.predicted_cost };
+          }
+          return h;
+        });
+      }
+
+      if (futureForecasts.length > 0 && history.length > 0) {
+        const lastEntry = history[history.length - 1];
+        futureForecasts.forEach((forecast: any, idx: number) => {
+          history.push({
+            id: String(w.project_id) + `_f${idx}`,
+            project_id: String(w.project_id),
+            update_date: `Forecast +${forecast.month_offset}M`,
+            original_cost: lastEntry.original_cost,
+            revised_cost: forecast.predicted_cost_cr,
+            predicted_cost: forecast.predicted_cost_cr, // Set predicted_cost for chart mapping
+            expenditure: lastEntry.expenditure, // carry over
+            physical_progress: lastEntry.physical_progress, // carry over
+            financial_progress: lastEntry.financial_progress, // carry over
+            original_completion_date: lastEntry.original_completion_date,
+            revised_completion_date: lastEntry.revised_completion_date,
+          });
+        });
+      }
+    }
+
+  } catch (e) {
+    console.error("Could not automatically load AI predictions on project init", e);
+  }
+
   return { project, history };
 }
 
