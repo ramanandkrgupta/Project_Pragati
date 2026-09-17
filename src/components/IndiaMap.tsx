@@ -31,14 +31,6 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
     });
   }, []);
 
-  const handleReset = () => {
-    setHoveredState(null);
-    if (onStateHover) {
-      const defaultState = data.find(d => d.name.toLowerCase() === 'uttar pradesh');
-      if (defaultState) onStateHover(defaultState);
-    }
-  };
-
   const colorScale = useMemo(() => {
     const maxVal = Math.max(...data.map(d => d.projectCount), 1);
     return scaleLinear<string>()
@@ -58,15 +50,15 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
   }
 
   return (
-    <div className="relative w-full h-[400px]" onMouseLeave={handleReset}>
+    <div className="relative w-full h-[500px]">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
-          scale: 850,
-          center: [82.5, 22.5]
+          scale: 950,
+          center: [82.5, 23]
         }}
         width={600}
-        height={400}
+        height={500}
         style={{ width: "100%", height: "100%" }}
       >
         <Geographies geography={INDIA_TOPO_JSON}>
@@ -96,7 +88,6 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
                       });
                     }
                   }}
-                  onMouseLeave={handleReset}
                   style={{ outline: "none", cursor: "pointer" }}
                 />
               );
