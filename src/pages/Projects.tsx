@@ -26,7 +26,7 @@ import {
   RotateCcw,
   Check,
 } from 'lucide-react';
-import { fetchProjects, fetchPaginatedProjects, createProject, fetchUsers, updateProject, fetchSectors, fetchStates, fetchStatuses, fetchRisks } from '../services/api';
+import { fetchProjects, fetchPaginatedProjects, createProject, fetchUsers, updateProject, fetchSectors, fetchStates } from '../services/api';
 import { Project, RiskLevel, UserProfile } from '../types';
 import { RiskBadge } from '../components/RiskBadge';
 import { StatusBadge } from '../components/StatusBadge';
@@ -118,18 +118,14 @@ export const Projects: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [totalCount, setTotalCount] = useState<number>(0);
-  const [availableSectors, setAvailableSectors] = useState<FilterOption[]>([]);
-  const [availableStates, setAvailableStates] = useState<FilterOption[]>([]);
-  const [availableStatuses, setAvailableStatuses] = useState<FilterOption[]>([]);
-  const [availableRisks, setAvailableRisks] = useState<FilterOption[]>([]);
+  const [availableSectors, setAvailableSectors] = useState<string[]>([]);
+  const [availableStates, setAvailableStates] = useState<string[]>([]);
 
   const loadFilterOptions = async () => {
     try {
-      const [sec, st, statuses, risks] = await Promise.all([fetchSectors(), fetchStates(), fetchStatuses(), fetchRisks()]);
+      const [sec, st] = await Promise.all([fetchSectors(), fetchStates()]);
       setAvailableSectors(sec);
       setAvailableStates(st);
-      setAvailableStatuses(statuses);
-      setAvailableRisks(risks);
     } catch (e) {
       console.error("Failed to load options", e);
     }
@@ -196,13 +192,22 @@ export const Projects: React.FC = () => {
     if (sortBy !== 'risk_desc') newParams.sort_by = sortBy;
     setSearchParams(newParams, { replace: true });
   }, [searchTerm, selectedStates, selectedSectors, selectedRisks, selectedStatuses, sortBy]);
-  // Use dynamically loaded filter options with counts from backend
-  const availableStatesWithCount = availableStates;
-  const availableSectorsWithCount = availableSectors;
-  const availableStatusesWithCount = availableStatuses;
-  
-  // Also optionally expose risks if the UI uses them later
-  const availableRisksWithCount = availableRisks;
+
+  // Use dynamically loaded sectors/states
+  const availableStatesWithCount = useMemo(() => {
+    return availableStates.map(name => ({ name, count: 0 })); // Counts not available server-side yet
+  }, [availableStates]);
+
+  const availableSectorsWithCount = useMemo(() => {
+    return availableSectors.map(name => ({ name, count: 0 }));
+  }, [availableSectors]);
+
+  // Available statuses
+  const availableStatusesWithCount = useMemo(() => {
+    const map = new Map<string, number>();
+    ['On-Going', 'Delayed', 'Under Risk', 'Completed', 'Tendering'].forEach((st) => map.set(st, 0));
+    return Array.from(map.entries()).map(([name, count]) => ({ name, count }));
+  }, []);
 
   // Filtered projects are just the raw projects now, since the server does the filtering!
   const filteredProjects = rawProjects;
@@ -423,11 +428,10 @@ export const Projects: React.FC = () => {
                 setIsSectorOpen(false);
                 setIsStatusOpen(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${
-                selectedStates.length > 0
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${selectedStates.length > 0
                   ? 'bg-blue-50 text-[#003B6F] border-blue-300 font-bold'
                   : 'bg-white text-slate-700 border-[#D9E1E8] hover:bg-slate-50'
-              }`}
+                }`}
             >
               <MapPin className="h-3.5 w-3.5 text-[#005A9C]" />
               <span>
@@ -477,7 +481,7 @@ export const Projects: React.FC = () => {
                             <input
                               type="checkbox"
                               checked={isSelected}
-                              onChange={() => {}}
+                              onChange={() => { }}
                               className="rounded border-slate-300 text-[#003B6F] focus:ring-0"
                             />
                             <span className={isSelected ? 'font-bold text-[#003B6F]' : 'text-slate-700'}>
@@ -504,11 +508,10 @@ export const Projects: React.FC = () => {
                 setIsStateOpen(false);
                 setIsStatusOpen(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${
-                selectedSectors.length > 0
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${selectedSectors.length > 0
                   ? 'bg-blue-50 text-[#003B6F] border-blue-300 font-bold'
                   : 'bg-white text-slate-700 border-[#D9E1E8] hover:bg-slate-50'
-              }`}
+                }`}
             >
               <Layers className="h-3.5 w-3.5 text-[#005A9C]" />
               <span>
@@ -558,7 +561,7 @@ export const Projects: React.FC = () => {
                             <input
                               type="checkbox"
                               checked={isSelected}
-                              onChange={() => {}}
+                              onChange={() => { }}
                               className="rounded border-slate-300 text-[#003B6F] focus:ring-0"
                             />
                             <span className={isSelected ? 'font-bold text-[#003B6F]' : 'text-slate-700'}>
@@ -585,11 +588,10 @@ export const Projects: React.FC = () => {
                 setIsStateOpen(false);
                 setIsSectorOpen(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${
-                selectedStatuses.length > 0
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-semibold transition-colors ${selectedStatuses.length > 0
                   ? 'bg-blue-50 text-[#003B6F] border-blue-300 font-bold'
                   : 'bg-white text-slate-700 border-[#D9E1E8] hover:bg-slate-50'
-              }`}
+                }`}
             >
               <Activity className="h-3.5 w-3.5 text-[#005A9C]" />
               <span>
@@ -626,7 +628,7 @@ export const Projects: React.FC = () => {
                           <input
                             type="checkbox"
                             checked={isSelected}
-                            onChange={() => {}}
+                            onChange={() => { }}
                             className="rounded border-slate-300 text-[#003B6F] focus:ring-0"
                           />
                           <span className={isSelected ? 'font-bold text-[#003B6F]' : 'text-slate-700'}>
@@ -653,20 +655,17 @@ export const Projects: React.FC = () => {
               { label: 'LOW', bgActive: 'bg-emerald-600 text-white border-emerald-600', text: 'Low' },
             ].map((riskItem) => {
               const isSelected = selectedRisks.includes(riskItem.label);
-              const countMatch = availableRisksWithCount.find(r => r.name.toUpperCase() === riskItem.label);
-              const displayCount = countMatch ? countMatch.count : 0;
               return (
                 <button
                   key={riskItem.label}
                   type="button"
                   onClick={() => toggleRisk(riskItem.label)}
-                  className={`px-2.5 py-1 rounded text-[11px] font-bold border transition-colors ${
-                    isSelected
+                  className={`px-2.5 py-1 rounded text-[11px] font-bold border transition-colors ${isSelected
                       ? riskItem.bgActive
                       : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'
-                  }`}
+                    }`}
                 >
-                  {riskItem.text} ({displayCount})
+                  {riskItem.text}
                 </button>
               );
             })}

@@ -272,10 +272,12 @@ export const ProjectDetail: React.FC = () => {
                     return (
                       <div key={idx} className="relative pt-1 pb-2">
                         <div className="flex justify-between items-end mb-1">
-                          <div className="flex flex-col">
-                            <span className="text-[11px] font-bold text-[#172033]">{niceName}</span>
-                            <span className="text-[10px] text-slate-500">
-                              {c.value !== 'Categorical/Transformed' ? `Value: ${c.value}` : 'Matches Risk Profile'}
+                          <div className="flex flex-col w-[70%]">
+                            <span className="text-[11px] font-bold text-[#172033]">
+                              {niceName} <span className="font-normal text-slate-500">({widthPct.toFixed(1)}% impact)</span>
+                            </span>
+                            <span className="text-[10px] text-slate-500 leading-tight mt-0.5">
+                              {c.explanation_text || (c.value !== 'Categorical/Transformed' ? `Value: ${c.value}` : 'Matches historical risk profile')}
                             </span>
                           </div>
                           <span className={`text-[10px] font-bold ${isIncrease ? 'text-[#C62828]' : 'text-[#138808]'}`}>

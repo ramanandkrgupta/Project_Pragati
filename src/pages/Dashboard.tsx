@@ -45,9 +45,13 @@ import { DashboardSummary, Project } from '../types';
 import { RiskBadge } from '../components/RiskBadge';
 import { StatusBadge } from '../components/StatusBadge';
 import { useAccessibility } from '../context/AccessibilityContext';
+import { IndiaMap } from '../components/IndiaMap';
+import { MinistrySectorOverview } from '../components/MinistrySectorOverview';
+import { AggregatedMetrics } from '../types';
 
 export const Dashboard: React.FC = () => {
   const [data, setData] = useState<DashboardSummary | null>(null);
+  const [hoveredStateMap, setHoveredStateMap] = useState<AggregatedMetrics | null>(null);
   const [allProjects, setAllProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -216,13 +220,13 @@ export const Dashboard: React.FC = () => {
   const trendData = (data.risk_trends && data.risk_trends.length > 0
     ? data.risk_trends
     : [
-        { month: 'Nov 2025', avg_risk_score: 42, high_risk_projects: 3, delay_risk_projects: 4 },
-        { month: 'Dec 2025', avg_risk_score: 45, high_risk_projects: 4, delay_risk_projects: 5 },
-        { month: 'Jan 2026', avg_risk_score: 48, high_risk_projects: 4, delay_risk_projects: 6 },
-        { month: 'Feb 2026', avg_risk_score: 51, high_risk_projects: 5, delay_risk_projects: 7 },
-        { month: 'Mar 2026', avg_risk_score: 49, high_risk_projects: 5, delay_risk_projects: 6 },
-        { month: 'Apr 2026', avg_risk_score: 53, high_risk_projects: 6, delay_risk_projects: 8 },
-      ]
+      { month: 'Nov 2025', avg_risk_score: 42, high_risk_projects: 3, delay_risk_projects: 4 },
+      { month: 'Dec 2025', avg_risk_score: 45, high_risk_projects: 4, delay_risk_projects: 5 },
+      { month: 'Jan 2026', avg_risk_score: 48, high_risk_projects: 4, delay_risk_projects: 6 },
+      { month: 'Feb 2026', avg_risk_score: 51, high_risk_projects: 5, delay_risk_projects: 7 },
+      { month: 'Mar 2026', avg_risk_score: 49, high_risk_projects: 5, delay_risk_projects: 6 },
+      { month: 'Apr 2026', avg_risk_score: 53, high_risk_projects: 6, delay_risk_projects: 8 },
+    ]
   ).map((item) => ({
     month: item.month,
     highRisk: item.high_risk_projects,
@@ -412,6 +416,101 @@ export const Dashboard: React.FC = () => {
         </div>
       </div>
 
+      <MinistrySectorOverview />
+
+      {/* State-wise Projects India Map */}
+      <div className="bg-white p-5 rounded-lg border border-[#D9DEE3] shadow-xs space-y-5">
+        <div className="border-b border-[#D9DEE3] pb-2.5">
+          <h2 className="text-sm font-bold text-[#0B3D66] flex items-center gap-1.5 uppercase tracking-wide">
+            <MapPin className="h-4 w-4 text-[#0B3D66]" />
+            State-wise Projects <span className="text-[#0B2942]/60 text-[10px] lowercase font-normal">(as of July, 2026)</span>
+          </h2>
+        </div>
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="w-full md:w-1/2 relative bg-slate-50/50 rounded border border-slate-100 overflow-hidden">
+            <IndiaMap onStateHover={setHoveredStateMap} />
+          </div>
+          <div className="w-full md:w-1/2 flex items-center justify-center p-6 bg-slate-50/50 rounded border border-slate-100">
+            {hoveredStateMap ? (
+              <div className="w-full bg-white rounded-xl border border-[#003B6F]/10 shadow-lg overflow-hidden">
+                <div className="bg-[#003B6F] px-6 py-4 text-center">
+                  <h3 className="text-xl font-bold text-white">{hoveredStateMap.name}</h3>
+                </div>
+                <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-blue-50 text-blue-600 rounded-lg">
+                      <FileSpreadsheet className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Project Count (No.)</p>
+                      <p className="text-2xl font-bold text-slate-900">{hoveredStateMap.projectCount}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-indigo-50 text-indigo-600 rounded-lg">
+                      <Coins className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Original Cost (in Cr.)</p>
+                      <p className="text-2xl font-bold text-slate-900">₹ {hoveredStateMap.originalCost.toLocaleString('en-IN', { maximumFractionDigits: 2 })}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-rose-50 text-rose-600 rounded-lg">
+                      <TrendingUp className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Latest Revised Cost (in Cr.)</p>
+                      <p className="text-2xl font-bold text-slate-900">₹ {hoveredStateMap.revisedCost.toLocaleString('en-IN', { maximumFractionDigits: 2 })}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
+                      <Activity className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Expenditure (Cumm.) (in Cr.)</p>
+                      <p className="text-2xl font-bold text-slate-900">₹ {hoveredStateMap.expenditure.toLocaleString('en-IN', { maximumFractionDigits: 2 })}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-amber-50 text-amber-600 rounded-lg">
+                      <Calendar className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Completed During month</p>
+                      <p className="text-2xl font-bold text-slate-900">{hoveredStateMap.completedDuringMonth}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-sky-50 text-sky-600 rounded-lg">
+                      <Building2 className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Newly Added (No.)</p>
+                      <p className="text-2xl font-bold text-slate-900">{hoveredStateMap.newlyAdded}</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            ) : (
+              <div className="text-center text-slate-500">
+                <MapPin className="w-12 h-12 text-slate-300 mx-auto mb-3 animate-bounce" />
+                <p className="text-lg font-bold text-slate-700">Interactive Map</p>
+                <p className="text-sm mt-1">Hover over any state on the map to view detailed project statistics and expenditure tracking.</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
       {/* ROW 1: Risk Distribution (Donut) & Project Progress Overview (Bar) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Risk Distribution (Donut Chart) */}
@@ -499,74 +598,72 @@ export const Dashboard: React.FC = () => {
 
       {/* ROW 2: Risk Intelligence & Performance Analytics: Line Chart of Avg Risk Score Trend */}
       <div className="bg-white p-5 rounded-lg border border-[#D9DEE3] shadow-xs space-y-3">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#D9DEE3] pb-2.5">
-            <div>
-              <h2 className="text-sm font-bold text-[#0B3D66] flex items-center gap-1.5">
-                <LineChartIcon className="h-4 w-4 text-[#0B3D66]" />
-                Risk Intelligence: Avg Risk Score Trend Over Time
-              </h2>
-              <p className="text-xs text-[#0B2942]/70">Monthly tracking of composite portfolio risk score trajectory</p>
-            </div>
-            <div className="flex items-center gap-1 bg-[#F4F6F8] p-1 rounded border border-[#D9DEE3] shrink-0">
-              <button
-                onClick={() => setTrendMetricMode('avg_score')}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded ${
-                  trendMetricMode === 'avg_score' ? 'bg-[#0B3D66] text-white' : 'text-[#0B2942]'
-                }`}
-              >
-                Avg Risk Score
-              </button>
-              <button
-                onClick={() => setTrendMetricMode('all')}
-                className={`px-2 py-0.5 text-[11px] font-bold rounded ${
-                  trendMetricMode === 'all' ? 'bg-[#0B3D66] text-white' : 'text-[#0B2942]'
-                }`}
-              >
-                All Metrics
-              </button>
-            </div>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#D9DEE3] pb-2.5">
+          <div>
+            <h2 className="text-sm font-bold text-[#0B3D66] flex items-center gap-1.5">
+              <LineChartIcon className="h-4 w-4 text-[#0B3D66]" />
+              Risk Intelligence: Avg Risk Score Trend Over Time
+            </h2>
+            <p className="text-xs text-[#0B2942]/70">Monthly tracking of composite portfolio risk score trajectory</p>
           </div>
-
-          <div className="h-56 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={trendData} margin={{ top: 10, right: 15, left: -15, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke={colors.gridline} />
-                <XAxis dataKey="month" stroke={colors.gridline} tick={{ fontSize: 11, fill: colors.textNavy, fontWeight: 600 }} />
-                <YAxis domain={[0, 100]} stroke={colors.gridline} tick={{ fontSize: 11, fill: colors.textNavy }} unit="%" />
-                <Tooltip contentStyle={customTooltipStyle} />
-                <Legend verticalAlign="top" wrapperStyle={{ fontSize: 11, color: colors.textNavy, fontWeight: 600 }} />
-                <Line
-                  type="monotone"
-                  dataKey="avgScore"
-                  name="Avg Risk Score (%)"
-                  stroke={colors.navy}
-                  strokeWidth={2.5}
-                  dot={{ r: 4, fill: colors.navy }}
-                />
-                {trendMetricMode === 'all' && (
-                  <Line
-                    type="monotone"
-                    dataKey="highRisk"
-                    name="High Risk Count"
-                    stroke={colors.redMaroon}
-                    strokeWidth={2}
-                    dot={{ r: 3, fill: colors.redMaroon }}
-                  />
-                )}
-                {trendMetricMode === 'all' && (
-                  <Line
-                    type="monotone"
-                    dataKey="delayRisk"
-                    name="Delay Risk Count"
-                    stroke={colors.orange}
-                    strokeWidth={2}
-                    strokeDasharray="4 4"
-                  />
-                )}
-              </LineChart>
-            </ResponsiveContainer>
+          <div className="flex items-center gap-1 bg-[#F4F6F8] p-1 rounded border border-[#D9DEE3] shrink-0">
+            <button
+              onClick={() => setTrendMetricMode('avg_score')}
+              className={`px-2 py-0.5 text-[11px] font-bold rounded ${trendMetricMode === 'avg_score' ? 'bg-[#0B3D66] text-white' : 'text-[#0B2942]'
+                }`}
+            >
+              Avg Risk Score
+            </button>
+            <button
+              onClick={() => setTrendMetricMode('all')}
+              className={`px-2 py-0.5 text-[11px] font-bold rounded ${trendMetricMode === 'all' ? 'bg-[#0B3D66] text-white' : 'text-[#0B2942]'
+                }`}
+            >
+              All Metrics
+            </button>
           </div>
         </div>
+
+        <div className="h-56 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={trendData} margin={{ top: 10, right: 15, left: -15, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke={colors.gridline} />
+              <XAxis dataKey="month" stroke={colors.gridline} tick={{ fontSize: 11, fill: colors.textNavy, fontWeight: 600 }} />
+              <YAxis domain={[0, 100]} stroke={colors.gridline} tick={{ fontSize: 11, fill: colors.textNavy }} unit="%" />
+              <Tooltip contentStyle={customTooltipStyle} />
+              <Legend verticalAlign="top" wrapperStyle={{ fontSize: 11, color: colors.textNavy, fontWeight: 600 }} />
+              <Line
+                type="monotone"
+                dataKey="avgScore"
+                name="Avg Risk Score (%)"
+                stroke={colors.navy}
+                strokeWidth={2.5}
+                dot={{ r: 4, fill: colors.navy }}
+              />
+              {trendMetricMode === 'all' && (
+                <Line
+                  type="monotone"
+                  dataKey="highRisk"
+                  name="High Risk Count"
+                  stroke={colors.redMaroon}
+                  strokeWidth={2}
+                  dot={{ r: 3, fill: colors.redMaroon }}
+                />
+              )}
+              {trendMetricMode === 'all' && (
+                <Line
+                  type="monotone"
+                  dataKey="delayRisk"
+                  name="Delay Risk Count"
+                  stroke={colors.orange}
+                  strokeWidth={2}
+                  strokeDasharray="4 4"
+                />
+              )}
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
 
       {/* ROW 3: Budget vs Actual Expenditure (Grouped Bar) & Regional Distribution (Bar) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

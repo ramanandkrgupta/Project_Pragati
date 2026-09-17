@@ -3,7 +3,6 @@ import {
   AlertStatus,
   AuthResponse,
   DashboardSummary,
-  FilterOption,
   ModelInsightsData,
   Prediction,
   Project,
@@ -70,7 +69,7 @@ export async function loginUser(credentials: { email: string; password: string }
   saveAuthSession(mockToken, mockUser);
   return {
     access_token: mockToken,
-    
+
     token_type: 'Bearer',
     user: mockUser,
   };
@@ -93,7 +92,7 @@ export async function registerUser(payload: {
   saveAuthSession(mockToken, mockUser);
   return {
     access_token: mockToken,
-    
+
     token_type: 'Bearer',
     user: mockUser,
   };
@@ -113,7 +112,7 @@ export async function fetchDashboard(): Promise<DashboardSummary> {
   const res = await fetch(`${BASE_URL}/analytics/overview`);
   if (!res.ok) throw new Error('Failed to fetch dashboard data from backend');
   const data = await res.json();
-  
+
   return {
     total_projects: data.total_projects || 0,
     high_risk_projects: data.total_high_risk || 0,
@@ -168,9 +167,9 @@ export async function fetchProjects(params?: {
   const url = `${BASE_URL}/early-warnings?${query.toString()}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error('Failed to fetch projects from backend');
-  
+
   const data = await res.json();
-  
+
   return (data.warnings || []).map((w: any) => ({
     id: String(w.project_id),
     project_code: `PRJ-${w.project_id}`,
@@ -228,9 +227,9 @@ export async function fetchPaginatedProjects(params: {
   const url = `${BASE_URL}/early-warnings?${query.toString()}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error('Failed to fetch paginated projects from backend');
-  
+
   const data = await res.json();
-  
+
   const projects = (data.warnings || []).map((w: any) => ({
     id: String(w.project_id),
     project_code: `PRJ-${w.project_id}`,
@@ -269,43 +268,29 @@ export async function fetchPaginatedProjects(params: {
   };
 }
 
-export async function fetchSectors(): Promise<FilterOption[]> {
+export async function fetchSectors(): Promise<string[]> {
   const res = await fetch(`${BASE_URL}/options/sectors`);
   if (!res.ok) return [];
   const data = await res.json();
   return data.sectors || [];
 }
 
-export async function fetchStates(): Promise<FilterOption[]> {
+export async function fetchStates(): Promise<string[]> {
   const res = await fetch(`${BASE_URL}/options/states`);
   if (!res.ok) return [];
   const data = await res.json();
   return data.states || [];
 }
 
-export async function fetchStatuses(): Promise<FilterOption[]> {
-  const res = await fetch(`${BASE_URL}/options/statuses`);
-  if (!res.ok) return [];
-  const data = await res.json();
-  return data.statuses || [];
-}
-
-export async function fetchRisks(): Promise<FilterOption[]> {
-  const res = await fetch(`${BASE_URL}/options/risks`);
-  if (!res.ok) return [];
-  const data = await res.json();
-  return data.risks || [];
-}
-
 export async function fetchProjectById(id: string): Promise<{ project: Project; history: ProjectMonitoringData[] }> {
   const res = await fetch(`${BASE_URL}/early-warnings?search=${id}`);
   if (!res.ok) throw new Error(`Failed to fetch project ${id} from backend`);
   const data = await res.json();
-  
+
   if (!data.warnings || data.warnings.length === 0) {
     throw new Error(`Project not found with ID: ${id}`);
   }
-  
+
   const w = data.warnings[0];
   const project: Project = {
     id: String(w.project_id),
@@ -331,7 +316,7 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
       id: String(w.project_id), project_id: String(w.project_id), prediction_date: new Date().toISOString(),
       risk_score: Math.round((w.risk_probability || 0) * 100),
       risk_level: (w.risk_level || 'LOW').toUpperCase() as any,
-      delay_probability: w.predicted_delay_months > 0 ? 80 : 20, 
+      delay_probability: w.predicted_delay_months > 0 ? 80 : 20,
       cost_overrun_probability: w.has_cost_overrun ? 80 : 20,
       top_risk_factors: [], recommended_action: '', feature_contributions: [], delay_model_used: '', cost_model_used: ''
     }
@@ -341,14 +326,14 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
 
   try {
     const payload = JSON.stringify({ project_id: parseInt(id.replace('PRJ-', ''), 10) || 0 });
-    
+
     // Fetch AI explanations and historical timeline
     const riskRes = await fetch(`${BASE_URL}/predict/overrun-risk`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: payload
     });
-    
+
     let riskData = null;
     if (riskRes.ok) {
       riskData = await riskRes.json();
@@ -361,7 +346,8 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
           feature: f.feature_name,
           value: f.feature_value,
           impact: f.shap_value,
-          explanation: f.impact_direction
+          explanation: f.impact_direction,
+          explanation_text: f.explanation_text
         }))
       };
 
@@ -392,7 +378,7 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
       const costData = await costRes.json();
       const historicalBacktest = costData.historical_backtest || [];
       const futureForecasts = costData.future_forecast || [];
-      
+
       // Merge predicted_cost into the history array
       if (historicalBacktest.length > 0) {
         history = history.map(h => {
@@ -434,21 +420,21 @@ export async function fetchProjectById(id: string): Promise<{ project: Project; 
 export async function runProjectPrediction(projectId: string): Promise<{ project: Project; prediction: Prediction; alerts: Alert[] }> {
   const cleanId = projectId.replace('PRJ-', '');
   const payload = { project_id: parseInt(cleanId, 10) || 0 };
-  
+
   const riskRes = await fetch(`${BASE_URL}/predict/overrun-risk`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
   });
-  
+
   if (!riskRes.ok) throw new Error('Failed to run prediction on Python backend');
   const riskData = await riskRes.json();
-  
+
   const prediction: Prediction = {
     id: projectId, project_id: projectId, prediction_date: new Date().toISOString(),
     risk_score: Math.round((riskData.risk_probability || 0) * 100),
     risk_level: (riskData.risk_level || 'LOW').toUpperCase() as any,
-    delay_probability: 0, 
+    delay_probability: 0,
     cost_overrun_probability: Math.round((riskData.risk_probability || 0) * 100),
     top_risk_factors: (riskData.top_factors || []).map((f: any) => `${f.feature_name}: ${f.impact_direction}`),
     recommended_action: riskData.ai_overview,
@@ -491,3 +477,24 @@ export async function createProject(payload: any) { return {} as Project; }
 export async function updateProject(id: string, updates: any) { return {} as Project; }
 export async function fetchUsers() { return []; }
 export async function updateUserRole(id: string, role: any) { return {} as UserProfile; }
+
+export async function fetchStateWiseAnalytics(): Promise<import('../types').AggregatedMetrics[]> {
+  const response = await fetch(`${BASE_URL}/analytics/state-wise`);
+  if (!response.ok) throw new Error('Failed to fetch state-wise analytics');
+  const data = await response.json();
+  return data.data;
+}
+
+export async function fetchAgencyWiseAnalytics(): Promise<import('../types').AggregatedMetrics[]> {
+  const response = await fetch(`${BASE_URL}/analytics/agency-wise`);
+  if (!response.ok) throw new Error('Failed to fetch agency-wise analytics');
+  const data = await response.json();
+  return data.data;
+}
+
+export async function fetchSectorWiseAnalytics(): Promise<import('../types').AggregatedMetrics[]> {
+  const response = await fetch(`${BASE_URL}/analytics/sector-wise`);
+  if (!response.ok) throw new Error('Failed to fetch sector-wise analytics');
+  const data = await response.json();
+  return data.data;
+}

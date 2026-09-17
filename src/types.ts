@@ -4,11 +4,6 @@ export type AlertType = 'SCHEDULE_DELAY' | 'COST_OVERRUN' | 'PROGRESS_DIVERGENCE
 export type AlertStatus = 'NEW' | 'REVIEWED' | 'RESOLVED';
 export type DataSource = 'Official Data' | 'Imported Data' | 'Demo Data' | 'PAIMANA Public Dashboard';
 
-export interface FilterOption {
-  name: string;
-  count: number;
-}
-
 export interface Project {
   id: string;
   project_code: string;
@@ -22,7 +17,7 @@ export interface Project {
   created_at: string;
   assigned_to?: string | null;
   is_demo?: boolean;
-  
+
   // Latest computed metrics
   latest_monitoring?: ProjectMonitoringData;
   features?: FeatureMetrics;
@@ -59,6 +54,7 @@ export interface FeatureContribution {
   value: string | number;
   impact: number; // -1 to +1 (relative risk contribution)
   explanation: string;
+  explanation_text?: string;
 }
 
 export interface Prediction {
@@ -270,4 +266,14 @@ export interface CreateProjectPayload {
   original_completion_date: string;
   revised_completion_date: string;
   assigned_to?: string | null;
+}
+
+export interface AggregatedMetrics {
+  name: string;
+  projectCount: number;
+  originalCost: number;
+  revisedCost: number;
+  expenditure: number;
+  completedDuringMonth: number;
+  newlyAdded: number;
 }

@@ -417,11 +417,34 @@ async def predict_overrun_risk(request: ProjectInferenceRequest):
             original_feature_name = fname.split('__')[-1] if '__' in fname else fname
             direction = "Increases Risk" if shap_val > 0 else "Decreases Risk"
             
+            explanation_text = None
+            try:
+                # Add contextual data for specific known risk features (like the user requested)
+                with engine.connect() as conn:
+                    if original_feature_name.startswith('state_'):
+                        state_name = original_feature_name.replace('state_', '')
+                        res = conn.execute(text("SELECT COUNT(*) FROM projects WHERE state = :st AND physical_progress < 100 AND revised_cost > 2000"), {"st": state_name}).scalar()
+                        if res and res > 0:
+                            explanation_text = f"{state_name} has {res} active projects over 2000Cr budget, showing regional risk correlation."
+                    elif original_feature_name.startswith('sector_'):
+                        sector_name = original_feature_name.replace('sector_', '')
+                        res = conn.execute(text("SELECT COUNT(*) FROM projects WHERE sector = :sec AND physical_progress < 100 AND (revised_cost > approved_cost OR expenditure > approved_cost)"), {"sec": sector_name}).scalar()
+                        if res and res > 0:
+                            explanation_text = f"{sector_name} sector has {res} active projects currently experiencing cost overruns."
+                    elif original_feature_name.startswith('implementing_agency_'):
+                        agency_name = original_feature_name.replace('implementing_agency_', '')
+                        res = conn.execute(text("SELECT COUNT(*) FROM projects WHERE implementing_agency = :ag AND physical_progress < 100 AND physical_progress < financial_progress"), {"ag": agency_name}).scalar()
+                        if res and res > 0:
+                            explanation_text = f"Agency {agency_name[:20]}... has {res} projects where financial spend outpaces physical progress."
+            except Exception as e:
+                pass
+            
             explanations.append(FeatureExplanation(
                 feature_name=original_feature_name,
                 feature_value=str(input_data.iloc[0].get(original_feature_name, "Categorical/Transformed")),
                 shap_value=float(shap_val),
-                impact_direction=direction
+                impact_direction=direction,
+                explanation_text=explanation_text
             ))
     except Exception as e:
         print(f"Warning: SHAP explanation generation failed: {e}")
@@ -1306,33 +1329,114 @@ def get_me(email: str = ""):
 @app.get("/api/v1/options/sectors")
 def get_sectors():
     with engine.connect() as conn:
-        res = conn.execute(text("SELECT sector, COUNT(*) FROM projects WHERE sector IS NOT NULL AND sector != '' GROUP BY sector ORDER BY sector"))
-        return {"sectors": [{"name": row[0], "count": row[1]} for row in res]}
+        res = conn.execute(text("SELECT DISTINCT sector FROM projects WHERE sector IS NOT NULL AND sector != '' ORDER BY sector"))
+        return {"sectors": [row[0] for row in res]}
 
 @app.get("/api/v1/options/states")
 def get_states():
     with engine.connect() as conn:
-        res = conn.execute(text("SELECT state, COUNT(*) FROM projects WHERE state IS NOT NULL AND state != '' GROUP BY state ORDER BY state"))
-        return {"states": [{"name": row[0], "count": row[1]} for row in res]}
+        res = conn.execute(text("SELECT DISTINCT state FROM projects WHERE state IS NOT NULL AND state != '' ORDER BY state"))
+        return {"states": [row[0] for row in res]}
 
-@app.get("/api/v1/options/statuses")
-def get_statuses():
-    with engine.connect() as conn:
-        res = conn.execute(text("""
-            SELECT 
-                CASE WHEN physical_progress >= 100 THEN 'Completed' ELSE 'On-Going' END as status,
-                COUNT(*)
-            FROM projects 
-            GROUP BY CASE WHEN physical_progress >= 100 THEN 'Completed' ELSE 'On-Going' END
-        """))
-        return {"statuses": [{"name": row[0], "count": row[1]} for row in res]}
+import re
 
-@app.get("/api/v1/options/risks")
-def get_risks():
+def clean_and_split_states(state_str):
+    if not state_str:
+        return []
+    s = state_str.replace('(-) (-)', '').replace('(-)', '').strip()
+    # Remove any standalone bracketed number like (10141) or (N06000163)
+    s = re.sub(r'\([A-Z0-9]+\)', '', s)
+    s = s.replace('Multi-States', '')
+    s = s.replace('(', '').replace(')', '')
+    s = s.strip()
+    if not s or s.lower() == 'pan india' or s.lower() == 'offshore':
+        return []
+    
+    # Split by comma
+    states = [x.strip() for x in s.split(',')]
+    return [x for x in states if x]
+
+@app.get("/api/v1/analytics/state-wise")
+def get_state_wise_analytics():
     with engine.connect() as conn:
-        res = conn.execute(text("""
-            SELECT risk_level, COUNT(*) 
-            FROM early_warnings 
-            GROUP BY risk_level
-        """))
-        return {"risks": [{"name": row[0].title(), "count": row[1]} for row in res if row[0]]}
+        res = conn.execute(text('''
+            SELECT state, approved_cost, revised_cost, expenditure, physical_progress
+            FROM projects
+        '''))
+        
+        state_map = {}
+        for row in res:
+            states = clean_and_split_states(row[0])
+            for st in states:
+                if st not in state_map:
+                    state_map[st] = {
+                        "name": st,
+                        "projectCount": 0,
+                        "originalCost": 0.0,
+                        "revisedCost": 0.0,
+                        "expenditure": 0.0,
+                        "completedDuringMonth": 0,
+                        "newlyAdded": 0
+                    }
+                state_map[st]["projectCount"] += 1
+                state_map[st]["originalCost"] += float(row[1] or 0)
+                state_map[st]["revisedCost"] += float(row[2] or 0)
+                state_map[st]["expenditure"] += float(row[3] or 0)
+                if row[4] and float(row[4]) >= 100:
+                    state_map[st]["completedDuringMonth"] += 1
+                    
+        return {"data": list(state_map.values())}
+
+@app.get("/api/v1/analytics/agency-wise")
+def get_agency_wise_analytics():
+    with engine.connect() as conn:
+        res = conn.execute(text('''
+            SELECT implementing_agency, COUNT(*) as projectCount, 
+                   SUM(approved_cost) as originalCost, SUM(revised_cost) as revisedCost, 
+                   SUM(expenditure) as expenditure,
+                   SUM(CASE WHEN physical_progress >= 100 THEN 1 ELSE 0 END) as completedDuringMonth
+            FROM projects
+            WHERE implementing_agency IS NOT NULL AND implementing_agency != ''
+            GROUP BY implementing_agency
+            ORDER BY projectCount DESC
+        '''))
+        
+        data = []
+        for row in res:
+            data.append({
+                "name": row[0],
+                "projectCount": row[1],
+                "originalCost": float(row[2] or 0),
+                "revisedCost": float(row[3] or 0),
+                "expenditure": float(row[4] or 0),
+                "completedDuringMonth": row[5],
+                "newlyAdded": 0
+            })
+        return {"data": data}
+
+@app.get("/api/v1/analytics/sector-wise")
+def get_sector_wise_analytics():
+    with engine.connect() as conn:
+        res = conn.execute(text('''
+            SELECT sector, COUNT(*) as projectCount, 
+                   SUM(approved_cost) as originalCost, SUM(revised_cost) as revisedCost, 
+                   SUM(expenditure) as expenditure,
+                   SUM(CASE WHEN physical_progress >= 100 THEN 1 ELSE 0 END) as completedDuringMonth
+            FROM projects
+            WHERE sector IS NOT NULL AND sector != ''
+            GROUP BY sector
+            ORDER BY projectCount DESC
+        '''))
+        
+        data = []
+        for row in res:
+            data.append({
+                "name": row[0],
+                "projectCount": row[1],
+                "originalCost": float(row[2] or 0),
+                "revisedCost": float(row[3] or 0),
+                "expenditure": float(row[4] or 0),
+                "completedDuringMonth": row[5],
+                "newlyAdded": 0
+            })
+        return {"data": data}

@@ -9,6 +9,7 @@ class FeatureExplanation(BaseModel):
     feature_value: Any = Field(..., description="Input value provided")
     shap_value: float = Field(..., description="SHAP attribution value (positive means it increases overrun risk)")
     impact_direction: str = Field(..., description="'Increases Risk' or 'Decreases Risk'")
+    explanation_text: Optional[str] = Field(None, description="Dynamic data-backed context for this feature's risk impact")
     
 class HistoricalSnapshot(BaseModel):
     report_month: str
