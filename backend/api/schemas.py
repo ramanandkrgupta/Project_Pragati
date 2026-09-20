@@ -4,6 +4,14 @@ from typing import List, Dict, Any, Optional
 class ProjectInferenceRequest(BaseModel):
     project_id: int = Field(..., description="Unique 6-digit identifier for the infrastructure project")
 
+class SimulationRequest(BaseModel):
+    sector: str = Field(..., description="Sector of the project")
+    original_cost: float = Field(..., description="Original approved cost in Cr")
+    revised_cost: float = Field(..., description="Simulated revised cost in Cr")
+    expenditure: float = Field(..., description="Simulated expenditure in Cr")
+    physical_progress: float = Field(..., description="Simulated physical progress (0-100)")
+    timeline_extension_months: int = Field(..., description="Simulated timeline extension in months")
+
 class FeatureExplanation(BaseModel):
     feature_name: str = Field(..., description="Name of the feature")
     feature_value: Any = Field(..., description="Input value provided")

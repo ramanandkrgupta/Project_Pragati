@@ -15,7 +15,7 @@ import {
   ChatResponse,
 } from '../types';
 
-const BASE_URL = '/api/v1';
+const BASE_URL = import.meta.env.VITE_API_URL || '/api/v1';
 const TOKEN_STORAGE_KEY = 'project_sentinel_token';
 const USER_STORAGE_KEY = 'project_sentinel_user';
 
@@ -471,7 +471,38 @@ export async function updateAlertStatus(alertId: string, status: AlertStatus) { 
 export async function uploadProjectData(fileOrPayload: any, commit: boolean = false, dataSource: string = '') { return { success: true, validation: { total_rows: 0, valid_rows: 0, errors: [] }, totalRows: 0, validRows: 0, import_stats: { imported_count: 0, updated_count: 0 } }; }
 export async function commitProjectRecordsBatch(payload: any) { return { success: true, batchIndex: 0, batchSize: 0, importedCount: 0, updatedCount: 0, processedCount: 0 }; }
 export async function fetchModelInsights() { return {} as ModelInsightsData; }
-export async function simulatePrediction(scenario: any) { return { features: {}, prediction: {} as Prediction, alerts: [] }; }
+export async function simulatePrediction(scenario: {
+  sector: string;
+  original_cost: number;
+  revised_cost: number;
+  expenditure: number;
+  physical_progress: number;
+  timeline_extension_months: number;
+}) {
+  const res = await fetch(`${BASE_URL}/predict/simulate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(scenario),
+  });
+  if (!res.ok) throw new Error('Simulation failed');
+  
+  const data = await res.json();
+  
+  return {
+    prediction: {
+      risk_score: Math.round(data.risk_probability * 100),
+      risk_level: data.risk_level.toUpperCase(),
+      delay_probability: Math.round(data.delay_probability * 100),
+      cost_overrun_probability: Math.round(data.cost_overrun_probability * 100),
+      top_inferred_factor: data.top_inferred_factor,
+      recommended_action: data.recommended_action,
+      risk_factors: data.top_factors.map((f: any) => f.feature_name),
+      projected_delay_months: scenario.timeline_extension_months,
+      projected_cost_overrun_cr: Math.max(0, scenario.revised_cost - scenario.original_cost)
+    },
+    explanations: data.top_factors
+  };
+}
 export async function sendChatMessage(message: string, history: any = [], currentProjectId?: string) { return { reply: "Chat is disabled in Python-only mode." } as ChatResponse; }
 export async function createProject(payload: any) { return {} as Project; }
 export async function updateProject(id: string, updates: any) { return {} as Project; }

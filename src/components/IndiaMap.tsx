@@ -10,6 +10,20 @@ interface IndiaMapProps {
   onStateHover?: (metrics: AggregatedMetrics | null) => void;
 }
 
+const stateNameMapping: Record<string, string> = {
+  "arunanchal pradesh": "arunachal pradesh",
+  "jammu & kashmir": "jammu and kashmir",
+  "andaman & nicobar island": "andaman & nicobar",
+  "nct of delhi": "delhi",
+  "dadara & nagar havelli": "dadra & nagar haveli and daman & diu"
+};
+
+const normalizeName = (name: string) => {
+  if (!name) return '';
+  const lower = name.toLowerCase().trim();
+  return stateNameMapping[lower] || lower;
+};
+
 export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
   const [data, setData] = useState<AggregatedMetrics[]>([]);
   const [loading, setLoading] = useState(true);
@@ -21,7 +35,7 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
       setData(res);
       setLoading(false);
       if (onStateHover) {
-        const defaultState = res.find(d => d.name.toLowerCase() === 'uttar pradesh');
+        const defaultState = res.find(d => normalizeName(d.name) === 'uttar pradesh');
         if (defaultState) onStateHover(defaultState);
       }
     }).catch(err => {
@@ -64,8 +78,9 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover }) => {
         <Geographies geography={INDIA_TOPO_JSON}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const stateName = geo.properties.st_nm || geo.properties.name;
-              const stateData = data.find(d => d.name.toLowerCase() === stateName.toLowerCase());
+              const rawName = geo.properties.st_nm || geo.properties.name || '';
+              const normalizedGeoName = normalizeName(rawName);
+              const stateData = normalizedGeoName ? data.find(d => normalizeName(d.name) === normalizedGeoName) : undefined;
 
               return (
                 <Geography

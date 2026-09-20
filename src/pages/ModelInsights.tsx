@@ -56,19 +56,24 @@ export const ModelInsights: React.FC = () => {
     }
   };
 
+  const [isSimulating, setIsSimulating] = useState(false);
+
   const runSimulation = async () => {
+    setIsSimulating(true);
     try {
       const res = await simulatePrediction({
         original_cost: simCost,
         revised_cost: simRevCost,
         expenditure: simExp,
         physical_progress: simPhys,
-        timeline_revision_months: simTimelineExt,
+        timeline_extension_months: simTimelineExt,
         sector: simSector,
       });
       setSimResult(res);
     } catch (err: any) {
       console.error('Simulation error', err);
+    } finally {
+      setIsSimulating(false);
     }
   };
 
@@ -76,13 +81,6 @@ export const ModelInsights: React.FC = () => {
     loadData();
     runSimulation();
   }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      runSimulation();
-    }, 250);
-    return () => clearTimeout(timer);
-  }, [simCost, simRevCost, simExp, simPhys, simTimelineExt, simSector]);
 
   if (loading) {
     return (
@@ -193,10 +191,10 @@ export const ModelInsights: React.FC = () => {
       {/* Interactive Scenario Lab */}
       <div className="bg-white p-6 rounded-lg border border-[#D9E1E8] shadow-xs space-y-4">
         <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <Sliders className="h-5 w-5 text-[#E87500]" />
+          <Sliders className="h-5 w-5 text-[#4C51BF]" />
           <div>
-            <h2 className="text-base font-bold text-[#003B6F]">What-If Scenario Simulation Lab</h2>
-            <p className="text-xs text-[#667085]">Test how cost revisions and schedule delays alter risk predictions</p>
+            <h2 className="text-base font-bold text-[#172033]">Live AI Inference & What-If Scenario Lab</h2>
+            <p className="text-xs text-[#667085]">Adjust project telemetry parameters in real time to observe live decision tree triggers and early warning generation</p>
           </div>
         </div>
 
@@ -251,7 +249,23 @@ export const ModelInsights: React.FC = () => {
 
             <div>
               <label className="font-bold text-slate-700 flex justify-between">
-                <span>Physical Progress:</span>
+                <span>Expenditure Disbursed:</span>
+                <span className="font-mono text-[#4C51BF]">₹{simExp} Cr ({((simExp/simRevCost)*100).toFixed(0)}% Financial)</span>
+              </label>
+              <input
+                type="range"
+                min={0}
+                max={simRevCost}
+                step={100}
+                value={simExp}
+                onChange={(e) => setSimExp(Number(e.target.value))}
+                className="w-full"
+              />
+            </div>
+
+            <div>
+              <label className="font-bold text-slate-700 flex justify-between">
+                <span>Physical Ground Progress:</span>
                 <span className="font-mono text-[#138808]">{simPhys}%</span>
               </label>
               <input
@@ -267,7 +281,7 @@ export const ModelInsights: React.FC = () => {
 
             <div>
               <label className="font-bold text-slate-700 flex justify-between">
-                <span>Timeline Extension:</span>
+                <span>Timeline Revision Slippage:</span>
                 <span className="font-mono text-[#C98200]">+{simTimelineExt} Months</span>
               </label>
               <input
@@ -280,41 +294,68 @@ export const ModelInsights: React.FC = () => {
                 className="w-full"
               />
             </div>
+            <button
+              onClick={runSimulation}
+              disabled={isSimulating}
+              className="mt-4 w-full bg-[#0B3D66] text-white py-2 rounded font-bold hover:bg-[#002B4A] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 transition-colors"
+            >
+              {isSimulating ? <RefreshCw className="h-4 w-4 animate-spin" /> : <BrainCircuit className="h-4 w-4" />}
+              {isSimulating ? "Simulating Scenario..." : "Run Simulation"}
+            </button>
           </div>
 
           {/* Results Output */}
-          <div className="lg:col-span-5 bg-[#F5F7FA] p-4 rounded border border-slate-200 space-y-3">
-            {simResult ? (
-              <div className="space-y-3">
-                <div className="flex items-center justify-between border-b pb-2">
-                  <span className="font-bold text-[#172033]">Inferred Risk Score</span>
-                  <RiskBadge
-                    level={simResult.prediction.risk_level}
-                    score={simResult.prediction.risk_score}
-                    size="md"
-                  />
+          <div className="lg:col-span-5 bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+            {isSimulating ? (
+              <div className="h-full w-full flex flex-col items-center justify-center text-[#4C51BF] space-y-2 py-10">
+                <RefreshCw className="h-6 w-6 animate-spin opacity-80" />
+                <span className="text-sm font-bold opacity-80">Evaluating ML Risk...</span>
+              </div>
+            ) : simResult ? (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Simulated Prediction</span>
+                    <h3 className="font-bold text-lg text-[#172033]">Live Risk Assessment</h3>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full border text-xs font-bold flex items-center gap-1.5 ${
+                    simResult.prediction.risk_level === 'HIGH' ? 'bg-rose-50 text-rose-700 border-rose-200' : 
+                    simResult.prediction.risk_level === 'MEDIUM' ? 'bg-amber-50 text-amber-700 border-amber-200' : 
+                    'bg-emerald-50 text-emerald-700 border-emerald-200'
+                  }`}>
+                    <ShieldAlert className="h-3 w-3" />
+                    <span>{simResult.prediction.risk_level} RISK {simResult.prediction.risk_score}/100</span>
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 text-center">
-                  <div className="bg-white p-2 rounded border border-slate-200">
-                    <span className="text-[10px] text-slate-500 font-bold">Delay Prob</span>
-                    <div className="text-base font-bold text-[#C62828]">
+                <div className="grid grid-cols-2 gap-3 text-center">
+                  <div className="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                    <span className="text-[11px] text-slate-500 font-bold uppercase tracking-wider">Delay Prob</span>
+                    <div className="text-2xl font-bold text-[#E53E3E] mt-1">
                       {simResult.prediction.delay_probability}%
                     </div>
                   </div>
-                  <div className="bg-white p-2 rounded border border-slate-200">
-                    <span className="text-[10px] text-slate-500 font-bold">Cost Prob</span>
-                    <div className="text-base font-bold text-[#C98200]">
+                  <div className="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                    <span className="text-[11px] text-slate-500 font-bold uppercase tracking-wider">Cost Escalation</span>
+                    <div className="text-2xl font-bold text-[#DD6B20] mt-1">
                       {simResult.prediction.cost_overrun_probability}%
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-blue-50 p-2.5 rounded border border-blue-200 text-[#003B6F] font-semibold space-y-1">
-                  <span>Recommended Action:</span>
-                  <p className="text-slate-700 font-normal leading-relaxed">
-                    {simResult.prediction.recommended_action}
-                  </p>
+                <div className="space-y-3">
+                  <div>
+                    <span className="text-xs font-bold text-slate-700">Top Inferred Factor:</span>
+                    <div className="mt-1 p-3 bg-white rounded border border-slate-200 text-sm text-slate-600 leading-relaxed shadow-sm">
+                      {simResult.prediction.top_inferred_factor}
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-[#2B6CB0]">Prescriptive Action:</span>
+                    <div className="mt-1 p-3 bg-blue-50 rounded border border-blue-200 text-sm text-[#2C5282] leading-relaxed shadow-sm">
+                      {simResult.prediction.recommended_action}
+                    </div>
+                  </div>
                 </div>
               </div>
             ) : (

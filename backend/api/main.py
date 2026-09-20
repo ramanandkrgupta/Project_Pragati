@@ -12,7 +12,7 @@ from sqlalchemy import create_engine, text
 import torch
 from dotenv import load_dotenv
 
-from api.schemas import ProjectInferenceRequest, PredictionResponse, FeatureExplanation, HistoricalSnapshot
+from api.schemas import ProjectInferenceRequest, SimulationRequest, PredictionResponse, FeatureExplanation, HistoricalSnapshot
 
 # Attempt to load Google GenAI
 try:
@@ -21,7 +21,7 @@ try:
 except ImportError:
     genai = None
 
-load_dotenv()
+load_dotenv(override=True)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 gemini_client = None
 if genai and GEMINI_API_KEY and GEMINI_API_KEY != "your_gemini_api_key_here":
@@ -157,7 +157,7 @@ def generate_ai_overview(project_name: str, snapshots: list) -> str:
     
     try:
         response = gemini_client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.6-flash',
             contents=prompt,
         )
         return response.text
@@ -460,7 +460,8 @@ async def predict_overrun_risk(request: ProjectInferenceRequest):
             revised_cost=float(row['revised_cost']) if pd.notna(row['revised_cost']) else 0.0
         ))
         
-    # 4. Generate LLM AI Overview
+
+# 4. Generate LLM AI Overview
     project_name = str(df_proj.iloc[0].get('project_name', f'Project {project_id}'))
     planned_start_date = str(df_proj.iloc[0].get('planned_start_date', ''))
     
@@ -476,6 +477,204 @@ async def predict_overrun_risk(request: ProjectInferenceRequest):
         historical_timeline=timeline,
         ai_overview=ai_overview
     )
+
+@app.post("/api/v1/predict/simulate")
+async def simulate_what_if(req: SimulationRequest):
+    if ml_pipeline is None or time_overrun_model is None:
+        raise HTTPException(status_code=503, detail="Model pipeline is not loaded.")
+        
+    # Construct synthetic baseline for cost overrun prediction
+    input_data_cost = pd.DataFrame([{
+        "sector": req.sector,
+        "state": "All India", # Default for simulation
+        "implementing_agency": "Simulated Agency",
+        "approved_cost": req.original_cost,
+        "planned_duration_months": 48 + req.timeline_extension_months
+    }])
+    
+    # 1. Cost Overrun Prediction
+    try:
+        risk_prob = ml_pipeline.predict_proba(input_data_cost)[0][1]
+        risk_prob = min(0.99, max(0.01, risk_prob))
+        
+        if risk_prob < 0.35:
+            risk_level = "Low"
+        elif risk_prob < 0.65:
+            risk_level = "Medium"
+        else:
+            risk_level = "High"
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Cost Inference failed: {str(e)}")
+        
+    # Construct synthetic snapshot for time overrun prediction
+    input_data_time = pd.DataFrame([{
+        "sector": req.sector,
+        "planned_duration_months": 48 + req.timeline_extension_months,
+        "physical_progress": req.physical_progress,
+        "planned_progress": min(100.0, req.physical_progress + 10.0),
+        "financial_progress": min(100.0, (req.revised_cost / req.original_cost) * 100 if req.original_cost else 0),
+        "expenditure_ratio": req.revised_cost / req.original_cost if req.original_cost else 1.0,
+        "milestones_completed": int(req.physical_progress / 20),
+        "milestones_total": 5,
+        "milestones_overdue": 1 if req.timeline_extension_months > 0 else 0
+    }])
+    
+    # 2. Time Overrun Prediction
+    try:
+        predicted_delay = float(time_overrun_model.predict(input_data_time)[0])
+        predicted_delay = max(0.0, round(predicted_delay, 1))
+    except Exception as e:
+        predicted_delay = float(req.timeline_extension_months)
+
+    delay_prob = min(0.99, predicted_delay / 24.0)
+
+    # 3. Model Explainability (SHAP)
+    explanations = []
+    try:
+        preprocessor = ml_pipeline.named_steps['preprocessor']
+        transformed_data = preprocessor.transform(input_data_cost)
+        
+        try:
+            feature_names = preprocessor.get_feature_names_out()
+        except:
+            feature_names = [f"Feature_{i}" for i in range(transformed_data.shape[1])]
+            
+        if explainer is not None:
+            shap_output = explainer.shap_values(transformed_data)
+            
+            if isinstance(shap_output, list) and len(shap_output) > 1:
+                class_1_shap = shap_output[1][0]
+            elif isinstance(shap_output, np.ndarray) and len(shap_output.shape) == 3:
+                class_1_shap = shap_output[0, :, 1]
+            else:
+                class_1_shap = shap_output[0] if len(np.shape(shap_output)) > 1 else shap_output
+        else:
+            classifier = ml_pipeline.named_steps.get('classifier')
+            if hasattr(classifier, 'coef_'):
+                arr = transformed_data.toarray()[0] if hasattr(transformed_data, 'toarray') else transformed_data[0]
+                class_1_shap = arr * classifier.coef_[0]
+            else:
+                class_1_shap = np.zeros(transformed_data.shape[1])
+                
+        feature_impacts = list(zip(feature_names, class_1_shap))
+        feature_impacts.sort(key=lambda x: abs(x[1]), reverse=True)
+        
+        filtered_impacts = []
+        for fname, shap_val in feature_impacts:
+            try:
+                f_idx = list(feature_names).index(fname)
+                f_val = transformed_data[0][f_idx]
+            except ValueError:
+                f_val = None
+            if fname.startswith('cat__') and f_val == 0.0:
+                continue
+            filtered_impacts.append((fname, shap_val))
+        
+        for fname, shap_val in filtered_impacts[:3]:  # Top 3 factors
+            if abs(shap_val) < 0.01:
+                continue
+            original_feature_name = fname.split('__')[-1] if '__' in fname else fname
+            direction = "Increases Risk" if shap_val > 0 else "Decreases Risk"
+            
+            # Find the original input value for display
+            try:
+                f_idx = list(feature_names).index(fname)
+                f_val = transformed_data[0][f_idx]
+                if isinstance(f_val, float):
+                    val_str = str(round(f_val, 2))
+                else:
+                    val_str = str(f_val)
+            except:
+                val_str = "N/A"
+                
+            explanations.append(FeatureExplanation(
+                feature_name=original_feature_name.replace('_', ' ').title(),
+                feature_value=val_str,
+                shap_value=float(shap_val),
+                impact_direction=direction
+            ))
+            
+    except Exception as e:
+        print(f"Warning: SHAP explanation generation failed for simulation: {e}")
+        
+    if not explanations:
+        # Fallback if SHAP fails completely
+        explanations = [
+            FeatureExplanation(
+                feature_name="Model Default",
+                feature_value="Baseline",
+                shap_value=0.1,
+                impact_direction="Increases Risk"
+            )
+        ]
+    
+    financial_progress = min(100.0, (req.expenditure / req.revised_cost) * 100 if req.revised_cost else 0)
+    
+    # 4. Generate Dynamic Insights via LLM
+    top_factor_str = ""
+    rec_action = ""
+    ai_overview = ""
+    
+    if gemini_client:
+        prompt = f"""
+        You are an AI infrastructure project monitoring assistant for the Government of India.
+        Analyze the following What-If simulation parameters for a {req.sector} project:
+        - Original Cost: ₹{req.original_cost}Cr
+        - Revised Cost: ₹{req.revised_cost}Cr
+        - Expenditure Disbursed: ₹{req.expenditure}Cr ({financial_progress:.1f}%)
+        - Physical Progress: {req.physical_progress}%
+        - Timeline Slippage: {req.timeline_extension_months} Months
+        
+        Model Risk Predictions:
+        - Cost Overrun Probability: {risk_prob*100:.1f}%
+        - Delay Probability: {delay_prob*100:.1f}%
+        
+        Provide three things in a strictly formatted JSON output:
+        {{
+            "top_inferred_factor": "A single sentence (max 20 words) explaining the primary driver of the risk.",
+            "recommended_action": "A highly prescriptive, authoritative action step (max 30 words) for a government officer.",
+            "ai_overview": "A short 2 sentence overview of the simulated scenario."
+        }}
+        
+        Respond ONLY with raw valid JSON. Do not include markdown blocks like ```json.
+        """
+        try:
+            import json
+            response = gemini_client.models.generate_content(
+                model='gemini-3.6-flash',
+                contents=prompt,
+            )
+            text = response.text.replace('```json', '').replace('```', '').strip()
+            data = json.loads(text)
+            top_factor_str = data.get("top_inferred_factor", "")
+            rec_action = data.get("recommended_action", "")
+            ai_overview = data.get("ai_overview", "")
+        except Exception as e:
+            print(f"Simulation LLM Error: {e}")
+            
+    # Fallbacks if LLM fails or is disabled
+    if not top_factor_str:
+        gap = financial_progress - req.physical_progress
+        top_factor_str = f"Progress gap of {gap:+.2f}% (Disbursement {financial_progress:.1f}% vs Physical {req.physical_progress}%) elevates risk."
+    if not rec_action:
+        rec_action = "Conduct urgent financial-physical audit: verify contractor billing milestones, audit work measurement sheets, and resolve on-site execution bottlenecks."
+    if not ai_overview:
+        ai_overview = "Simulation run complete. The combination of cost escalation and physical progress determines the risk profile."
+    
+    return {
+        "project_id": 999999,
+        "project_name": "What-If Simulation",
+        "risk_probability": max(risk_prob, delay_prob),
+        "risk_level": "High" if max(risk_prob, delay_prob) >= 0.65 else ("Medium" if max(risk_prob, delay_prob) >= 0.35 else "Low"),
+        "delay_probability": delay_prob,
+        "cost_overrun_probability": risk_prob,
+        "top_factors": explanations,
+        "top_inferred_factor": top_factor_str,
+        "recommended_action": rec_action,
+        "historical_timeline": [],
+        "ai_overview": ai_overview
+    }
 
 from api.schemas import EarlyWarningItem, EarlyWarningResponse
 from typing import Optional
@@ -951,12 +1150,12 @@ User Query: {req.query}
 
     try:
         response = gemini_client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.6-flash',
             contents=prompt,
         )
         return ProjectAssistantResponse(
             answer=response.text,
-            engine="Gemini 2.5 Flash"
+            engine="Gemini 3.6 Flash"
         )
     except Exception as e:
         print(f"Gemini API Error: {str(e)}")
